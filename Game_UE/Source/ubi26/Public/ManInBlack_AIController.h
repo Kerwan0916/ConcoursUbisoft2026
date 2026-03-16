@@ -24,6 +24,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result) override;
+	virtual void OnPossess(APawn* InPawn) override;
 
 	// the function that fires when the FOV detects a target
 	UFUNCTION()

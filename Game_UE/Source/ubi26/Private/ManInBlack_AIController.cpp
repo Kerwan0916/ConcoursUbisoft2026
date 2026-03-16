@@ -6,6 +6,7 @@
 #include "Perception/AISenseConfig_Sight.h"
 #include "Navigation/PathFollowingComponent.h"
 #include "TimerManager.h"
+#include "ManInBlack_Character.h"
 
 AManInBlack_AIController::AManInBlack_AIController()
 {
@@ -30,6 +31,23 @@ AManInBlack_AIController::AManInBlack_AIController()
 void AManInBlack_AIController::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//MoveToNextPatrolPoint();
+}
+
+void AManInBlack_AIController::OnPossess(APawn* InPawn)
+{
+	Super::OnPossess(InPawn);
+
+	// Cast the pawn we just possessed to our custom C++ Character
+	if (AManInBlack_Character* MIBCharacter = Cast<AManInBlack_Character>(InPawn))
+	{
+		// Grab the array from the character's body and give it to the brain
+		PatrolPoints = MIBCharacter->PatrolRoute;
+
+		// Kick off the patrol!
+		MoveToNextPatrolPoint();
+	}
 }
 
 void AManInBlack_AIController::OnTargetDetected(AActor* Actor, FAIStimulus Stimulus)
