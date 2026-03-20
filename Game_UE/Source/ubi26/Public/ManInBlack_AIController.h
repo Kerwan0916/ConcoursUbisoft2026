@@ -30,6 +30,9 @@ protected:
 	UFUNCTION()
 	void OnTargetDetected(AActor* Actor, FAIStimulus Stimulus);
 
+	UFUNCTION()
+	void UpdateChase();
+
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UAIPerceptionComponent* AIPerception;
@@ -44,6 +47,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Patrol")
 	float WaitTime = 2.0f; // Time to wait at each patrol point
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Patrol")
+	float PatrolSpeed = 200.0f; // Speed to move between patrol points
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Patrol")
+	float ChaseSpeed = 300.0f; // Speed to chase the alien
+
 
 	UFUNCTION(BlueprintCallable, Category = "AI Patrol")
 	void MoveToNextPatrolPoint();
@@ -53,4 +62,6 @@ private:
 	int32 CurrentPatrolIndex = 0;
 
 	FTimerHandle WaitTimerHandle;
+
+	FTimerHandle ChaseTimerHandle;
 };
