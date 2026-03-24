@@ -200,10 +200,50 @@ void AManInBlack_AIController::UpdateChase()
 	}
 	else
 	{
-		// The array was empty -> All aliens escaped his vision.
+		// if he loses sight of alien but alien is still in the array, it means the alien is just out of his FOV but still close. 
+		// In this case, we want him to keep chasing the last known location of the alien until he reaches it or sees it again.
+		if (TargetAlien != nullptr)
+		{
+			float DistToOldTarget = FVector::Dist(ControlledPawn->GetActorLocation(), TargetAlien->GetActorLocation());
+
+			// if the alien is within 600 units, man in black spins and keeps chasing
+			if (DistToOldTarget < 600.0f)
+			{
+				MoveToActor(TargetAlien, 100.0f);
+				return; // stop here so the patrol logic doesn't kick in and change his destination while he's still chasing the last known location of the alien
+			}
+		}
+		// The array was empty so all aliens escaped his vision.
 		// Clear the target, kill the chase loop, and resume patrol
 		TargetAlien = nullptr;
 		GetWorld()->GetTimerManager().ClearTimer(ChaseTimerHandle);
+
+		// Find the closest patrol point to his current location 
+		if (PatrolPoints.Num() > 0 && GetPawn() != nullptr)
+		{
+			float ShortestPatrolDist = 999999.0f;
+			int32 ClosestIndex = CurrentPatrolIndex;
+			FVector MyLocation = GetPawn()->GetActorLocation();
+
+			for (int32 i = 0; i < PatrolPoints.Num(); i++)
+			{
+				if (PatrolPoints[i])
+				{
+					float Dist = FVector::Dist(MyLocation, PatrolPoints[i]->GetActorLocation());
+
+					// If this point is closer than the others, save it
+					if (Dist < ShortestPatrolDist)
+					{
+						ShortestPatrolDist = Dist;
+						ClosestIndex = i;
+					}
+				}
+			}
+
+			// Update his brain to target the closest point we just found
+			CurrentPatrolIndex = ClosestIndex;
+		}
+		// Resume patrol heading to the new closest point
 		MoveToNextPatrolPoint();
 	}
 }
