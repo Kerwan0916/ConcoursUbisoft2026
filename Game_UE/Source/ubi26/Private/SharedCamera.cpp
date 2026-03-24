@@ -17,7 +17,7 @@ ASharedCamera::ASharedCamera()
 	RootComponent = RootComp;
 
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
-	RootComponent = CameraBoom;
+	CameraBoom->SetupAttachment(RootComponent);
 
 	// fix : angle the camera down and stop the floor from breaking the zoom
 	CameraBoom->bDoCollisionTest = false;
