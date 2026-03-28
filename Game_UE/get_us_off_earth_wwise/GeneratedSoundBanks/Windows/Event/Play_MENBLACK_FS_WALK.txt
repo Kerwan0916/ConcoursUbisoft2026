@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1316171309	Play_MENBLACK_FS_WALK			\Default Work Unit\MEN IN BLACK\Play_MENBLACK_FS_WALK	
+

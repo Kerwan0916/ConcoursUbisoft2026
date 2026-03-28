@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="VOLUME FADERS" ID="{DBFF554B-5A12-4C53-A873-85E5920301C9}" ShortID="690566687">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="20"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<GameParameter Name="RTPC_VOLUME_SFX" ID="{C338F3E4-E3BF-464D-B861-B341A7FB252D}"/>
+						<GameParameter Name="RTPC_VOLUME_BGM" ID="{ACCA3806-BC43-42BB-B47B-A309D2249293}"/>
+						<GameParameter Name="RTPC_VOLUME_MAIN" ID="{160EAD28-0BDC-4361-A77C-111A0DEA43E3}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

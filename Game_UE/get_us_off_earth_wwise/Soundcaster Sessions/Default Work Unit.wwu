@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{011B9882-EC59-4AB3-800E-F5C966FF354E}" SchemaVersion="119">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{011B9882-EC59-4AB3-800E-F5C966FF354E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="TEST SESSION" ID="{ADB21C03-4D75-4098-90CE-7A8C8CCD803C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_BGM" ID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="GAME_OVER" ID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>
