@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="SURFACE" ID="{51BCD824-4EE1-4B17-8C75-DF5ABA922871}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
+						<Switch Name="TILE" ID="{964759D4-5713-451C-B5C2-D98D035C10EB}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
