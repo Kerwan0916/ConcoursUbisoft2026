@@ -13,10 +13,135 @@
 							<ObjectRef Name="Play_BGM" ID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_AMB_2D_ROOMTONE_GENERAL_LOOP" ID="{CE553948-3260-40AC-9F07-DAF424CA0830}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AMB_3D_HANGAR_DOOR_HUM_LOOP" ID="{610F436B-177E-4B0C-A571-D0D896895C39}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AMB_3D_INCUBATORS_LOOP" ID="{E2C233C7-15A2-40EF-B417-6F91F3CA0D84}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AMB_3D_LEVERS_OFF_LOOP" ID="{A718C967-8A6E-4A72-97B9-0E2BD21D7345}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ROOM_DOOR_ROOM_OPEN" ID="{05620FB7-FBEE-4CB5-9DBC-3F8C608A3671}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_KEYS_EMITTER_LOOP" ID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_ALIEN_GRUNT_CATCHED" ID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_ALIEN_GRUNT_SPOTTED" ID="{F9E9C59E-1D1B-48A8-B9C7-848685025D08}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_ALIEN_GRUNT_VICTORY" ID="{4669F09D-5904-4C4D-9593-10E777F774DE}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ALIEN_FS_RUN_SWITCH" ID="{D6873E74-1023-4146-BC4F-445644489C81}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_ALIEN_TELEPORTED" ID="{F4781E7D-6509-47BA-A5C1-2D17C7539C1C}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_DOOR_HANGAR_OPEN" ID="{42AC01E4-941A-41AB-A7B5-AADA04599646}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_KEYS_PICKUP" ID="{4B7F7B1D-5D74-4F8A-A69C-D12AC56E112D}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_MENBLACK_GRUNT_CATCH_ALIEN" ID="{5D863314-F367-4BE1-A3F8-390FFB89465A}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN" ID="{7F849F53-C459-4F03-A017-FF8F9008B349}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_MENBLACK_IS_CLOSE_LOOP" ID="{343F1413-B08F-43B9-A7FB-42FF2743C333}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_MENBLACK_FS_WALK_SWITCH" ID="{E8C96E28-2882-412B-832B-A36E181F35C2}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_DOOR_LOCKED" ID="{EE40E8B2-D341-4272-989D-930316DD2A0D}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_LEVER_LIGHT" ID="{B5897D35-9072-4E50-9749-5856FB0F528F}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="2" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_BACK" ID="{990DFE39-4F9E-4AAD-BB67-AB4DB629A568}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_BUTTON_APPEAR" ID="{EAFA5753-72D7-496C-B4C9-E0CDF55ED6B1}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_MENU_MAIN_ENTER" ID="{F24B7B7B-EFE0-4AB1-9854-DA433F7D6EA3}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_PANEL_IN" ID="{588ED580-500C-4C9D-9384-F5AE049851BE}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_SELECT" ID="{63A16E8C-756D-44CF-84DD-E0FF4473C2E7}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_METAL_DRAWERS_OPEN" ID="{9418A815-9685-4D35-8322-8E5184093FCB}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_LEVER_TRAP" ID="{1ADEBBA2-3C4D-494B-8770-F58EE826412D}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="3" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_BUTTON_ACTIVATED" ID="{E9FFFA8D-52BB-4592-AC64-F4818E77ACFD}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_HOVERS" ID="{5BA3A5D4-E1C1-4FFE-BB86-3C4A4F831173}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_MENU_MAIN_EXIT" ID="{8038F53F-89A9-4267-939D-5E227260F756}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_PANEL_OUT" ID="{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_WOODEN_DRAWERS" ID="{FEB06038-BDD6-48DE-B33F-C9C37342D0E6}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
+							<Position X="4" Y="5"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="GAME_OVER" ID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
+						<CurrentStateRef Name="None" ID="{C439BED1-7C10-47E0-9239-75BA9B0E665E}"/>
+						<CurrentStateRef Name="ALIEN_SPOTTED" ID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
