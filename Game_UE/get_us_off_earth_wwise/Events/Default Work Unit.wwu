@@ -130,17 +130,6 @@
 						</Event>
 						<Folder Name="GRUNTS" ID="{30EFE1E5-FF0A-4168-98B9-8A3116DD25EF}" ShortID="792760722">
 							<ChildrenList>
-								<Event Name="Play_SFX_MENBLACK_GRUNT_STUNT" ID="{1C58D2D8-843A-4CC1-884C-C0C28EF89591}">
-									<ChildrenList>
-										<Action Name="" ID="{0B4F8964-4CEA-4C5E-B5C1-929A87FDA773}" ShortID="383078171">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="SFX_MENBLACK_GRUNT_STUNT" ID="{75AEB77C-EBCA-4749-ACAD-0184B558DDA3}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="Play_SFX_MENBLACK_GRUNT_CATCH_ALIEN" ID="{5D863314-F367-4BE1-A3F8-390FFB89465A}">
 									<ChildrenList>
 										<Action Name="" ID="{A93DBEA6-467C-469C-B95F-8C7A93449B11}" ShortID="241290674">
@@ -175,17 +164,6 @@
 					<ChildrenList>
 						<Folder Name="LEVERS" ID="{AD2F9B8F-1470-43CD-9217-D28B12356FA0}" ShortID="979778367">
 							<ChildrenList>
-								<Event Name="Play_SFX_LEVER_FAKE" ID="{6E224352-236E-4CD8-AAAE-7586B4E563D8}">
-									<ChildrenList>
-										<Action Name="" ID="{68F79142-EE0B-4655-AFDC-B23494C54C0D}" ShortID="233075773">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="SFX_LEVER_FAKE" ID="{89ED1263-9169-47EB-B08B-E15D6564CCF1}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="Play_SFX_LEVER_LIGHT" ID="{B5897D35-9072-4E50-9749-5856FB0F528F}">
 									<ChildrenList>
 										<Action Name="" ID="{C53DFF08-6A4B-4C87-91C6-432A952D60AD}" ShortID="234379952">
