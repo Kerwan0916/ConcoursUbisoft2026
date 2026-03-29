@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="73382271" Type="Event" Language="SFX" Hash="{6EDCDACE-4DB8-C364-D8B7-A62827BF9AD8}">
+			<ShortName>Play_AMB_2D_ROOMTONE_GENERAL_LOOP</ShortName>
+			<Path>Event/Play_AMB_2D_ROOMTONE_GENERAL_LOOP.bnk</Path>
+			<Media>
+				<File Id="49463264" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_2D_ROOMTONE_GENERAL_LOOP.wav</ShortName>
+					<Path>Media/49463264.wem</Path>
+					<CachePath>SFX/AMB_2D_ROOMTONE_GENERAL_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="73382271" Name="Play_AMB_2D_ROOMTONE_GENERAL_LOOP">
+					<MediaRefs>
+						<MediaRef Id="49463264"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="242448392" Type="Event" Language="SFX" Hash="{9BDD0DC1-8BD3-195E-447F-A445E8D25FED}">
+			<ShortName>Play_SLIDERS</ShortName>
+			<Path>Event/Play_SLIDERS.bnk</Path>
+			<Events>
+				<Event Id="242448392" Name="Play_SLIDERS"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="412978243" Type="Event" Language="SFX" Hash="{98458D4A-2A10-B623-0E51-8746B7E94583}">
+			<ShortName>Play_SFX_LEVER_LIGHT</ShortName>
+			<Path>Event/Play_SFX_LEVER_LIGHT.bnk</Path>
+			<Media>
+				<File Id="348356355" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_LIGHT_ON_02.wav</ShortName>
+					<Path>Media/348356355.wem</Path>
+					<CachePath>SFX/SFX_LEVER_LIGHT_ON_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="394900702" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_LIGHT_ON_03.wav</ShortName>
+					<Path>Media/394900702.wem</Path>
+					<CachePath>SFX/SFX_LEVER_LIGHT_ON_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="690904035" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_LIGHT_ON_01.wav</ShortName>
+					<Path>Media/690904035.wem</Path>
+					<CachePath>SFX/SFX_LEVER_LIGHT_ON_01_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="412978243" Name="Play_SFX_LEVER_LIGHT">
+					<MediaRefs>
+						<MediaRef Id="348356355"/>
+						<MediaRef Id="394900702"/>
+						<MediaRef Id="690904035"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="521258450" Type="Event" Language="SFX" Hash="{518D9C83-E7F2-A5B5-D5C4-4E7658208517}">
+			<ShortName>Play_BUTTON_ACTIVATED</ShortName>
+			<Path>Event/Play_BUTTON_ACTIVATED.bnk</Path>
+			<Events>
+				<Event Id="521258450" Name="Play_BUTTON_ACTIVATED"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="792739802" Type="Event" Language="SFX" Hash="{FD64EA7A-9F20-6CB1-0630-964794CC3D4B}">
+			<ShortName>Play_SFX_LEVER_FAKE</ShortName>
+			<Path>Event/Play_SFX_LEVER_FAKE.bnk</Path>
+			<Events>
+				<Event Id="792739802" Name="Play_SFX_LEVER_FAKE"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="921702379" Type="Event" Language="SFX" Hash="{6AA81B67-2774-C09D-AD4A-828BD3CEFE16}">
+			<ShortName>Play_DEBUG</ShortName>
+			<Path>Event/Play_DEBUG.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="822063367" Name="Tone Generator" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="921702379" Name="Play_DEBUG">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="822063367"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1042987450" Type="Event" Language="SFX" Hash="{4C3A2A00-E61A-1C06-94DF-0030CB2BB2E1}">
+			<ShortName>Play_SELECT</ShortName>
+			<Path>Event/Play_SELECT.bnk</Path>
+			<Events>
+				<Event Id="1042987450" Name="Play_SELECT"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1088840730" Type="Event" Language="SFX" Hash="{09B9E0EB-CDDF-C69F-D03E-49ED2CCDA78B}">
+			<ShortName>Play_SFX_ALIEN_GRUNT_SPOTTED</ShortName>
+			<Path>Event/Play_SFX_ALIEN_GRUNT_SPOTTED.bnk</Path>
+			<Media>
+				<File Id="558125221" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_SPOTTED_03.wav</ShortName>
+					<Path>Media/558125221.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_SPOTTED_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="687414491" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_SPOTTED_02.wav</ShortName>
+					<Path>Media/687414491.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_SPOTTED_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="738204242" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_SPOTTED_01.wav</ShortName>
+					<Path>Media/738204242.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_SPOTTED_01_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1088840730" Name="Play_SFX_ALIEN_GRUNT_SPOTTED">
+					<MediaRefs>
+						<MediaRef Id="558125221"/>
+						<MediaRef Id="687414491"/>
+						<MediaRef Id="738204242"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1183002284" Type="Event" Language="SFX" Hash="{8CDB5DD8-FB2D-1357-A752-64E999E22F5F}">
+			<ShortName>Play_MENBLACK_GRUNT_CATCH_ALIEN</ShortName>
+			<Path>Event/Play_MENBLACK_GRUNT_CATCH_ALIEN.bnk</Path>
+			<Events>
+				<Event Id="1183002284" Name="Play_MENBLACK_GRUNT_CATCH_ALIEN"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1292086503" Type="Event" Language="SFX" Hash="{14BF45AF-34DA-CA4A-C180-BD1ECB3D754B}">
+			<ShortName>Play_BACK</ShortName>
+			<Path>Event/Play_BACK.bnk</Path>
+			<Events>
+				<Event Id="1292086503" Name="Play_BACK"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1316171309" Type="Event" Language="SFX" Hash="{069634A4-0F77-56E6-E715-EAF67D77F40F}">
+			<ShortName>Play_MENBLACK_FS_WALK</ShortName>
+			<Path>Event/Play_MENBLACK_FS_WALK.bnk</Path>
+			<Events>
+				<Event Id="1316171309" Name="Play_MENBLACK_FS_WALK"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{796351FF-205D-FC4F-3658-B17DD6EB4E6F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="84587813" Name="ALIENS"/>
+				<Bus Id="315418005" Name="MEN IN BLACK"/>
+				<Bus Id="412724365" Name="BGM"/>
+				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="1551306167" Name="UI"/>
+				<Bus Id="2002649911" Name="WORLD OBJECTS"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="822163944" Name="SS_Air_RPM"/>
+				<GameParameter Id="924658319" Name="RTPC_VOLUME_MAIN"/>
+				<GameParameter Id="1029930033" Name="SS_Air_Fury"/>
+				<GameParameter Id="1351367891" Name="SS_Air_Fear"/>
+				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
+				<GameParameter Id="3002758120" Name="SS_Air_Freefall"/>
+				<GameParameter Id="3074696722" Name="SS_Air_Size"/>
+				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
+				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
+				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
+				<GameParameter Id="3993832622" Name="RTPC_VOLUME_BGM"/>
+				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
+				<GameParameter Id="4276639445" Name="RTPC_VOLUME_SFX"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2248712270" Name="BGM_STATES">
+					<States>
+						<State Id="93434497" Name="STORYBOARD_START"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1432716332" Name="GAME_OVER"/>
+						<State Id="1966203490" Name="STORYBOARD_END"/>
+						<State Id="2005704188" Name="MAIN_MENU"/>
+						<State Id="2201105581" Name="CREDITS"/>
+						<State Id="2716678721" Name="VICTORY"/>
+						<State Id="2782712965" Name="LEVEL"/>
+						<State Id="4036474513" Name="STORYBOARD_TUTORIAL"/>
+						<State Id="4188752148" Name="ALIEN_SPOTTED"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="4233560256" Name="PLAY_PAUSE">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1852808225" Name="PLAYING"/>
+						<State Id="3092587493" Name="PAUSE"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="1436159542" Type="Event" Language="SFX" Hash="{B1883045-8A60-D16B-19B6-D99587A0DC0B}">
+			<ShortName>Play_MENBLACK_FLASHBANG</ShortName>
+			<Path>Event/Play_MENBLACK_FLASHBANG.bnk</Path>
+			<Events>
+				<Event Id="1436159542" Name="Play_MENBLACK_FLASHBANG"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1484984344" Type="Event" Language="SFX" Hash="{5B7A72FC-33E6-C532-C6B5-EFD1D6A1B37D}">
+			<ShortName>Play_SFX_LEVER_TRAP</ShortName>
+			<Path>Event/Play_SFX_LEVER_TRAP.bnk</Path>
+			<Media>
+				<File Id="28333578" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_TRAP_04.wav</ShortName>
+					<Path>Media/28333578.wem</Path>
+					<CachePath>SFX/SFX_LEVER_TRAP_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="74654798" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_TRAP_02.wav</ShortName>
+					<Path>Media/74654798.wem</Path>
+					<CachePath>SFX/SFX_LEVER_TRAP_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="471453000" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_TRAP_01.wav</ShortName>
+					<Path>Media/471453000.wem</Path>
+					<CachePath>SFX/SFX_LEVER_TRAP_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="533646679" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_TRAP_03.wav</ShortName>
+					<Path>Media/533646679.wem</Path>
+					<CachePath>SFX/SFX_LEVER_TRAP_03_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1484984344" Name="Play_SFX_LEVER_TRAP">
+					<MediaRefs>
+						<MediaRef Id="28333578"/>
+						<MediaRef Id="74654798"/>
+						<MediaRef Id="471453000"/>
+						<MediaRef Id="533646679"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1592706777" Type="Event" Language="SFX" Hash="{6A7D701A-CCD7-BE94-3D7F-8A6248683847}">
+			<ShortName>Play_SFX_KEYS_PICKUP</ShortName>
+			<Path>Event/Play_SFX_KEYS_PICKUP.bnk</Path>
+			<Media>
+				<File Id="932091003" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_KEYS_PICKUP_01.wav</ShortName>
+					<Path>Media/932091003.wem</Path>
+					<CachePath>SFX/SFX_KEYS_PICKUP_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="952344543" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_KEYS_PICKUP_02.wav</ShortName>
+					<Path>Media/952344543.wem</Path>
+					<CachePath>SFX/SFX_KEYS_PICKUP_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1018103587" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_KEYS_PICKUP_03.wav</ShortName>
+					<Path>Media/1018103587.wem</Path>
+					<CachePath>SFX/SFX_KEYS_PICKUP_03_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1592706777" Name="Play_SFX_KEYS_PICKUP">
+					<MediaRefs>
+						<MediaRef Id="932091003"/>
+						<MediaRef Id="952344543"/>
+						<MediaRef Id="1018103587"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1710034899" Type="Event" Language="SFX" Hash="{935028E2-47F5-DB60-0A10-6570413D1F63}">
+			<ShortName>Play_SFX_METAL_DRAWERS_OPEN</ShortName>
+			<Path>Event/Play_SFX_METAL_DRAWERS_OPEN.bnk</Path>
+			<Media>
+				<File Id="182264909" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DRAWER_METAL_OPEN_01.wav</ShortName>
+					<Path>Media/182264909.wem</Path>
+					<CachePath>SFX/SFX_DRAWER_METAL_OPEN_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="529242152" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DRAWER_METAL_OPEN_03.wav</ShortName>
+					<Path>Media/529242152.wem</Path>
+					<CachePath>SFX/SFX_DRAWER_METAL_OPEN_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="805383889" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DRAWER_METAL_OPEN_02.wav</ShortName>
+					<Path>Media/805383889.wem</Path>
+					<CachePath>SFX/SFX_DRAWER_METAL_OPEN_02_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1710034899" Name="Play_SFX_METAL_DRAWERS_OPEN">
+					<MediaRefs>
+						<MediaRef Id="182264909"/>
+						<MediaRef Id="529242152"/>
+						<MediaRef Id="805383889"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1745445364" Type="Event" Language="SFX" Hash="{B601466B-2706-7D9D-E54F-AF25341BF8D3}">
+			<ShortName>Play_AMB_3D_INCUBATORS_LOOP</ShortName>
+			<Path>Event/Play_AMB_3D_INCUBATORS_LOOP.bnk</Path>
+			<Media>
+				<File Id="239543694" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_3D_INCUBATORS_LOOP.wav</ShortName>
+					<Path>Media/239543694.wem</Path>
+					<CachePath>SFX/AMB_3D_INCUBATORS_LOOP_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1745445364" Name="Play_AMB_3D_INCUBATORS_LOOP">
+					<MediaRefs>
+						<MediaRef Id="239543694"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2079067046" Type="Event" Language="SFX" Hash="{759158FE-CD8D-B383-E75A-1033C2CC0258}">
+			<ShortName>Play_MENBLACK_GRUNT_SPOTS_ALIEN</ShortName>
+			<Path>Event/Play_MENBLACK_GRUNT_SPOTS_ALIEN.bnk</Path>
+			<Events>
+				<Event Id="2079067046" Name="Play_MENBLACK_GRUNT_SPOTS_ALIEN"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2126514987" Type="Event" Language="SFX" Hash="{16791562-D14C-99B4-CAF3-14393FA3F932}">
+			<ShortName>Play_SFX_DOOR_HANGAR_OPEN</ShortName>
+			<Path>Event/Play_SFX_DOOR_HANGAR_OPEN.bnk</Path>
+			<Media>
+				<File Id="60955474" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DOOR_HANGAR_OPEN.wav</ShortName>
+					<Path>Media/60955474.wem</Path>
+					<CachePath>SFX/SFX_DOOR_HANGAR_OPEN_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2126514987" Name="Play_SFX_DOOR_HANGAR_OPEN">
+					<MediaRefs>
+						<MediaRef Id="60955474"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2138504219" Type="Event" Language="SFX" Hash="{CA5D4D33-AB37-1F46-FDB3-0CD010C12184}">
+			<ShortName>Play_SFX_ALIEN_GRUNT_CATCHED</ShortName>
+			<Path>Event/Play_SFX_ALIEN_GRUNT_CATCHED.bnk</Path>
+			<Media>
+				<File Id="683213460" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_CATCHED_01.wav</ShortName>
+					<Path>Media/683213460.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_CATCHED_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="965717301" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_CATCHED_2.wav</ShortName>
+					<Path>Media/965717301.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_CATCHED_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1033905513" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_CATCHED_03.wav</ShortName>
+					<Path>Media/1033905513.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_CATCHED_03_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2138504219" Name="Play_SFX_ALIEN_GRUNT_CATCHED">
+					<MediaRefs>
+						<MediaRef Id="683213460"/>
+						<MediaRef Id="965717301"/>
+						<MediaRef Id="1033905513"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2548916635" Type="Event" Language="SFX" Hash="{91D99FBC-1CF8-67C2-D35C-CFF67E56FB71}">
+			<ShortName>Play_AMB_3D_HANGAR_DOOR_HUM_LOOP</ShortName>
+			<Path>Event/Play_AMB_3D_HANGAR_DOOR_HUM_LOOP.bnk</Path>
+			<Media>
+				<File Id="665623576" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_3D_HANGAR_DOOR_HUM_LOOP.wav</ShortName>
+					<Path>Media/665623576.wem</Path>
+					<CachePath>SFX/AMB_3D_HANGAR_DOOR_HUM_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2548916635" Name="Play_AMB_3D_HANGAR_DOOR_HUM_LOOP">
+					<MediaRefs>
+						<MediaRef Id="665623576"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2739294108" Type="Event" Language="SFX" Hash="{50E3FE36-5150-60B7-CB5B-DA8B3925E4DE}">
+			<ShortName>Play_SFX_ALIEN_TELEPORTED</ShortName>
+			<Path>Event/Play_SFX_ALIEN_TELEPORTED.bnk</Path>
+			<Media>
+				<File Id="1062678991" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_TELEPORTED.wav</ShortName>
+					<Path>Media/1062678991.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_TELEPORTED_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2739294108" Name="Play_SFX_ALIEN_TELEPORTED">
+					<MediaRefs>
+						<MediaRef Id="1062678991"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2750415231" Type="Event" Language="SFX" Hash="{856C0BEC-301F-1DF1-4326-773E84A35611}">
+			<ShortName>Play_SFX_WOODEN_DRAWERS</ShortName>
+			<Path>Event/Play_SFX_WOODEN_DRAWERS.bnk</Path>
+			<Media>
+				<File Id="680842596" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DRAWER_WOOD_OPEN_01.wav</ShortName>
+					<Path>Media/680842596.wem</Path>
+					<CachePath>SFX/SFX_DRAWER_WOOD_OPEN_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="744277863" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DRAWER_WOOD_OPEN_02.wav</ShortName>
+					<Path>Media/744277863.wem</Path>
+					<CachePath>SFX/SFX_DRAWER_WOOD_OPEN_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="817347720" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DRAWER_WOOD_OPEN_03.wav</ShortName>
+					<Path>Media/817347720.wem</Path>
+					<CachePath>SFX/SFX_DRAWER_WOOD_OPEN_03_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2750415231" Name="Play_SFX_WOODEN_DRAWERS">
+					<MediaRefs>
+						<MediaRef Id="680842596"/>
+						<MediaRef Id="744277863"/>
+						<MediaRef Id="817347720"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2815666795" Type="Event" Language="SFX" Hash="{7E5C091A-5F1D-AA8D-CF00-71D22DEB52B8}">
+			<ShortName>Play_HOVERS</ShortName>
+			<Path>Event/Play_HOVERS.bnk</Path>
+			<Events>
+				<Event Id="2815666795" Name="Play_HOVERS"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2997844418" Type="Event" Language="SFX" Hash="{1F399CBF-5396-0344-0433-B82BDB223913}">
+			<ShortName>Play_BUTTON_APPEAR</ShortName>
+			<Path>Event/Play_BUTTON_APPEAR.bnk</Path>
+			<Events>
+				<Event Id="2997844418" Name="Play_BUTTON_APPEAR"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3110399011" Type="Event" Language="SFX" Hash="{753798C2-52EB-AA93-845A-FB7832F7F169}">
+			<ShortName>Play_AMB_3D_LEVERS_OFF_LOOP</ShortName>
+			<Path>Event/Play_AMB_3D_LEVERS_OFF_LOOP.bnk</Path>
+			<Media>
+				<File Id="332770322" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_3D_LEVERS_OFF_LOOP.wav</ShortName>
+					<Path>Media/332770322.wem</Path>
+					<CachePath>SFX/AMB_3D_LEVERS_OFF_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3110399011" Name="Play_AMB_3D_LEVERS_OFF_LOOP">
+					<MediaRefs>
+						<MediaRef Id="332770322"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3126765036" Type="Event" Language="SFX" Hash="{84EDFCC5-DEF6-3A72-DC10-D6D8457AC540}">
+			<ShortName>Play_BGM</ShortName>
+			<Path>Event/Play_BGM.bnk</Path>
+			<Media>
+				<File Id="408488534" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_STORYBOARD_TUTO_LOOP.wav</ShortName>
+					<Path>Media/408488534.wem</Path>
+					<CachePath>SFX/BGM_STORYBOARD_TUTO_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1051026258" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_STORYBOARD_TUTO_INTRO.wav</ShortName>
+					<Path>Media/1051026258.wem</Path>
+					<CachePath>SFX/BGM_STORYBOARD_TUTO_INTRO_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3126765036" Name="Play_BGM">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2248712270" Id="4036474513"/>
+							<MediaRefs>
+								<MediaRef Id="408488534"/>
+								<MediaRef Id="1051026258"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="2248712270" Name="BGM_STATES">
+					<States>
+						<State Id="93434497" Name="STORYBOARD_START"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1432716332" Name="GAME_OVER"/>
+						<State Id="1966203490" Name="STORYBOARD_END"/>
+						<State Id="2005704188" Name="MAIN_MENU"/>
+						<State Id="2201105581" Name="CREDITS"/>
+						<State Id="2716678721" Name="VICTORY"/>
+						<State Id="2782712965" Name="LEVEL"/>
+						<State Id="4036474513" Name="STORYBOARD_TUTORIAL"/>
+						<State Id="4188752148" Name="ALIEN_SPOTTED"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3172212121" Type="Event" Language="SFX" Hash="{4D936F42-3121-5C6B-7BE2-CA24A65601A5}">
+			<ShortName>Play_MENBLACK_GRUNT_STUNT</ShortName>
+			<Path>Event/Play_MENBLACK_GRUNT_STUNT.bnk</Path>
+			<Events>
+				<Event Id="3172212121" Name="Play_MENBLACK_GRUNT_STUNT"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3279092899" Type="Event" Language="SFX" Hash="{FA6073E0-EFA8-8B36-5945-119F40AFB8C1}">
+			<ShortName>Play_SFX_ALIEN_GRUNT_VICTORY</ShortName>
+			<Path>Event/Play_SFX_ALIEN_GRUNT_VICTORY.bnk</Path>
+			<Media>
+				<File Id="125822146" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_VICTORY.wav</ShortName>
+					<Path>Media/125822146.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_VICTORY_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3279092899" Name="Play_SFX_ALIEN_GRUNT_VICTORY">
+					<MediaRefs>
+						<MediaRef Id="125822146"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4182414899" Type="Event" Language="SFX" Hash="{EB59636F-0DFF-76F4-7196-168EE9707F7A}">
+			<ShortName>Play_ROOM_DOOR_ROOM_OPEN</ShortName>
+			<Path>Event/Play_ROOM_DOOR_ROOM_OPEN.bnk</Path>
+			<Media>
+				<File Id="103083915" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DOOR_ROOM_OPEN_01.wav</ShortName>
+					<Path>Media/103083915.wem</Path>
+					<CachePath>SFX/SFX_DOOR_ROOM_OPEN_01_F1AD42D6.wem</CachePath>
+				</File>
+				<File Id="479246505" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DOOR_ROOM_OPEN_03.wav</ShortName>
+					<Path>Media/479246505.wem</Path>
+					<CachePath>SFX/SFX_DOOR_ROOM_OPEN_03_2994C871.wem</CachePath>
+				</File>
+				<File Id="637390537" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DOOR_ROOM_OPEN_02.wav</ShortName>
+					<Path>Media/637390537.wem</Path>
+					<CachePath>SFX/SFX_DOOR_ROOM_OPEN_02_CBFE80B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4182414899" Name="Play_ROOM_DOOR_ROOM_OPEN">
+					<MediaRefs>
+						<MediaRef Id="103083915"/>
+						<MediaRef Id="479246505"/>
+						<MediaRef Id="637390537"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E1C645BE-9447-871B-D676-784A1FC70E85}</FileHash>
+</SoundBanksInfo>

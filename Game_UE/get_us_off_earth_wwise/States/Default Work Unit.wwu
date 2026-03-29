@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A42BC338-B4A0-40CE-A80F-2D937A7D16E2}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{A42BC338-B4A0-40CE-A80F-2D937A7D16E2}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="BGM_STATES" ID="{D39E64FD-B42E-4A9F-8955-0010E697CDFB}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{756C74B9-4996-46AF-8E12-8B31CF42A159}"/>
+						<State Name="MAIN_MENU" ID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
+						<State Name="STORYBOARD_START" ID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
+						<State Name="STORYBOARD_END" ID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
+						<State Name="LEVEL" ID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
+						<State Name="ALIEN_SPOTTED" ID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
+						<State Name="VICTORY" ID="{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"/>
+						<State Name="GAME_OVER" ID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C439BED1-7C10-47E0-9239-75BA9B0E665E}"/>
+						<State Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
+						<State Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

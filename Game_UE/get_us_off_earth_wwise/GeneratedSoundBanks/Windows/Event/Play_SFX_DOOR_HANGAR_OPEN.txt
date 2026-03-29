@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2126514987	Play_SFX_DOOR_HANGAR_OPEN			\Default Work Unit\WORLD OBJECTS\DOORS\Play_SFX_DOOR_HANGAR_OPEN	
+
