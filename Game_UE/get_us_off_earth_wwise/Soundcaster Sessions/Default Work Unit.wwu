@@ -141,7 +141,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{C439BED1-7C10-47E0-9239-75BA9B0E665E}"/>
-						<CurrentStateRef Name="ALIEN_SPOTTED" ID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
+						<CurrentStateRef Name="LEVEL" ID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>

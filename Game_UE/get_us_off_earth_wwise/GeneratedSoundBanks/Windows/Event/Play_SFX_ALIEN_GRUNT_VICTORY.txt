@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3279092899	Play_SFX_ALIEN_GRUNT_VICTORY			\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_VICTORY	
-

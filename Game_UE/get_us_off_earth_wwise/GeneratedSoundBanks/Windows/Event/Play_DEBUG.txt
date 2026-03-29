@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	921702379	Play_DEBUG			\Default Work Unit\Play_DEBUG	
-
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	822063367	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DEBUG\Tone Generator	
-

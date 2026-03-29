@@ -221,6 +221,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{E7443788-F9CB-4EF1-BFEE-B2E3B0957CD0}" ShortID="623211858">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_3D_HANGAR_DOOR_HUM_LOOP" ID="{C12833EB-0B81-4AEA-ACE8-B2011A1010A1}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="Play_SFX_DOOR_LOCKED" ID="{EE40E8B2-D341-4272-989D-930316DD2A0D}">

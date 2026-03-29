@@ -27,11 +27,34 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="BGM_STATES" ID="{D39E64FD-B42E-4A9F-8955-0010E697CDFB}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
+										<StateRef Name="VICTORY" ID="{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"/>
+										<CustomState Name="" ID="{7A0026FB-859B-49C4-AFEC-7C4020D12B20}" ShortID="788578213"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LEVEL" ID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
+										<CustomState Name="" ID="{3011B69F-B819-4C96-A550-CB00432DAC9E}" ShortID="45729178"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="GAME_OVER" ID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
+										<CustomState Name="" ID="{80868972-4FB7-4158-A807-C90BD9A39D5C}" ShortID="991518755"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MAIN_MENU" ID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
+										<CustomState Name="" ID="{D4340450-4067-406D-9F1A-459E5D2B44DD}" ShortID="600178113"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
 										<CustomState Name="" ID="{75BD15BC-5F85-47E1-8A3C-184101A811CA}" ShortID="46245097"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ALIEN_SPOTTED" ID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
+										<CustomState Name="" ID="{21BD3249-2020-4F15-8870-A22AA59EFAB2}" ShortID="887791219"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
@@ -40,6 +63,22 @@
 												<Property Name="BusVolume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LOADING" ID="{D68D556B-AD7F-4C65-B5B3-DE626A276228}"/>
+										<CustomState Name="" ID="{6602F28B-B576-493F-A6F3-32FEDE60B7C5}" ShortID="867946071">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_END" ID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
+										<CustomState Name="" ID="{4A398F99-B905-44B8-A2F7-15709CD8A78C}" ShortID="183281776"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_START" ID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
+										<CustomState Name="" ID="{D46D0B62-E004-4967-9EB9-4AB9BD8C9906}" ShortID="915656021"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -93,11 +132,34 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="BGM_STATES" ID="{D39E64FD-B42E-4A9F-8955-0010E697CDFB}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
+										<StateRef Name="VICTORY" ID="{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"/>
+										<CustomState Name="" ID="{1882958B-7020-4E56-9CBE-10C5B2EBB2B9}" ShortID="1021647274"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LEVEL" ID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
+										<CustomState Name="" ID="{A14A8D9A-6A18-43FC-9565-27FE8DEAA0D1}" ShortID="850487469"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="GAME_OVER" ID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
+										<CustomState Name="" ID="{C468A8BE-A112-418A-9D41-051C0A0EA48B}" ShortID="157429509"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MAIN_MENU" ID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
+										<CustomState Name="" ID="{E23ACCAF-595B-4D52-A9D3-8688DEFD4BDC}" ShortID="192515973"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
 										<CustomState Name="" ID="{7C703F3F-F4B4-49A3-BB23-9EDFEAC843C4}" ShortID="549928908"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ALIEN_SPOTTED" ID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
+										<CustomState Name="" ID="{BB0163D8-EEB6-4406-A49D-A56EEB00F4C5}" ShortID="745573693"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
@@ -106,6 +168,22 @@
 												<Property Name="BusVolume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LOADING" ID="{D68D556B-AD7F-4C65-B5B3-DE626A276228}"/>
+										<CustomState Name="" ID="{75EEA34B-8198-403A-9EB4-7B8B5476D974}" ShortID="741052589">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_END" ID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
+										<CustomState Name="" ID="{951DCEB5-FD50-4DDE-AD70-A14429E83E55}" ShortID="402097949"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_START" ID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
+										<CustomState Name="" ID="{FE135234-2BB3-4D3B-9A70-58A90F1EC748}" ShortID="401451221"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -159,11 +237,34 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="BGM_STATES" ID="{D39E64FD-B42E-4A9F-8955-0010E697CDFB}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
+										<StateRef Name="VICTORY" ID="{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"/>
+										<CustomState Name="" ID="{0324E640-1CBA-40D4-AD60-26966239CE4E}" ShortID="995746038"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LEVEL" ID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
+										<CustomState Name="" ID="{629A3857-8EF6-44B2-AE30-A0193B858734}" ShortID="446987871"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="GAME_OVER" ID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
+										<CustomState Name="" ID="{AE4AF145-18F7-4472-A859-38CBE15E824E}" ShortID="54980652"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MAIN_MENU" ID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
+										<CustomState Name="" ID="{30C8CB89-0C14-4AED-A6DE-524692D90A49}" ShortID="87542353"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
 										<CustomState Name="" ID="{3DD9E6F3-B7CE-41D8-A35E-59C8150CB85E}" ShortID="646306527"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ALIEN_SPOTTED" ID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
+										<CustomState Name="" ID="{0FA3B9A6-0E2D-475E-9DB0-03604A8E9A41}" ShortID="4776692"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
@@ -172,6 +273,22 @@
 												<Property Name="BusVolume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LOADING" ID="{D68D556B-AD7F-4C65-B5B3-DE626A276228}"/>
+										<CustomState Name="" ID="{2030CFCF-8275-4118-8171-7B8EDFF9FC82}" ShortID="970903536">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_END" ID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
+										<CustomState Name="" ID="{82DCBEA8-6970-44E5-A840-489DCD5FFE78}" ShortID="594586199"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_START" ID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
+										<CustomState Name="" ID="{CA8B293C-30F2-4C3D-B84F-90F9F3531170}" ShortID="11414599"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -315,11 +432,34 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="BGM_STATES" ID="{D39E64FD-B42E-4A9F-8955-0010E697CDFB}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
+										<StateRef Name="VICTORY" ID="{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"/>
+										<CustomState Name="" ID="{D62712CB-7536-45B0-85B0-9599CFE1AE3C}" ShortID="147474739"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LEVEL" ID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
+										<CustomState Name="" ID="{47F2089E-F551-450A-B0D0-6F30D58F65DF}" ShortID="346522350"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="GAME_OVER" ID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
+										<CustomState Name="" ID="{3EE760D5-CEB4-4A23-9B53-938BF8C25649}" ShortID="722103162"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MAIN_MENU" ID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
+										<CustomState Name="" ID="{4BA3CC5F-4B27-4494-ADFE-623DEE34F27F}" ShortID="705994767"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
 										<CustomState Name="" ID="{8AAD24E6-953C-4332-B1C6-1E41940F9DE5}" ShortID="966947037"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ALIEN_SPOTTED" ID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
+										<CustomState Name="" ID="{4811EFC3-152C-44A9-B86B-B5D300D32DB9}" ShortID="4522594"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
@@ -328,6 +468,22 @@
 												<Property Name="BusVolume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LOADING" ID="{D68D556B-AD7F-4C65-B5B3-DE626A276228}"/>
+										<CustomState Name="" ID="{4DAA561A-3724-4D92-A7EF-A9DCBDD626F3}" ShortID="42304354">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_END" ID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
+										<CustomState Name="" ID="{F969090C-4DA7-4BA7-ABBF-65EC1A586FCF}" ShortID="462919379"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_START" ID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
+										<CustomState Name="" ID="{9F3D24F2-7CD5-4A5A-8A61-5C6E126531BD}" ShortID="476843279"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>

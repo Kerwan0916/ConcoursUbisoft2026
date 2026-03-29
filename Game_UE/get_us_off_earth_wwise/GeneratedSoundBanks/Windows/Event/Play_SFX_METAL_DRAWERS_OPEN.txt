@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	1710034899	Play_SFX_METAL_DRAWERS_OPEN			\Default Work Unit\WORLD OBJECTS\DRAWERS\Play_SFX_METAL_DRAWERS_OPEN	
-

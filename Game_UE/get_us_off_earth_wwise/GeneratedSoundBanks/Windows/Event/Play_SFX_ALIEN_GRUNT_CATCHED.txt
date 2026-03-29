@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2138504219	Play_SFX_ALIEN_GRUNT_CATCHED			\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_CATCHED	
-

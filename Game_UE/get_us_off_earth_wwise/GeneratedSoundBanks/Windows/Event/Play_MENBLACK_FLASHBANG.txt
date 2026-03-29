@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	1436159542	Play_MENBLACK_FLASHBANG			\Default Work Unit\MEN IN BLACK\Play_MENBLACK_FLASHBANG	
-

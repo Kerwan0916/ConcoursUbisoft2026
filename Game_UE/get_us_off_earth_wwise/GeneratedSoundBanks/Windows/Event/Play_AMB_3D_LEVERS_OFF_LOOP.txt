@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3110399011	Play_AMB_3D_LEVERS_OFF_LOOP			\Default Work Unit\AMB\Play_AMB_3D_LEVERS_OFF_LOOP	
-

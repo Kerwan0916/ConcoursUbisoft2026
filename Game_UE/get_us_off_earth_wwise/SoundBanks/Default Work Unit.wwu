@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D48FE7AE-D81C-4C7A-B80D-36DE788EA6EF}" SchemaVersion="119">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{D48FE7AE-D81C-4C7A-B80D-36DE788EA6EF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D48FE7AE-D81C-4C7A-B80D-36DE788EA6EF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Soundbank" ID="{5FC23588-9DC0-4F9B-9391-F3FE5C5074AF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_DEBUG" ID="{CFCB5B14-E738-411F-961B-EF7A68E7C919}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MEN IN BLACK" ID="{A9ABFEB9-6FBD-4132-A622-F2B1CBC5D721}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ALIEN_FS_RUN_SWITCH" ID="{D6873E74-1023-4146-BC4F-445644489C81}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BGM" ID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ALIEN 1" ID="{068F45C5-5B07-458B-9150-13FC22CA0A99}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SFX_ALIEN_TELEPORTED" ID="{F4781E7D-6509-47BA-A5C1-2D17C7539C1C}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GRUNTS" ID="{E7FF60F5-6956-485F-8E1C-B317CF5926EB}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="WORLD OBJECTS" ID="{F1766578-05B4-49FC-92A8-527C6DD0E4B2}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI" ID="{75846E38-712A-4A41-B0FD-9077308C1F2D}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB" ID="{32CC0A0E-039E-4DEE-B9C0-C681A4FEB9C5}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

@@ -14,19 +14,19 @@
 		<CopyLooseStreamedMediaFiles>true</CopyLooseStreamedMediaFiles>
 		<SubFoldersForGeneratedFiles>false</SubFoldersForGeneratedFiles>
 		<RemoveUnusedGeneratedFiles>true</RemoveUnusedGeneratedFiles>
-		<SourceControlGeneratedFiles>false</SourceControlGeneratedFiles>
+		<SourceControlGeneratedFiles>true</SourceControlGeneratedFiles>
 		<GenerateHeaderFile>false</GenerateHeaderFile>
 		<GenerateContentTxtFile>true</GenerateContentTxtFile>
 		<GenerateMetadataXML>true</GenerateMetadataXML>
-		<GenerateMetadataJSON>false</GenerateMetadataJSON>
+		<GenerateMetadataJSON>true</GenerateMetadataJSON>
 		<GenerateAllBanksMetadata>true</GenerateAllBanksMetadata>
 		<GeneratePerBankMetadata>false</GeneratePerBankMetadata>
 		<UseSoundBankNames>true</UseSoundBankNames>
 		<AllowExceedingMaxSize>false</AllowExceedingMaxSize>
-		<MaxAttenuationInfo>false</MaxAttenuationInfo>
-		<EstimatedDurationInfo>false</EstimatedDurationInfo>
-		<PrintObjectGuid>false</PrintObjectGuid>
-		<PrintObjectPath>false</PrintObjectPath>
+		<MaxAttenuationInfo>true</MaxAttenuationInfo>
+		<EstimatedDurationInfo>true</EstimatedDurationInfo>
+		<PrintObjectGuid>true</PrintObjectGuid>
+		<PrintObjectPath>true</PrintObjectPath>
 	</Settings>
-	<FileHash>{E451C5F0-8F8E-1742-BA4A-E1BB601D33C8}</FileHash>
+	<FileHash>{5CDAF8B7-338F-DDF2-ACED-2534CB39490A}</FileHash>
 </PlatformInfo>
