@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1088840730	Play_SFX_ALIEN_GRUNT_SPOTTED			\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_SPOTTED	
+
