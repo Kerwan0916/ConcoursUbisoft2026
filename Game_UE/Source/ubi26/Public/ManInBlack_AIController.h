@@ -53,6 +53,20 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Patrol")
 	float ChaseSpeed = 300.0f; // Speed to chase the alien
 
+	// AI Catch Settings
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Catch")
+	float CatchDistance = 150.0f; // Distance at which the AI will "catch" the alien
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Catch")
+	float CatchCooldown = 3.0f; // Time after catching before the AI can catch again
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "AI Catch")
+	void OnGameOver();
+
+	void CatchAlien(AActor* CaughtAlien);
+	void FinishCatchSequence();
+	void ResetCatchCooldown();
+
 
 	UFUNCTION(BlueprintCallable, Category = "AI Patrol")
 	void MoveToNextPatrolPoint();
@@ -64,4 +78,9 @@ private:
 	FTimerHandle WaitTimerHandle;
 
 	FTimerHandle ChaseTimerHandle;
+
+	FTimerHandle CatchSequenceTimerHandle;
+	FTimerHandle CatchCooldownTimerHandle;
+	AActor* CurrentlyCaughtAlien = nullptr;
+	bool bIsCatchOnCooldown = false;
 };
