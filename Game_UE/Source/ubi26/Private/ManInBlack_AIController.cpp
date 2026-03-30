@@ -10,6 +10,7 @@
 #include "Perception/AISense.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Character.h"
+#include "Kismet/GameplayStatics.h"
 
 AManInBlack_AIController::AManInBlack_AIController()
 {
@@ -177,6 +178,13 @@ void AManInBlack_AIController::UpdateChase()
 			// Calculate the distance using our safe ControlledPawn reference
 			float Distance = FVector::Dist(ControlledPawn->GetActorLocation(), PerceivedActor->GetActorLocation());
 
+			// did he catch the alien? If he's within the catch distance, call the catch function and skip the rest of the chase logic
+			if (!bIsCatchOnCooldown && Distance <= CatchDistance)
+			{
+				CatchAlien(PerceivedActor);
+				return; // stop the chase logic here, we don't want him to keep chasing while he's in the middle of the catch sequence
+			}
+
 			if (Distance < ShortestDistance)
 			{
 				ShortestDistance = Distance;
@@ -246,5 +254,88 @@ void AManInBlack_AIController::UpdateChase()
 		// Resume patrol heading to the new closest point
 		MoveToNextPatrolPoint();
 	}
+}
+
+void AManInBlack_AIController::CatchAlien(AActor* CaughtAlien)
+{
+	if (!CaughtAlien) return;
+
+	// 1. Stop AI Chase & Trigger Cooldown
+	GetWorld()->GetTimerManager().ClearTimer(ChaseTimerHandle);
+	TargetAlien = nullptr;
+	StopMovement();
+	CurrentlyCaughtAlien = CaughtAlien;
+
+	bIsCatchOnCooldown = true;
+	GetWorld()->GetTimerManager().SetTimer(CatchCooldownTimerHandle, this, &AManInBlack_AIController::ResetCatchCooldown, CatchCooldown, false);
+
+	// 2. Lock the player controls and trigger the camera fade
+	if (APawn* CaughtPawn = Cast<APawn>(CaughtAlien))
+	{
+		if (APlayerController* PC = Cast<APlayerController>(CaughtPawn->GetController()))
+		{
+			CaughtPawn->DisableInput(PC); // The alien is now officially stuck
+
+			if (PC->PlayerCameraManager)
+			{
+				// Fade to black over 1 second
+				PC->PlayerCameraManager->StartCameraFade(0.0f, 1.0f, 1.0f, FLinearColor::Black, false, true);
+			}
+		}
+	}
+
+	// 3. Swap the ID badges so the AI ignores this player from now on
+	CaughtAlien->Tags.Remove("Alien");
+	CaughtAlien->Tags.Add("Prisoner");
+
+	// 4. GAME OVER CHECK: Are both players currently in prison?
+	TArray<AActor*> Prisoners;
+	UGameplayStatics::GetAllActorsWithTag(GetWorld(), "Prisoner", Prisoners);
+
+	if (Prisoners.Num() >= 2)
+	{
+		// BOTH CAUGHT! Call the Blueprint event to show the UI Widget!
+		OnGameOver();
+		return;
+	}
+
+	// 5. If the game isn't over, set a timer to teleport them 1 second later (when the screen is fully black)
+	GetWorld()->GetTimerManager().SetTimer(CatchSequenceTimerHandle, this, &AManInBlack_AIController::FinishCatchSequence, 1.0f, false);
+}
+
+void AManInBlack_AIController::FinishCatchSequence()
+{
+	if (!CurrentlyCaughtAlien) return;
+
+	// 1. Find the specific location tagged "PrisonCell"
+	TArray<AActor*> PrisonCells;
+	UGameplayStatics::GetAllActorsWithTag(GetWorld(), "PrisonCell", PrisonCells);
+
+	// 2. Teleport the alien to it
+	if (PrisonCells.Num() > 0)
+	{
+		CurrentlyCaughtAlien->SetActorLocation(PrisonCells[0]->GetActorLocation());
+	}
+
+	// 3. Trigger the White Fade-In
+	if (APawn* CaughtPawn = Cast<APawn>(CurrentlyCaughtAlien))
+	{
+		if (APlayerController* PC = Cast<APlayerController>(CaughtPawn->GetController()))
+		{
+			if (PC->PlayerCameraManager)
+			{
+				PC->PlayerCameraManager->StartCameraFade(1.0f, 0.0f, 1.0f, FLinearColor::White, false, false);
+			}
+		}
+	}
+
+	// 4. Clean up and tell the Man in Black to go back to patrolling
+	CurrentlyCaughtAlien = nullptr;
+	MoveToNextPatrolPoint();
+}
+
+void AManInBlack_AIController::ResetCatchCooldown()
+{
+	bIsCatchOnCooldown = false;
 }
 
