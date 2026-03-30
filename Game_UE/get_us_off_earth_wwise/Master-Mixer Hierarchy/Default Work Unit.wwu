@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}" SchemaVersion="119">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{A2CF1CFB-639F-438E-85D1-ED8921142031}" WorkUnitID="{EFAF1FE5-54DE-4707-A121-77319551EFA1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="ALIENS" ID="{76E48A40-357B-4B25-8837-8FE32BE05C10}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
+										<CustomState Name="" ID="{75BD15BC-5F85-47E1-8A3C-184101A811CA}" ShortID="46245097"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
+										<CustomState Name="" ID="{91EFC3FD-74D4-4A4B-833A-EA8E80199CB7}" ShortID="321450978">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{7FAA1DC3-3EA8-47A6-B0FE-9CFB2FDD8D66}" ShortID="432571399">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_VOLUME_SFX" ID="{C338F3E4-E3BF-464D-B861-B341A7FB252D}" WorkUnitID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{DFDF2F97-3930-42F1-B3AD-7C925E18DC18}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="MEN IN BLACK" ID="{4B876210-25EC-4323-B907-B11C5B5F457A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="23"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
+										<CustomState Name="" ID="{7C703F3F-F4B4-49A3-BB23-9EDFEAC843C4}" ShortID="549928908"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
+										<CustomState Name="" ID="{F1D1B1A9-FC30-4A1E-BEC4-597A808949EB}" ShortID="1002996362">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{0C1AC80E-D733-4E84-B274-7A7F23CB6DC6}" ShortID="295482100">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_VOLUME_SFX" ID="{C338F3E4-E3BF-464D-B861-B341A7FB252D}" WorkUnitID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{74A64846-8DE4-41F1-8916-32EF4B468FD3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="WORLD OBJECTS" ID="{666BED11-C169-4D51-B230-2CF80A8C18E2}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
+										<CustomState Name="" ID="{3DD9E6F3-B7CE-41D8-A35E-59C8150CB85E}" ShortID="646306527"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
+										<CustomState Name="" ID="{D376C078-3D21-44A9-AC82-20C2232B80E8}" ShortID="92818570">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{B96378CC-4BCE-4843-BBA0-8004211B01A2}" ShortID="324631424">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_VOLUME_SFX" ID="{C338F3E4-E3BF-464D-B861-B341A7FB252D}" WorkUnitID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{8387B4D0-3BB7-4B6D-A583-7F50A6E35F64}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="BGM" ID="{9A1C8E14-F058-4B7D-B5EE-C41D5BBE3E48}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="13"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{5E5CF606-7F00-4BE4-B49B-987C3C90A065}" ShortID="805557509">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_VOLUME_BGM" ID="{ACCA3806-BC43-42BB-B47B-A309D2249293}" WorkUnitID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{3D965155-6B4E-4AA4-8D50-E3EE2CBECC4D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="UI" ID="{F37071CA-0F67-4915-899E-C8D0C00382F9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{ACCED970-B9EE-4A96-9737-7E72A7AC074E}" ShortID="1064150833">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_VOLUME_SFX" ID="{C338F3E4-E3BF-464D-B861-B341A7FB252D}" WorkUnitID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B04F83B1-DC16-4A87-BF37-B5547828369C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="AMB" ID="{FCB4CF9E-9424-4F56-ACC2-A0B5E478779D}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="18"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
+										<CustomState Name="" ID="{8AAD24E6-953C-4332-B1C6-1E41940F9DE5}" ShortID="966947037"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
+										<CustomState Name="" ID="{6C1D5127-3088-478B-A963-9D4DE2EA28EE}" ShortID="608931542">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{8FECB051-82B8-4D9F-9555-B608D4898F13}" ShortID="789529407">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_VOLUME_SFX" ID="{C338F3E4-E3BF-464D-B861-B341A7FB252D}" WorkUnitID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{DFD4F6ED-A06A-423C-9682-FA2579BB40A2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{F1B1DBBE-03B4-416F-8CB3-AE8422FCEDE6}" ShortID="169739836">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_VOLUME_MAIN" ID="{160EAD28-0BDC-4361-A77C-111A0DEA43E3}" WorkUnitID="{1FD3CF61-5F81-4218-AC08-DD2A9A526451}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{AE294DD2-B588-42A9-AD15-18CE7193ACF5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1484984344	Play_SFX_LEVER_TRAP			\Default Work Unit\WORLD OBJECTS\LEVERS\Play_SFX_LEVER_TRAP	
+

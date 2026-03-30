@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2750415231	Play_SFX_WOODEN_DRAWERS			\Default Work Unit\WORLD OBJECTS\DRAWERS\Play_SFX_WOODEN_DRAWERS	
+
