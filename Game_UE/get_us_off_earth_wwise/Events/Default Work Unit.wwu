@@ -223,43 +223,6 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_SFX_DOOR_LOCKED" ID="{EE40E8B2-D341-4272-989D-930316DD2A0D}">
-									<ChildrenList>
-										<Action Name="" ID="{4C307C90-0243-4BA3-82E0-BD246D6567C2}" ShortID="44588781">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="DOOR LOCKED" ID="{D3DB2329-DC0B-4A3C-BE1A-36CBD38EF806}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="DRAWERS" ID="{B778C8B6-7C67-4EB6-A428-6E164A36998F}" ShortID="817019431">
-							<ChildrenList>
-								<Event Name="Play_SFX_METAL_DRAWERS_OPEN" ID="{9418A815-9685-4D35-8322-8E5184093FCB}">
-									<ChildrenList>
-										<Action Name="" ID="{D55CB27F-CBCE-438C-978A-1416400BDE68}" ShortID="870215272">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="METAL DRAWERS" ID="{B517841F-9C84-4C3D-9060-11118006471E}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_SFX_WOODEN_DRAWERS" ID="{FEB06038-BDD6-48DE-B33F-C9C37342D0E6}">
-									<ChildrenList>
-										<Action Name="" ID="{87567428-0B85-4288-A6BC-F92BDFD2FD1E}" ShortID="514648558">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="WOODEN DRAWERS" ID="{FCE135FF-6E76-4D34-AE97-415FC6D821B3}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="KEYS" ID="{4C95FBA9-CABF-4803-8F3A-C82ABDA9ED61}" ShortID="511349109">

@@ -82,10 +82,6 @@
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_SFX_DOOR_LOCKED" ID="{EE40E8B2-D341-4272-989D-930316DD2A0D}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
-							<Position X="2" Y="5"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_SFX_LEVER_LIGHT" ID="{B5897D35-9072-4E50-9749-5856FB0F528F}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
 							<Position X="2" Y="6"/>
 						</Module>
@@ -110,10 +106,6 @@
 							<Position X="3" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_SFX_METAL_DRAWERS_OPEN" ID="{9418A815-9685-4D35-8322-8E5184093FCB}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
-							<Position X="3" Y="5"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_SFX_LEVER_TRAP" ID="{1ADEBBA2-3C4D-494B-8770-F58EE826412D}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
 							<Position X="3" Y="6"/>
 						</Module>
@@ -132,10 +124,6 @@
 						<Module>
 							<ObjectRef Name="Play_SFX_PANEL_OUT" ID="{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
 							<Position X="4" Y="3"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_SFX_WOODEN_DRAWERS" ID="{FEB06038-BDD6-48DE-B33F-C9C37342D0E6}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
-							<Position X="4" Y="5"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
