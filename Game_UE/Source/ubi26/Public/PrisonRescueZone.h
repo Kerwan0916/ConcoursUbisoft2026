@@ -7,6 +7,7 @@
 #include "PrisonRescueZone.generated.h"
 
 class UBoxComponent;
+class APlayerController;
 
 UCLASS()
 class UBI26_API APrisonRescueZone : public AActor
@@ -15,6 +16,7 @@ class UBI26_API APrisonRescueZone : public AActor
 	
 public:	
 	APrisonRescueZone();
+	virtual void Tick(float DeltaTime) override;
 
 protected:
 	// the physical zone the player must be in to rescue the prisoner
@@ -30,4 +32,11 @@ protected:
 
 	// The function that runs when 'E' is pressed
 	void ExecuteRescue();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Rescue")
+	void OnAlienRescued(AActor* FreedAlien);
+
+private:
+	UPROPERTY()
+	TArray<APlayerController*> RescuerInZone;
 };
