@@ -223,6 +223,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_SFX_INCUBATOR_DOOR_OPEN" ID="{4C21A550-6205-41C3-8D87-856EFE781516}">
+									<ChildrenList>
+										<Action Name="" ID="{1EE4F692-985B-467A-8159-EE6F78BBDA54}" ShortID="595346300">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="INCUBATOR_DOOR_OPEN" ID="{4022AC26-73A0-4093-96DC-ACF98C764DD8}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="KEYS" ID="{4C95FBA9-CABF-4803-8F3A-C82ABDA9ED61}" ShortID="511349109">
