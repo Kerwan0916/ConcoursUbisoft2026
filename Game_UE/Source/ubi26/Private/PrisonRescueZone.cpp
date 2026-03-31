@@ -5,11 +5,11 @@
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Pawn.h"
-#include "InputCoreTypes.h"
+#include "GameFramework/PlayerController.h"
 
 APrisonRescueZone::APrisonRescueZone()
 {
-	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bCanEverTick = true;
 
 	// Create the box and make it the root of the actor
 	RescueBox = CreateDefaultSubobject<UBoxComponent>(TEXT("RescueBox"));
@@ -24,6 +24,20 @@ APrisonRescueZone::APrisonRescueZone()
 	RescueBox->OnComponentEndOverlap.AddDynamic(this, &APrisonRescueZone::OnOverlapEnd);
 }
 
+void APrisonRescueZone::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	// scan the controller of anyone standing in the box
+	for (APlayerController* PC : RescuerInZone)
+	{
+		if (PC && (PC->WasInputKeyJustPressed(EKeys::E) || PC->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Right)))
+		{
+			ExecuteRescue();
+			break;
+		}
+	}
+}
+
 void APrisonRescueZone::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	// Only care if a FREE alien walks into the box
@@ -33,14 +47,8 @@ void APrisonRescueZone::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 		{
 			if (APlayerController* PC = Cast<APlayerController>(AlienPawn->GetController()))
 			{
-				// Allow this specific player to talk to this box
-				EnableInput(PC);
-
-				// Dynamically bind the 'E' key to the rescue function!
-				if (InputComponent)
-				{
-					InputComponent->BindKey(EKeys::E, IE_Pressed, this, &APrisonRescueZone::ExecuteRescue);
-				}
+				// Add them to our tracking array
+				RescuerInZone.AddUnique(PC);
 			}
 		}
 	}
@@ -54,8 +62,8 @@ void APrisonRescueZone::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor
 		{
 			if (APlayerController* PC = Cast<APlayerController>(AlienPawn->GetController()))
 			{
-				// They left the box, stop listening to their keyboard
-				DisableInput(PC);
+				// They left the box, stop tracking them
+				RescuerInZone.Remove(PC);
 			}
 		}
 	}
@@ -80,6 +88,9 @@ void APrisonRescueZone::ExecuteRescue()
 				if (APlayerController* PC = Cast<APlayerController>(PrisonerPawn->GetController()))
 				{
 					PrisonerPawn->EnableInput(PC);
+
+					// 3. Tell the blueprint
+					OnAlienRescued(PrisonerActor);
 				}
 			}
 		}
