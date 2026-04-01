@@ -3,6 +3,7 @@
 
 #include "PrisonRescueZone.h"
 #include "Components/BoxComponent.h"
+#include "Engine/Engine.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Pawn.h"
 #include "GameFramework/PlayerController.h"
@@ -28,9 +29,9 @@ void APrisonRescueZone::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	// scan the controller of anyone standing in the box
-	for (APlayerController* PC : RescuerInZone)
+	for (auto& [Id, PC] : RescuerInZone)
 	{
-		if (PC && (PC->WasInputKeyJustPressed(EKeys::E) || PC->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Right)))
+		if (IsValid(PC) && (PC->WasInputKeyJustPressed(EKeys::E) || PC->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Right)))
 		{
 			ExecuteRescue();
 			break;
@@ -48,7 +49,7 @@ void APrisonRescueZone::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAct
 			if (APlayerController* PC = Cast<APlayerController>(AlienPawn->GetController()))
 			{
 				// Add them to our tracking array
-				RescuerInZone.AddUnique(PC);
+				RescuerInZone.Add(PC->GetUniqueID(), PC);
 			}
 		}
 	}
@@ -63,7 +64,7 @@ void APrisonRescueZone::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor
 			if (APlayerController* PC = Cast<APlayerController>(AlienPawn->GetController()))
 			{
 				// They left the box, stop tracking them
-				RescuerInZone.Remove(PC);
+				RescuerInZone.Remove(PC->GetUniqueID());
 			}
 		}
 	}
