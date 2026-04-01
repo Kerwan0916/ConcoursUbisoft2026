@@ -1242,6 +1242,84 @@
 										<ActiveSource Name="SFX_DOOR_HANGAR_OPEN" ID="{A30338E3-9513-4E73-AEA8-591BDB1AD114}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="INCUBATOR_DOOR_OPEN" ID="{4022AC26-73A0-4093-96DC-ACF98C764DD8}" ShortID="519629196">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_DOOR_INCUBATOR_OPEN_01" ID="{D3AACFA7-C436-48A1-A2B8-703E412D683B}" ShortID="850720393">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_DOOR_INCUBATOR_OPEN_01" ID="{5D147960-BBD4-429B-8760-06AAB665422C}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_DOOR_INCUBATOR_OPEN_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="220897522"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_DOOR_INCUBATOR_OPEN_01" ID="{5D147960-BBD4-429B-8760-06AAB665422C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_DOOR_INCUBATOR_OPEN_02" ID="{6665A9E3-26E3-45ED-B197-0C1CABCF0B3B}" ShortID="544936583">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_DOOR_INCUBATOR_OPEN_02" ID="{005FCB42-94EA-4DC8-AB1A-C9CD6612E270}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_DOOR_INCUBATOR_OPEN_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="14143496"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_DOOR_INCUBATOR_OPEN_02" ID="{005FCB42-94EA-4DC8-AB1A-C9CD6612E270}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_DOOR_INCUBATOR_OPEN_03" ID="{638D4E03-E2DB-4022-9E5F-737701B7808B}" ShortID="185502696">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_DOOR_INCUBATOR_OPEN_03" ID="{2CF88D23-093E-4219-8DDE-6F8B191BD985}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_DOOR_INCUBATOR_OPEN_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="5110674"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_DOOR_INCUBATOR_OPEN_03" ID="{2CF88D23-093E-4219-8DDE-6F8B191BD985}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="KEYS" ID="{4C5E41D0-9E28-4640-B0F8-4EBAF6989959}" ShortID="681304784">
