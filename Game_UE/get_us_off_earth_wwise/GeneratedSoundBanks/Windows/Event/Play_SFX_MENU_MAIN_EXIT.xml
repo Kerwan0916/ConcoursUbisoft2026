@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1160267864" Type="Event" GUID="{8038F53F-89A9-4267-939D-5E227260F756}" Language="SFX" Hash="{ACD31DDA-5E1C-2CE4-3362-5108CD81AB68}">
+			<ObjectPath>Play_SFX_MENU_MAIN_EXIT</ObjectPath>
+			<ShortName>Play_SFX_MENU_MAIN_EXIT</ShortName>
+			<Path>Event/Play_SFX_MENU_MAIN_EXIT.bnk</Path>
+			<Media>
+				<File Id="241317464" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENU_MAIN_EXIT.wav</ShortName>
+					<Path>Media/241317464.wem</Path>
+					<CachePath>SFX/SFX_MENU_MAIN_EXIT_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1160267864" Name="Play_SFX_MENU_MAIN_EXIT" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_MENU_MAIN_EXIT" GUID="{8038F53F-89A9-4267-939D-5E227260F756}" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<MediaRefs>
+						<MediaRef Id="241317464"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B0DCB222-3CD8-29CD-B034-4F441DA91DF5}</FileHash>
+</SoundBanksInfo>

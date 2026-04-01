@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "325086926",
+    "Type": "Event",
+    "GUID": "{63A16E8C-756D-44CF-84DD-E0FF4473C2E7}",
+    "Language": "SFX",
+    "Hash": "{CD6160CB-2F2A-6EFD-1DF0-E2B396DDA92A}",
+    "ObjectPath": "Play_SFX_SELECT",
+    "ShortName": "Play_SFX_SELECT",
+    "Path": "Event/Play_SFX_SELECT.bnk",
+    "Media": [
+     {
+      "Id": "136745054",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_MENU_MAIN_SELECT_03.wav",
+      "Path": "Media/136745054.wem",
+      "CachePath": "SFX/SFX_MENU_MAIN_SELECT_03_818F3B66.wem"
+     },
+     {
+      "Id": "138351464",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_MENU_MAIN_SELECT_04.wav",
+      "Path": "Media/138351464.wem",
+      "CachePath": "SFX/SFX_MENU_MAIN_SELECT_04_818F3B66.wem"
+     },
+     {
+      "Id": "529851342",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_MENU_MAIN_SELECT_02.wav",
+      "Path": "Media/529851342.wem",
+      "CachePath": "SFX/SFX_MENU_MAIN_SELECT_02_818F3B66.wem"
+     },
+     {
+      "Id": "670464283",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_MENU_MAIN_SELECT_05.wav",
+      "Path": "Media/670464283.wem",
+      "CachePath": "SFX/SFX_MENU_MAIN_SELECT_05_818F3B66.wem"
+     },
+     {
+      "Id": "684608406",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_MENU_MAIN_SELECT_01.wav",
+      "Path": "Media/684608406.wem",
+      "CachePath": "SFX/SFX_MENU_MAIN_SELECT_01_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "325086926",
+      "Name": "Play_SFX_SELECT",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_SFX_SELECT",
+      "GUID": "{63A16E8C-756D-44CF-84DD-E0FF4473C2E7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "1",
+      "MediaRefs": [
+       {
+        "Id": "136745054"
+       },
+       {
+        "Id": "138351464"
+       },
+       {
+        "Id": "529851342"
+       },
+       {
+        "Id": "670464283"
+       },
+       {
+        "Id": "684608406"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{11C65784-95BE-C6F7-A5E2-44A19015682D}"
+ }
+}

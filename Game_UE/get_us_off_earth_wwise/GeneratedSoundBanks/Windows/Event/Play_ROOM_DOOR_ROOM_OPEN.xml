@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="4182414899" Type="Event" GUID="{05620FB7-FBEE-4CB5-9DBC-3F8C608A3671}" Language="SFX" Hash="{EB59636F-0DFF-76F4-7196-168EE9707F7A}">
+			<ObjectPath>Play_ROOM_DOOR_ROOM_OPEN</ObjectPath>
+			<ShortName>Play_ROOM_DOOR_ROOM_OPEN</ShortName>
+			<Path>Event/Play_ROOM_DOOR_ROOM_OPEN.bnk</Path>
+			<Media>
+				<File Id="103083915" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DOOR_ROOM_OPEN_01.wav</ShortName>
+					<Path>Media/103083915.wem</Path>
+					<CachePath>SFX/SFX_DOOR_ROOM_OPEN_01_F1AD42D6.wem</CachePath>
+				</File>
+				<File Id="479246505" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DOOR_ROOM_OPEN_03.wav</ShortName>
+					<Path>Media/479246505.wem</Path>
+					<CachePath>SFX/SFX_DOOR_ROOM_OPEN_03_2994C871.wem</CachePath>
+				</File>
+				<File Id="637390537" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DOOR_ROOM_OPEN_02.wav</ShortName>
+					<Path>Media/637390537.wem</Path>
+					<CachePath>SFX/SFX_DOOR_ROOM_OPEN_02_CBFE80B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4182414899" Name="Play_ROOM_DOOR_ROOM_OPEN" ObjectPath="\Events\Default Work Unit\WORLD OBJECTS\DOORS\Play_ROOM_DOOR_ROOM_OPEN" GUID="{05620FB7-FBEE-4CB5-9DBC-3F8C608A3671}" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="103083915"/>
+						<MediaRef Id="479246505"/>
+						<MediaRef Id="637390537"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{03F0FB61-06A8-DA9C-B69E-54FF72D80C36}</FileHash>
+</SoundBanksInfo>

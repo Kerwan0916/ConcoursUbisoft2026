@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3303699548	Play_SFX_MENBLACK_IS_CLOSE_LOOP			\Default Work Unit\MEN IN BLACK\Play_SFX_MENBLACK_IS_CLOSE_LOOP	
+

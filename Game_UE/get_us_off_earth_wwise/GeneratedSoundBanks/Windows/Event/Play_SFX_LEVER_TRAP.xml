@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1484984344" Type="Event" GUID="{1ADEBBA2-3C4D-494B-8770-F58EE826412D}" Language="SFX" Hash="{F49EAD19-DE83-F7B6-18C5-875726DF0795}">
+			<ObjectPath>Play_SFX_LEVER_TRAP</ObjectPath>
+			<ShortName>Play_SFX_LEVER_TRAP</ShortName>
+			<Path>Event/Play_SFX_LEVER_TRAP.bnk</Path>
+			<Media>
+				<File Id="28333578" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_TRAP_04.wav</ShortName>
+					<Path>Media/28333578.wem</Path>
+					<CachePath>SFX/SFX_LEVER_TRAP_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="74654798" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_TRAP_02.wav</ShortName>
+					<Path>Media/74654798.wem</Path>
+					<CachePath>SFX/SFX_LEVER_TRAP_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="471453000" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_TRAP_01.wav</ShortName>
+					<Path>Media/471453000.wem</Path>
+					<CachePath>SFX/SFX_LEVER_TRAP_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="533646679" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_LEVER_TRAP_03.wav</ShortName>
+					<Path>Media/533646679.wem</Path>
+					<CachePath>SFX/SFX_LEVER_TRAP_03_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1484984344" Name="Play_SFX_LEVER_TRAP" ObjectPath="\Events\Default Work Unit\WORLD OBJECTS\LEVERS\Play_SFX_LEVER_TRAP" GUID="{1ADEBBA2-3C4D-494B-8770-F58EE826412D}" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+					<MediaRefs>
+						<MediaRef Id="28333578"/>
+						<MediaRef Id="74654798"/>
+						<MediaRef Id="471453000"/>
+						<MediaRef Id="533646679"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{1B370768-9954-1914-AEF7-FEBDD312BDE7}</FileHash>
+</SoundBanksInfo>

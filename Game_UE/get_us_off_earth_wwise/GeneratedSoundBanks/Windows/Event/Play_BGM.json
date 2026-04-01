@@ -1,0 +1,250 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "3126765036",
+    "Type": "Event",
+    "GUID": "{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}",
+    "Language": "SFX",
+    "Hash": "{48F27E3D-F382-7559-47B8-7D8D22E83A60}",
+    "ObjectPath": "Play_BGM",
+    "ShortName": "Play_BGM",
+    "Path": "Event/Play_BGM.bnk",
+    "Media": [
+     {
+      "Id": "180484542",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BMG_GAMEOVER.wav",
+      "Path": "Media/180484542.wem",
+      "CachePath": "SFX/BMG_GAMEOVER_FBC78EF0.wem"
+     },
+     {
+      "Id": "217843161",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_LEVEL_SPOTTED_INTRO.wav",
+      "Path": "Media/217843161.wem",
+      "CachePath": "SFX/BGM_LEVEL_SPOTTED_INTRO_FBC78EF0.wem"
+     },
+     {
+      "Id": "223694991",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_WIN_INTRO.wav",
+      "Path": "Media/223694991.wem",
+      "CachePath": "SFX/BGM_WIN_INTRO_FBC78EF0.wem"
+     },
+     {
+      "Id": "299948454",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_MENU_START_INTRO.wav",
+      "Path": "Media/299948454.wem",
+      "CachePath": "SFX/BGM_MENU_START_INTRO_FBC78EF0.wem"
+     },
+     {
+      "Id": "469949838",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_MENU_START_LOOP.wav",
+      "Path": "Media/469949838.wem",
+      "CachePath": "SFX/BGM_MENU_START_LOOP_FBC78EF0.wem"
+     },
+     {
+      "Id": "515298676",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_LEVEL_SPOTTED_LOOP.wav",
+      "Path": "Media/515298676.wem",
+      "CachePath": "SFX/BGM_LEVEL_SPOTTED_LOOP_FBC78EF0.wem"
+     },
+     {
+      "Id": "583878935",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_WIN_LOOP.wav",
+      "Path": "Media/583878935.wem",
+      "CachePath": "SFX/BGM_WIN_LOOP_FBC78EF0.wem"
+     },
+     {
+      "Id": "593492298",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_LEVEL_INTRO.wav",
+      "Path": "Media/593492298.wem",
+      "CachePath": "SFX/BGM_LEVEL_INTRO_FBC78EF0.wem"
+     },
+     {
+      "Id": "621569200",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_LEVEL_LOOP.wav",
+      "Path": "Media/621569200.wem",
+      "CachePath": "SFX/BGM_LEVEL_LOOP_FBC78EF0.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3126765036",
+      "Name": "Play_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM",
+      "GUID": "{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2248712270",
+         "Id": "4188752148",
+         "GUID": "{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "217843161"
+         },
+         {
+          "Id": "515298676"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2248712270",
+         "Id": "2782712965",
+         "GUID": "{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "593492298"
+         },
+         {
+          "Id": "621569200"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2248712270",
+         "Id": "2005704188",
+         "GUID": "{74A12937-57BD-49C1-8906-D5E45A40C105}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "299948454"
+         },
+         {
+          "Id": "469949838"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2248712270",
+         "Id": "979765101",
+         "GUID": "{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "223694991"
+         },
+         {
+          "Id": "583878935"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2248712270",
+         "Id": "1432716332",
+         "GUID": "{146D3876-4C28-483A-88A2-B126F678DC2B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "180484542"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "2248712270",
+      "Name": "BGM_STATES",
+      "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES",
+      "GUID": "{D39E64FD-B42E-4A9F-8955-0010E697CDFB}",
+      "States": [
+       {
+        "Id": "93434497",
+        "Name": "STORYBOARD_START",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES\\STORYBOARD_START",
+        "GUID": "{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES\\None",
+        "GUID": "{756C74B9-4996-46AF-8E12-8B31CF42A159}"
+       },
+       {
+        "Id": "979765101",
+        "Name": "WIN",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES\\WIN",
+        "GUID": "{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"
+       },
+       {
+        "Id": "1432716332",
+        "Name": "GAME_OVER",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES\\GAME_OVER",
+        "GUID": "{146D3876-4C28-483A-88A2-B126F678DC2B}"
+       },
+       {
+        "Id": "1966203490",
+        "Name": "STORYBOARD_END",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES\\STORYBOARD_END",
+        "GUID": "{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"
+       },
+       {
+        "Id": "2005704188",
+        "Name": "MAIN_MENU",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES\\MAIN_MENU",
+        "GUID": "{74A12937-57BD-49C1-8906-D5E45A40C105}"
+       },
+       {
+        "Id": "2782712965",
+        "Name": "LEVEL",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES\\LEVEL",
+        "GUID": "{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"
+       },
+       {
+        "Id": "4188752148",
+        "Name": "ALIEN_SPOTTED",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_STATES\\ALIEN_SPOTTED",
+        "GUID": "{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{85755257-38BB-E145-61D0-C0F4E30195B3}"
+ }
+}

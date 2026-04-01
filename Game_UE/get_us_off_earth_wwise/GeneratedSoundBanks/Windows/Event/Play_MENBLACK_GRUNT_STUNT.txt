@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3172212121	Play_MENBLACK_GRUNT_STUNT			\Default Work Unit\MEN IN BLACK\Play_MENBLACK_GRUNT_STUNT	
-

@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "2012969758",
+    "Type": "Event",
+    "GUID": "{5A50AF4C-9921-4873-AA70-A16D0E30AA34}",
+    "Language": "SFX",
+    "Hash": "{21520971-7211-A978-F91E-EA36FAA68C97}",
+    "ObjectPath": "Play_SFX_KEYS_EMITTER_LOOP",
+    "ShortName": "Play_SFX_KEYS_EMITTER_LOOP",
+    "Path": "Event/Play_SFX_KEYS_EMITTER_LOOP.bnk",
+    "Media": [
+     {
+      "Id": "957123288",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_KEYS_EMITTER_LOOP.wav",
+      "Path": "Media/957123288.wem",
+      "CachePath": "SFX/SFX_KEYS_EMITTER_LOOP_FBC78EF0.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2012969758",
+      "Name": "Play_SFX_KEYS_EMITTER_LOOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\WORLD OBJECTS\\KEYS\\Play_SFX_KEYS_EMITTER_LOOP",
+      "GUID": "{5A50AF4C-9921-4873-AA70-A16D0E30AA34}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "957123288"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{18547D66-B2B4-98EF-3239-9392A53F1765}"
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "1484984344",
+    "Type": "Event",
+    "GUID": "{1ADEBBA2-3C4D-494B-8770-F58EE826412D}",
+    "Language": "SFX",
+    "Hash": "{F49EAD19-DE83-F7B6-18C5-875726DF0795}",
+    "ObjectPath": "Play_SFX_LEVER_TRAP",
+    "ShortName": "Play_SFX_LEVER_TRAP",
+    "Path": "Event/Play_SFX_LEVER_TRAP.bnk",
+    "Media": [
+     {
+      "Id": "28333578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_LEVER_TRAP_04.wav",
+      "Path": "Media/28333578.wem",
+      "CachePath": "SFX/SFX_LEVER_TRAP_04_818F3B66.wem"
+     },
+     {
+      "Id": "74654798",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_LEVER_TRAP_02.wav",
+      "Path": "Media/74654798.wem",
+      "CachePath": "SFX/SFX_LEVER_TRAP_02_818F3B66.wem"
+     },
+     {
+      "Id": "471453000",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_LEVER_TRAP_01.wav",
+      "Path": "Media/471453000.wem",
+      "CachePath": "SFX/SFX_LEVER_TRAP_01_818F3B66.wem"
+     },
+     {
+      "Id": "533646679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_LEVER_TRAP_03.wav",
+      "Path": "Media/533646679.wem",
+      "CachePath": "SFX/SFX_LEVER_TRAP_03_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1484984344",
+      "Name": "Play_SFX_LEVER_TRAP",
+      "ObjectPath": "\\Events\\Default Work Unit\\WORLD OBJECTS\\LEVERS\\Play_SFX_LEVER_TRAP",
+      "GUID": "{1ADEBBA2-3C4D-494B-8770-F58EE826412D}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5",
+      "DurationMax": "1.5",
+      "MediaRefs": [
+       {
+        "Id": "28333578"
+       },
+       {
+        "Id": "74654798"
+       },
+       {
+        "Id": "471453000"
+       },
+       {
+        "Id": "533646679"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1B27CF86-E895-1508-120C-5B7FDAD0EFF1}"
+ }
+}

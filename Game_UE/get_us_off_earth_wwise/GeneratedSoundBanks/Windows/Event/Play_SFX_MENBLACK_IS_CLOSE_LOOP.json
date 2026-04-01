@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "3303699548",
+    "Type": "Event",
+    "GUID": "{343F1413-B08F-43B9-A7FB-42FF2743C333}",
+    "Language": "SFX",
+    "Hash": "{5BED5BCE-6487-A9B0-0774-2AC35E3AF658}",
+    "ObjectPath": "Play_SFX_MENBLACK_IS_CLOSE_LOOP",
+    "ShortName": "Play_SFX_MENBLACK_IS_CLOSE_LOOP",
+    "Path": "Event/Play_SFX_MENBLACK_IS_CLOSE_LOOP.bnk",
+    "Media": [
+     {
+      "Id": "638810481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_MENBLACK_IS_CLOSE_LOOP.wav",
+      "Path": "Media/638810481.wem",
+      "CachePath": "SFX/SFX_MENBLACK_IS_CLOSE_LOOP_FBC78EF0.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3303699548",
+      "Name": "Play_SFX_MENBLACK_IS_CLOSE_LOOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\MEN IN BLACK\\Play_SFX_MENBLACK_IS_CLOSE_LOOP",
+      "GUID": "{343F1413-B08F-43B9-A7FB-42FF2743C333}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "638810481"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FD81A23E-0E6C-B39B-C993-411E66BBB226}"
+ }
+}

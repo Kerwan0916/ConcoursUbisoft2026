@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "2739294108",
+    "Type": "Event",
+    "GUID": "{F4781E7D-6509-47BA-A5C1-2D17C7539C1C}",
+    "Language": "SFX",
+    "Hash": "{50E3FE36-5150-60B7-CB5B-DA8B3925E4DE}",
+    "ObjectPath": "Play_SFX_ALIEN_TELEPORTED",
+    "ShortName": "Play_SFX_ALIEN_TELEPORTED",
+    "Path": "Event/Play_SFX_ALIEN_TELEPORTED.bnk",
+    "Media": [
+     {
+      "Id": "1062678991",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_ALIEN_TELEPORTED.wav",
+      "Path": "Media/1062678991.wem",
+      "CachePath": "SFX/SFX_ALIEN_TELEPORTED_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2739294108",
+      "Name": "Play_SFX_ALIEN_TELEPORTED",
+      "ObjectPath": "\\Events\\Default Work Unit\\ALIEN 1\\Play_SFX_ALIEN_TELEPORTED",
+      "GUID": "{F4781E7D-6509-47BA-A5C1-2D17C7539C1C}",
+      "DurationType": "OneShot",
+      "DurationMin": "4",
+      "DurationMax": "4",
+      "MediaRefs": [
+       {
+        "Id": "1062678991"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FC1F8671-3974-DC59-78F2-9BA26C0D89B5}"
+ }
+}

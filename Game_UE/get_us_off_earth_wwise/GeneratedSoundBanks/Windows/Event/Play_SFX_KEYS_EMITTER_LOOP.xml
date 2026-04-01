@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="2012969758" Type="Event" GUID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" Language="SFX" Hash="{21520971-7211-A978-F91E-EA36FAA68C97}">
+			<ObjectPath>Play_SFX_KEYS_EMITTER_LOOP</ObjectPath>
+			<ShortName>Play_SFX_KEYS_EMITTER_LOOP</ShortName>
+			<Path>Event/Play_SFX_KEYS_EMITTER_LOOP.bnk</Path>
+			<Media>
+				<File Id="957123288" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_KEYS_EMITTER_LOOP.wav</ShortName>
+					<Path>Media/957123288.wem</Path>
+					<CachePath>SFX/SFX_KEYS_EMITTER_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2012969758" Name="Play_SFX_KEYS_EMITTER_LOOP" ObjectPath="\Events\Default Work Unit\WORLD OBJECTS\KEYS\Play_SFX_KEYS_EMITTER_LOOP" GUID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="957123288"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{A16915C5-833E-5909-705D-33EAA192889B}</FileHash>
+</SoundBanksInfo>

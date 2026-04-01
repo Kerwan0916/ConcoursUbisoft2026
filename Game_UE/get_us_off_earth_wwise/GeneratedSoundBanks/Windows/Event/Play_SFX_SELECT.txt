@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	325086926	Play_SFX_SELECT			\Default Work Unit\UI\Play_SFX_SELECT	
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="2126514987" Type="Event" GUID="{42AC01E4-941A-41AB-A7B5-AADA04599646}" Language="SFX" Hash="{16791562-D14C-99B4-CAF3-14393FA3F932}">
+			<ObjectPath>Play_SFX_DOOR_HANGAR_OPEN</ObjectPath>
+			<ShortName>Play_SFX_DOOR_HANGAR_OPEN</ShortName>
+			<Path>Event/Play_SFX_DOOR_HANGAR_OPEN.bnk</Path>
+			<Media>
+				<File Id="60955474" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_DOOR_HANGAR_OPEN.wav</ShortName>
+					<Path>Media/60955474.wem</Path>
+					<CachePath>SFX/SFX_DOOR_HANGAR_OPEN_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2126514987" Name="Play_SFX_DOOR_HANGAR_OPEN" ObjectPath="\Events\Default Work Unit\WORLD OBJECTS\DOORS\Play_SFX_DOOR_HANGAR_OPEN" GUID="{42AC01E4-941A-41AB-A7B5-AADA04599646}" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="60955474"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{924BD0EC-B748-D48A-D800-643024931D7D}</FileHash>
+</SoundBanksInfo>

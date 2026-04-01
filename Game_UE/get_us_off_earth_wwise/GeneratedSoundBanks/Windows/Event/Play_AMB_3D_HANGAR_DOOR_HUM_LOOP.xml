@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="2548916635" Type="Event" GUID="{610F436B-177E-4B0C-A571-D0D896895C39}" Language="SFX" Hash="{1DCAF53E-6A83-17B0-0D4D-97653231DEE6}">
+			<ObjectPath>Play_AMB_3D_HANGAR_DOOR_HUM_LOOP</ObjectPath>
+			<ShortName>Play_AMB_3D_HANGAR_DOOR_HUM_LOOP</ShortName>
+			<Path>Event/Play_AMB_3D_HANGAR_DOOR_HUM_LOOP.bnk</Path>
+			<Media>
+				<File Id="665623576" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_3D_HANGAR_DOOR_HUM_LOOP.wav</ShortName>
+					<Path>Media/665623576.wem</Path>
+					<CachePath>SFX/AMB_3D_HANGAR_DOOR_HUM_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2548916635" Name="Play_AMB_3D_HANGAR_DOOR_HUM_LOOP" ObjectPath="\Events\Default Work Unit\AMB\Play_AMB_3D_HANGAR_DOOR_HUM_LOOP" GUID="{610F436B-177E-4B0C-A571-D0D896895C39}" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="665623576"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{63C7B0D8-18E9-9958-DE16-B024433449BD}</FileHash>
+</SoundBanksInfo>

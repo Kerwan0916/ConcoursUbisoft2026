@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "2138504219",
+    "Type": "Event",
+    "GUID": "{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}",
+    "Language": "SFX",
+    "Hash": "{CA5D4D33-AB37-1F46-FDB3-0CD010C12184}",
+    "ObjectPath": "Play_SFX_ALIEN_GRUNT_CATCHED",
+    "ShortName": "Play_SFX_ALIEN_GRUNT_CATCHED",
+    "Path": "Event/Play_SFX_ALIEN_GRUNT_CATCHED.bnk",
+    "Media": [
+     {
+      "Id": "683213460",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_ALIEN_GRUNT_CATCHED_01.wav",
+      "Path": "Media/683213460.wem",
+      "CachePath": "SFX/SFX_ALIEN_GRUNT_CATCHED_01_818F3B66.wem"
+     },
+     {
+      "Id": "965717301",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_ALIEN_GRUNT_CATCHED_2.wav",
+      "Path": "Media/965717301.wem",
+      "CachePath": "SFX/SFX_ALIEN_GRUNT_CATCHED_2_818F3B66.wem"
+     },
+     {
+      "Id": "1033905513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_ALIEN_GRUNT_CATCHED_03.wav",
+      "Path": "Media/1033905513.wem",
+      "CachePath": "SFX/SFX_ALIEN_GRUNT_CATCHED_03_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2138504219",
+      "Name": "Play_SFX_ALIEN_GRUNT_CATCHED",
+      "ObjectPath": "\\Events\\Default Work Unit\\ALIEN 1\\GRUNTS\\Play_SFX_ALIEN_GRUNT_CATCHED",
+      "GUID": "{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "1",
+      "MediaRefs": [
+       {
+        "Id": "683213460"
+       },
+       {
+        "Id": "965717301"
+       },
+       {
+        "Id": "1033905513"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{945339EB-798C-A076-8C42-D5A6882B3104}"
+ }
+}

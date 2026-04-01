@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1780698603" Type="Event" GUID="{990DFE39-4F9E-4AAD-BB67-AB4DB629A568}" Language="SFX" Hash="{1B4F0810-9596-DD7F-5297-02D54A7C6574}">
+			<ObjectPath>Play_SFX_BACK</ObjectPath>
+			<ShortName>Play_SFX_BACK</ShortName>
+			<Path>Event/Play_SFX_BACK.bnk</Path>
+			<Media>
+				<File Id="229615890" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENU_MAIN_BACK_02.wav</ShortName>
+					<Path>Media/229615890.wem</Path>
+					<CachePath>SFX/SFX_MENU_MAIN_BACK_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="259535470" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENU_MAIN_BACK_05.wav</ShortName>
+					<Path>Media/259535470.wem</Path>
+					<CachePath>SFX/SFX_MENU_MAIN_BACK_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="416683451" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENU_MAIN_BACK_04.wav</ShortName>
+					<Path>Media/416683451.wem</Path>
+					<CachePath>SFX/SFX_MENU_MAIN_BACK_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="537906069" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENU_MAIN_BACK_01.wav</ShortName>
+					<Path>Media/537906069.wem</Path>
+					<CachePath>SFX/SFX_MENU_MAIN_BACK_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1001023443" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENU_MAIN_BACK_03.wav</ShortName>
+					<Path>Media/1001023443.wem</Path>
+					<CachePath>SFX/SFX_MENU_MAIN_BACK_03_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1780698603" Name="Play_SFX_BACK" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_BACK" GUID="{990DFE39-4F9E-4AAD-BB67-AB4DB629A568}" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="229615890"/>
+						<MediaRef Id="259535470"/>
+						<MediaRef Id="416683451"/>
+						<MediaRef Id="537906069"/>
+						<MediaRef Id="1001023443"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{65846DD1-D4B9-CFBD-A728-7D55940EC1DD}</FileHash>
+</SoundBanksInfo>
