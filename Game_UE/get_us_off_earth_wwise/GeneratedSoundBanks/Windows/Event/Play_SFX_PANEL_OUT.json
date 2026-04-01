@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "4110738637",
+    "Type": "Event",
+    "GUID": "{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}",
+    "Language": "SFX",
+    "Hash": "{CC1DCBEF-C9E4-CE14-2855-1C77DF90A72E}",
+    "ObjectPath": "Play_SFX_PANEL_OUT",
+    "ShortName": "Play_SFX_PANEL_OUT",
+    "Path": "Event/Play_SFX_PANEL_OUT.bnk",
+    "Media": [
+     {
+      "Id": "203755712",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_UI_MENU_PANEL_OUT_03.wav",
+      "Path": "Media/203755712.wem",
+      "CachePath": "SFX/SFX_UI_MENU_PANEL_OUT_03_818F3B66.wem"
+     },
+     {
+      "Id": "224976223",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_UI_MENU_PANEL_OUT_02.wav",
+      "Path": "Media/224976223.wem",
+      "CachePath": "SFX/SFX_UI_MENU_PANEL_OUT_02_818F3B66.wem"
+     },
+     {
+      "Id": "359125135",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_UI_MENU_PANEL_OUT_04.wav",
+      "Path": "Media/359125135.wem",
+      "CachePath": "SFX/SFX_UI_MENU_PANEL_OUT_04_818F3B66.wem"
+     },
+     {
+      "Id": "371348642",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_UI_MENU_PANEL_OUT_05.wav",
+      "Path": "Media/371348642.wem",
+      "CachePath": "SFX/SFX_UI_MENU_PANEL_OUT_05_818F3B66.wem"
+     },
+     {
+      "Id": "1012132438",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_UI_MENU_PANEL_OUT_01.wav",
+      "Path": "Media/1012132438.wem",
+      "CachePath": "SFX/SFX_UI_MENU_PANEL_OUT_01_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4110738637",
+      "Name": "Play_SFX_PANEL_OUT",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_SFX_PANEL_OUT",
+      "GUID": "{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5",
+      "DurationMax": "1.5",
+      "MediaRefs": [
+       {
+        "Id": "203755712"
+       },
+       {
+        "Id": "224976223"
+       },
+       {
+        "Id": "359125135"
+       },
+       {
+        "Id": "371348642"
+       },
+       {
+        "Id": "1012132438"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F08661AD-6600-B75F-6018-0319401BFC59}"
+ }
+}

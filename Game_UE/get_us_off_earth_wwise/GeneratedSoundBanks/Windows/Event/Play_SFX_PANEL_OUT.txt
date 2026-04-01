@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4110738637	Play_SFX_PANEL_OUT			\Default Work Unit\UI\Play_SFX_PANEL_OUT	
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1484426712" Type="Event" GUID="{D6873E74-1023-4146-BC4F-445644489C81}" Language="SFX" Hash="{6E1BF884-E7A9-01BB-D31B-AD8BD4C31C33}">
+			<ObjectPath>Play_ALIEN_FS_RUN_SWITCH</ObjectPath>
+			<ShortName>Play_ALIEN_FS_RUN_SWITCH</ShortName>
+			<Path>Event/Play_ALIEN_FS_RUN_SWITCH.bnk</Path>
+			<Events>
+				<Event Id="1484426712" Name="Play_ALIEN_FS_RUN_SWITCH" ObjectPath="\Events\Default Work Unit\ALIEN 1\Play_ALIEN_FS_RUN_SWITCH" GUID="{D6873E74-1023-4146-BC4F-445644489C81}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{6F4A8A83-0347-2BEB-73DB-5E45A3B66E9B}</FileHash>
+</SoundBanksInfo>

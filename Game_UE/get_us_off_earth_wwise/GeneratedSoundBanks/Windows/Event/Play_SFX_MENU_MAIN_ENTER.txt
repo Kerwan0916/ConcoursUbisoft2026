@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3430759498	Play_SFX_MENU_MAIN_ENTER			\Default Work Unit\UI\Play_SFX_MENU_MAIN_ENTER	
+

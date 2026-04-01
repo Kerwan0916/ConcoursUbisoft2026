@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1884588609	Play_SFX_INCUBATOR_DOOR_OPEN			\Default Work Unit\WORLD OBJECTS\DOORS\Play_SFX_INCUBATOR_DOOR_OPEN	
+

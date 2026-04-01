@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="3279092899" Type="Event" GUID="{4669F09D-5904-4C4D-9593-10E777F774DE}" Language="SFX" Hash="{FA6073E0-EFA8-8B36-5945-119F40AFB8C1}">
+			<ObjectPath>Play_SFX_ALIEN_GRUNT_VICTORY</ObjectPath>
+			<ShortName>Play_SFX_ALIEN_GRUNT_VICTORY</ShortName>
+			<Path>Event/Play_SFX_ALIEN_GRUNT_VICTORY.bnk</Path>
+			<Media>
+				<File Id="125822146" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_VICTORY.wav</ShortName>
+					<Path>Media/125822146.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_VICTORY_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3279092899" Name="Play_SFX_ALIEN_GRUNT_VICTORY" ObjectPath="\Events\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_VICTORY" GUID="{4669F09D-5904-4C4D-9593-10E777F774DE}" DurationType="OneShot" DurationMin="2.1386395" DurationMax="2.1386395">
+					<MediaRefs>
+						<MediaRef Id="125822146"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{098E8158-2FAA-0A93-2A65-2085A52E1148}</FileHash>
+</SoundBanksInfo>

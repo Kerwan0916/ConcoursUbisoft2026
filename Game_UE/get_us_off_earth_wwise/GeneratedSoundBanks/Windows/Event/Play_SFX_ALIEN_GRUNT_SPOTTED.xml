@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1088840730" Type="Event" GUID="{F9E9C59E-1D1B-48A8-B9C7-848685025D08}" Language="SFX" Hash="{09B9E0EB-CDDF-C69F-D03E-49ED2CCDA78B}">
+			<ObjectPath>Play_SFX_ALIEN_GRUNT_SPOTTED</ObjectPath>
+			<ShortName>Play_SFX_ALIEN_GRUNT_SPOTTED</ShortName>
+			<Path>Event/Play_SFX_ALIEN_GRUNT_SPOTTED.bnk</Path>
+			<Media>
+				<File Id="558125221" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_SPOTTED_03.wav</ShortName>
+					<Path>Media/558125221.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_SPOTTED_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="687414491" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_SPOTTED_02.wav</ShortName>
+					<Path>Media/687414491.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_SPOTTED_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="738204242" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIEN_GRUNT_SPOTTED_01.wav</ShortName>
+					<Path>Media/738204242.wem</Path>
+					<CachePath>SFX/SFX_ALIEN_GRUNT_SPOTTED_01_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1088840730" Name="Play_SFX_ALIEN_GRUNT_SPOTTED" ObjectPath="\Events\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_SPOTTED" GUID="{F9E9C59E-1D1B-48A8-B9C7-848685025D08}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="558125221"/>
+						<MediaRef Id="687414491"/>
+						<MediaRef Id="738204242"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{F7D72BC7-3FEC-D73A-E1EE-A086D7E35966}</FileHash>
+</SoundBanksInfo>

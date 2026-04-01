@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="3301992102" Type="Event" GUID="{EAFA5753-72D7-496C-B4C9-E0CDF55ED6B1}" Language="SFX" Hash="{BF4B2B4B-E7BB-5323-0B0D-261D1A45437E}">
+			<ObjectPath>Play_SFX_BUTTON_APPEAR</ObjectPath>
+			<ShortName>Play_SFX_BUTTON_APPEAR</ShortName>
+			<Path>Event/Play_SFX_BUTTON_APPEAR.bnk</Path>
+			<Events>
+				<Event Id="3301992102" Name="Play_SFX_BUTTON_APPEAR" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_BUTTON_APPEAR" GUID="{EAFA5753-72D7-496C-B4C9-E0CDF55ED6B1}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{46036B85-8631-CC3A-F2B5-2A714539D375}</FileHash>
+</SoundBanksInfo>

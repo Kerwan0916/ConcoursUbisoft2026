@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1709427562" Type="Event" GUID="{7F849F53-C459-4F03-A017-FF8F9008B349}" Language="SFX" Hash="{DA902DB1-8716-7EB9-F657-2871C59323FC}">
+			<ObjectPath>Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN</ObjectPath>
+			<ShortName>Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN</ShortName>
+			<Path>Event/Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN.bnk</Path>
+			<Media>
+				<File Id="69781813" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENBLACK_GRUNT_SPOTS_ALIEN_01.wav</ShortName>
+					<Path>Media/69781813.wem</Path>
+					<CachePath>SFX/SFX_MENBLACK_GRUNT_SPOTS_ALIEN_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="311536568" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENBLACK_GRUNT_SPOTS_ALIEN_02.wav</ShortName>
+					<Path>Media/311536568.wem</Path>
+					<CachePath>SFX/SFX_MENBLACK_GRUNT_SPOTS_ALIEN_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="366174810" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_MENBLACK_GRUNT_SPOTS_ALIEN_03.wav</ShortName>
+					<Path>Media/366174810.wem</Path>
+					<CachePath>SFX/SFX_MENBLACK_GRUNT_SPOTS_ALIEN_03_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1709427562" Name="Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN" ObjectPath="\Events\Default Work Unit\MEN IN BLACK\GRUNTS\Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN" GUID="{7F849F53-C459-4F03-A017-FF8F9008B349}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="69781813"/>
+						<MediaRef Id="311536568"/>
+						<MediaRef Id="366174810"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{4928D3DB-A977-0B65-8587-44AD24CE2CD5}</FileHash>
+</SoundBanksInfo>
