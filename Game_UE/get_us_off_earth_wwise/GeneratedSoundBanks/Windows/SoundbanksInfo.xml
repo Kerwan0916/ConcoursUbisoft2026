@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="73382271" Type="Event" GUID="{CE553948-3260-40AC-9F07-DAF424CA0830}" Language="SFX" Hash="{6EDCDACE-4DB8-C364-D8B7-A62827BF9AD8}">
+		<SoundBank Id="73382271" Type="Event" GUID="{CE553948-3260-40AC-9F07-DAF424CA0830}" Language="SFX" Hash="{36EB62D4-CE50-4F28-9D30-78502D7A0A92}">
 			<ObjectPath>Play_AMB_2D_ROOMTONE_GENERAL_LOOP</ObjectPath>
 			<ShortName>Play_AMB_2D_ROOMTONE_GENERAL_LOOP</ShortName>
 			<Path>Event/Play_AMB_2D_ROOMTONE_GENERAL_LOOP.bnk</Path>
@@ -28,7 +28,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="325086926" Type="Event" GUID="{63A16E8C-756D-44CF-84DD-E0FF4473C2E7}" Language="SFX" Hash="{CD6160CB-2F2A-6EFD-1DF0-E2B396DDA92A}">
+		<SoundBank Id="325086926" Type="Event" GUID="{63A16E8C-756D-44CF-84DD-E0FF4473C2E7}" Language="SFX" Hash="{BF63D56D-4F95-0760-D559-038EBEA09F5B}">
 			<ObjectPath>Play_SFX_SELECT</ObjectPath>
 			<ShortName>Play_SFX_SELECT</ShortName>
 			<Path>Event/Play_SFX_SELECT.bnk</Path>
@@ -71,7 +71,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="412978243" Type="Event" GUID="{B5897D35-9072-4E50-9749-5856FB0F528F}" Language="SFX" Hash="{CA5A23BD-F66B-789D-C537-5420F667A6DF}">
+		<SoundBank Id="412978243" Type="Event" GUID="{B5897D35-9072-4E50-9749-5856FB0F528F}" Language="SFX" Hash="{035CA325-B2CD-2A53-128A-4D7A44D5DE27}">
 			<ObjectPath>Play_SFX_LEVER_LIGHT</ObjectPath>
 			<ShortName>Play_SFX_LEVER_LIGHT</ShortName>
 			<Path>Event/Play_SFX_LEVER_LIGHT.bnk</Path>
@@ -121,7 +121,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1088840730" Type="Event" GUID="{F9E9C59E-1D1B-48A8-B9C7-848685025D08}" Language="SFX" Hash="{09B9E0EB-CDDF-C69F-D03E-49ED2CCDA78B}">
+		<SoundBank Id="1088840730" Type="Event" GUID="{F9E9C59E-1D1B-48A8-B9C7-848685025D08}" Language="SFX" Hash="{DDF4F35C-EB50-B471-CCE4-F24159899C18}">
 			<ObjectPath>Play_SFX_ALIEN_GRUNT_SPOTTED</ObjectPath>
 			<ShortName>Play_SFX_ALIEN_GRUNT_SPOTTED</ShortName>
 			<Path>Event/Play_SFX_ALIEN_GRUNT_SPOTTED.bnk</Path>
@@ -152,7 +152,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1160267864" Type="Event" GUID="{8038F53F-89A9-4267-939D-5E227260F756}" Language="SFX" Hash="{ACD31DDA-5E1C-2CE4-3362-5108CD81AB68}">
+		<SoundBank Id="1160267864" Type="Event" GUID="{8038F53F-89A9-4267-939D-5E227260F756}" Language="SFX" Hash="{C0CC535B-50F3-17DB-663A-DA97B35C7F61}">
 			<ObjectPath>Play_SFX_MENU_MAIN_EXIT</ObjectPath>
 			<ShortName>Play_SFX_MENU_MAIN_EXIT</ShortName>
 			<Path>Event/Play_SFX_MENU_MAIN_EXIT.bnk</Path>
@@ -160,11 +160,11 @@
 				<File Id="241317464" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>SFX_MENU_MAIN_EXIT.wav</ShortName>
 					<Path>Media/241317464.wem</Path>
-					<CachePath>SFX/SFX_MENU_MAIN_EXIT_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_MENU_MAIN_EXIT_10A1ED6A.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1160267864" Name="Play_SFX_MENU_MAIN_EXIT" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_MENU_MAIN_EXIT" GUID="{8038F53F-89A9-4267-939D-5E227260F756}" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1160267864" Name="Play_SFX_MENU_MAIN_EXIT" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_MENU_MAIN_EXIT" GUID="{8038F53F-89A9-4267-939D-5E227260F756}" DurationType="OneShot" DurationMin="2.6256" DurationMax="2.6256">
 					<MediaRefs>
 						<MediaRef Id="241317464"/>
 					</MediaRefs>
@@ -215,6 +215,7 @@
 						<State Id="1966203490" Name="STORYBOARD_END" ObjectPath="\States\Default Work Unit\BGM_STATES\STORYBOARD_END" GUID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
 						<State Id="2005704188" Name="MAIN_MENU" ObjectPath="\States\Default Work Unit\BGM_STATES\MAIN_MENU" GUID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
 						<State Id="2782712965" Name="LEVEL" ObjectPath="\States\Default Work Unit\BGM_STATES\LEVEL" GUID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
+						<State Id="3573931707" Name="LOADING" ObjectPath="\States\Default Work Unit\BGM_STATES\LOADING" GUID="{462F5976-B37B-48B0-96F0-5CDC40A6D736}"/>
 						<State Id="4188752148" Name="ALIEN_SPOTTED" ObjectPath="\States\Default Work Unit\BGM_STATES\ALIEN_SPOTTED" GUID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
 					</States>
 				</StateGroup>
@@ -363,7 +364,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1450419186" Type="Event" GUID="{588ED580-500C-4C9D-9384-F5AE049851BE}" Language="SFX" Hash="{6B0419EF-3780-6199-A19A-DBE0E1FDFCA9}">
+		<SoundBank Id="1450419186" Type="Event" GUID="{588ED580-500C-4C9D-9384-F5AE049851BE}" Language="SFX" Hash="{D59AA88A-8953-9332-9A44-5F63C1813312}">
 			<ObjectPath>Play_SFX_PANEL_IN</ObjectPath>
 			<ShortName>Play_SFX_PANEL_IN</ShortName>
 			<Path>Event/Play_SFX_PANEL_IN.bnk</Path>
@@ -406,23 +407,152 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1468578206" Type="Event" GUID="{E9FFFA8D-52BB-4592-AC64-F4818E77ACFD}" Language="SFX" Hash="{585A6B5A-D0EF-F6D3-6464-4314184A51DF}">
-			<ObjectPath>Play_SFX_BUTTON_ACTIVATED</ObjectPath>
-			<ShortName>Play_SFX_BUTTON_ACTIVATED</ShortName>
-			<Path>Event/Play_SFX_BUTTON_ACTIVATED.bnk</Path>
-			<Events>
-				<Event Id="1468578206" Name="Play_SFX_BUTTON_ACTIVATED" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_BUTTON_ACTIVATED" GUID="{E9FFFA8D-52BB-4592-AC64-F4818E77ACFD}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="1484426712" Type="Event" GUID="{D6873E74-1023-4146-BC4F-445644489C81}" Language="SFX" Hash="{6E1BF884-E7A9-01BB-D31B-AD8BD4C31C33}">
+		<SoundBank Id="1484426712" Type="Event" GUID="{D6873E74-1023-4146-BC4F-445644489C81}" Language="SFX" Hash="{3315A56A-1D20-4DB1-52EC-C1ECA1265F9B}">
 			<ObjectPath>Play_ALIEN_FS_RUN_SWITCH</ObjectPath>
 			<ShortName>Play_ALIEN_FS_RUN_SWITCH</ShortName>
 			<Path>Event/Play_ALIEN_FS_RUN_SWITCH.bnk</Path>
+			<Media>
+				<File Id="76787987" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_04.wav</ShortName>
+					<Path>Media/76787987.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="191645909" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_04.wav</ShortName>
+					<Path>Media/191645909.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_04_417E2ABC.wem</CachePath>
+				</File>
+				<File Id="199489418" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_10.wav</ShortName>
+					<Path>Media/199489418.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_10_D461B954.wem</CachePath>
+				</File>
+				<File Id="216286846" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_05.wav</ShortName>
+					<Path>Media/216286846.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_05_8AEB9026.wem</CachePath>
+				</File>
+				<File Id="275134199" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_03.wav</ShortName>
+					<Path>Media/275134199.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="331121356" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_06.wav</ShortName>
+					<Path>Media/331121356.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_06_6A94F8D7.wem</CachePath>
+				</File>
+				<File Id="360949913" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_07.wav</ShortName>
+					<Path>Media/360949913.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_07_22B41BBE.wem</CachePath>
+				</File>
+				<File Id="607443133" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_05.wav</ShortName>
+					<Path>Media/607443133.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="617451163" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_08.wav</ShortName>
+					<Path>Media/617451163.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="680797267" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_02.wav</ShortName>
+					<Path>Media/680797267.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_02_EF2942F2.wem</CachePath>
+				</File>
+				<File Id="768684392" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_09.wav</ShortName>
+					<Path>Media/768684392.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_09_818F3B66.wem</CachePath>
+				</File>
+				<File Id="783943069" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_06.wav</ShortName>
+					<Path>Media/783943069.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="816819462" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_09.wav</ShortName>
+					<Path>Media/816819462.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_09_818F3B66.wem</CachePath>
+				</File>
+				<File Id="851729636" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_03.wav</ShortName>
+					<Path>Media/851729636.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="903465451" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_07.wav</ShortName>
+					<Path>Media/903465451.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="968726609" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_01.wav</ShortName>
+					<Path>Media/968726609.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1047142444" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_01.wav</ShortName>
+					<Path>Media/1047142444.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1049735021" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_TILES_02.wav</ShortName>
+					<Path>Media/1049735021.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_TILES_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1052331438" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_ALIENS_FS_RUN_RUG_08.wav</ShortName>
+					<Path>Media/1052331438.wem</Path>
+					<CachePath>SFX/SFX_ALIENS_FS_RUN_RUG_08_818F3B66.wem</CachePath>
+				</File>
+			</Media>
 			<Events>
-				<Event Id="1484426712" Name="Play_ALIEN_FS_RUN_SWITCH" ObjectPath="\Events\Default Work Unit\ALIEN 1\Play_ALIEN_FS_RUN_SWITCH" GUID="{D6873E74-1023-4146-BC4F-445644489C81}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1484426712" Name="Play_ALIEN_FS_RUN_SWITCH" ObjectPath="\Events\Default Work Unit\ALIEN 1\Play_ALIEN_FS_RUN_SWITCH" GUID="{D6873E74-1023-4146-BC4F-445644489C81}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="712161697" GUID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
+							<MediaRefs>
+								<MediaRef Id="191645909"/>
+								<MediaRef Id="199489418"/>
+								<MediaRef Id="216286846"/>
+								<MediaRef Id="331121356"/>
+								<MediaRef Id="360949913"/>
+								<MediaRef Id="680797267"/>
+								<MediaRef Id="816819462"/>
+								<MediaRef Id="851729636"/>
+								<MediaRef Id="1047142444"/>
+								<MediaRef Id="1052331438"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="2637588553" GUID="{964759D4-5713-451C-B5C2-D98D035C10EB}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="76787987"/>
+								<MediaRef Id="275134199"/>
+								<MediaRef Id="607443133"/>
+								<MediaRef Id="617451163"/>
+								<MediaRef Id="768684392"/>
+								<MediaRef Id="783943069"/>
+								<MediaRef Id="903465451"/>
+								<MediaRef Id="968726609"/>
+								<MediaRef Id="1049735021"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1834394558" Name="SURFACE" ObjectPath="\Switches\Default Work Unit\SURFACE" GUID="{51BCD824-4EE1-4B17-8C75-DF5ABA922871}">
+					<Switches>
+						<Switch Id="712161697" Name="RUG" ObjectPath="\Switches\Default Work Unit\SURFACE\RUG" GUID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
+						<Switch Id="2637588553" Name="TILE" ObjectPath="\Switches\Default Work Unit\SURFACE\TILE" GUID="{964759D4-5713-451C-B5C2-D98D035C10EB}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1484984344" Type="Event" GUID="{1ADEBBA2-3C4D-494B-8770-F58EE826412D}" Language="SFX" Hash="{F49EAD19-DE83-F7B6-18C5-875726DF0795}">
+		<SoundBank Id="1484984344" Type="Event" GUID="{1ADEBBA2-3C4D-494B-8770-F58EE826412D}" Language="SFX" Hash="{6C7EE75C-E577-B08C-F8C5-ECB411B786AE}">
 			<ObjectPath>Play_SFX_LEVER_TRAP</ObjectPath>
 			<ShortName>Play_SFX_LEVER_TRAP</ShortName>
 			<Path>Event/Play_SFX_LEVER_TRAP.bnk</Path>
@@ -459,7 +589,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1592706777" Type="Event" GUID="{4B7F7B1D-5D74-4F8A-A69C-D12AC56E112D}" Language="SFX" Hash="{1D191E17-0C0F-E30B-2660-F7E50163F3A9}">
+		<SoundBank Id="1592706777" Type="Event" GUID="{4B7F7B1D-5D74-4F8A-A69C-D12AC56E112D}" Language="SFX" Hash="{7DA387D1-D4ED-CC50-60B1-4963976819CA}">
 			<ObjectPath>Play_SFX_KEYS_PICKUP</ObjectPath>
 			<ShortName>Play_SFX_KEYS_PICKUP</ShortName>
 			<Path>Event/Play_SFX_KEYS_PICKUP.bnk</Path>
@@ -490,7 +620,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1709427562" Type="Event" GUID="{7F849F53-C459-4F03-A017-FF8F9008B349}" Language="SFX" Hash="{DA902DB1-8716-7EB9-F657-2871C59323FC}">
+		<SoundBank Id="1709427562" Type="Event" GUID="{7F849F53-C459-4F03-A017-FF8F9008B349}" Language="SFX" Hash="{BD25FDB7-143D-D961-1F25-5CE919DB0C67}">
 			<ObjectPath>Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN</ObjectPath>
 			<ShortName>Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN</ShortName>
 			<Path>Event/Play_SFX_MENBLACK_GRUNT_SPOTS_ALIEN.bnk</Path>
@@ -521,7 +651,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1745445364" Type="Event" GUID="{E2C233C7-15A2-40EF-B417-6F91F3CA0D84}" Language="SFX" Hash="{3825781C-7C99-CED2-871B-B9D68BCF5A1D}">
+		<SoundBank Id="1745445364" Type="Event" GUID="{E2C233C7-15A2-40EF-B417-6F91F3CA0D84}" Language="SFX" Hash="{3359BF51-C103-9A3D-39FD-226EADFB3DAF}">
 			<ObjectPath>Play_AMB_3D_INCUBATORS_LOOP</ObjectPath>
 			<ShortName>Play_AMB_3D_INCUBATORS_LOOP</ShortName>
 			<Path>Event/Play_AMB_3D_INCUBATORS_LOOP.bnk</Path>
@@ -540,7 +670,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1780698603" Type="Event" GUID="{990DFE39-4F9E-4AAD-BB67-AB4DB629A568}" Language="SFX" Hash="{1B4F0810-9596-DD7F-5297-02D54A7C6574}">
+		<SoundBank Id="1780698603" Type="Event" GUID="{990DFE39-4F9E-4AAD-BB67-AB4DB629A568}" Language="SFX" Hash="{E16CAA7E-0DCE-F6FA-38D0-C84508EFCA70}">
 			<ObjectPath>Play_SFX_BACK</ObjectPath>
 			<ShortName>Play_SFX_BACK</ShortName>
 			<Path>Event/Play_SFX_BACK.bnk</Path>
@@ -583,7 +713,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1884588609" Type="Event" GUID="{4C21A550-6205-41C3-8D87-856EFE781516}" Language="SFX" Hash="{0E8B998E-6DB9-AA51-A8C6-42E034DDFB5F}">
+		<SoundBank Id="1884588609" Type="Event" GUID="{4C21A550-6205-41C3-8D87-856EFE781516}" Language="SFX" Hash="{DC27E673-1700-3436-A76D-706270DB200B}">
 			<ObjectPath>Play_SFX_INCUBATOR_DOOR_OPEN</ObjectPath>
 			<ShortName>Play_SFX_INCUBATOR_DOOR_OPEN</ShortName>
 			<Path>Event/Play_SFX_INCUBATOR_DOOR_OPEN.bnk</Path>
@@ -614,7 +744,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2012969758" Type="Event" GUID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" Language="SFX" Hash="{21520971-7211-A978-F91E-EA36FAA68C97}">
+		<SoundBank Id="2012969758" Type="Event" GUID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" Language="SFX" Hash="{DA0D9389-7AD1-A83E-57BE-CFABB6635AF8}">
 			<ObjectPath>Play_SFX_KEYS_EMITTER_LOOP</ObjectPath>
 			<ShortName>Play_SFX_KEYS_EMITTER_LOOP</ShortName>
 			<Path>Event/Play_SFX_KEYS_EMITTER_LOOP.bnk</Path>
@@ -633,7 +763,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2126514987" Type="Event" GUID="{42AC01E4-941A-41AB-A7B5-AADA04599646}" Language="SFX" Hash="{16791562-D14C-99B4-CAF3-14393FA3F932}">
+		<SoundBank Id="2126514987" Type="Event" GUID="{42AC01E4-941A-41AB-A7B5-AADA04599646}" Language="SFX" Hash="{79210CCA-344D-7389-D2C8-6289B32BC8AF}">
 			<ObjectPath>Play_SFX_DOOR_HANGAR_OPEN</ObjectPath>
 			<ShortName>Play_SFX_DOOR_HANGAR_OPEN</ShortName>
 			<Path>Event/Play_SFX_DOOR_HANGAR_OPEN.bnk</Path>
@@ -652,7 +782,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2138504219" Type="Event" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" Language="SFX" Hash="{CA5D4D33-AB37-1F46-FDB3-0CD010C12184}">
+		<SoundBank Id="2138504219" Type="Event" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" Language="SFX" Hash="{B1B3302C-B9B1-F7CE-7319-87B830042E4F}">
 			<ObjectPath>Play_SFX_ALIEN_GRUNT_CATCHED</ObjectPath>
 			<ShortName>Play_SFX_ALIEN_GRUNT_CATCHED</ShortName>
 			<Path>Event/Play_SFX_ALIEN_GRUNT_CATCHED.bnk</Path>
@@ -683,7 +813,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2383364376" Type="Event" GUID="{E8C96E28-2882-412B-832B-A36E181F35C2}" Language="SFX" Hash="{8B8524DA-1442-9654-AEBD-35C8AF558A3D}">
+		<SoundBank Id="2383364376" Type="Event" GUID="{E8C96E28-2882-412B-832B-A36E181F35C2}" Language="SFX" Hash="{AC9A6EB4-89B6-0068-2061-F4B0BEA1BA95}">
 			<ObjectPath>Play_SFX_MENBLACK_FS_WALK_SWITCH</ObjectPath>
 			<ShortName>Play_SFX_MENBLACK_FS_WALK_SWITCH</ShortName>
 			<Path>Event/Play_SFX_MENBLACK_FS_WALK_SWITCH.bnk</Path>
@@ -834,7 +964,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2548916635" Type="Event" GUID="{610F436B-177E-4B0C-A571-D0D896895C39}" Language="SFX" Hash="{1DCAF53E-6A83-17B0-0D4D-97653231DEE6}">
+		<SoundBank Id="2548916635" Type="Event" GUID="{610F436B-177E-4B0C-A571-D0D896895C39}" Language="SFX" Hash="{7E0C44CC-D352-6C2B-50BC-76971F46FDCC}">
 			<ObjectPath>Play_AMB_3D_HANGAR_DOOR_HUM_LOOP</ObjectPath>
 			<ShortName>Play_AMB_3D_HANGAR_DOOR_HUM_LOOP</ShortName>
 			<Path>Event/Play_AMB_3D_HANGAR_DOOR_HUM_LOOP.bnk</Path>
@@ -853,7 +983,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2739294108" Type="Event" GUID="{F4781E7D-6509-47BA-A5C1-2D17C7539C1C}" Language="SFX" Hash="{50E3FE36-5150-60B7-CB5B-DA8B3925E4DE}">
+		<SoundBank Id="2739294108" Type="Event" GUID="{F4781E7D-6509-47BA-A5C1-2D17C7539C1C}" Language="SFX" Hash="{D7BF78FC-B3BB-6086-1490-B2D85748CAF7}">
 			<ObjectPath>Play_SFX_ALIEN_TELEPORTED</ObjectPath>
 			<ShortName>Play_SFX_ALIEN_TELEPORTED</ShortName>
 			<Path>Event/Play_SFX_ALIEN_TELEPORTED.bnk</Path>
@@ -872,7 +1002,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2800585656" Type="Event" GUID="{5D863314-F367-4BE1-A3F8-390FFB89465A}" Language="SFX" Hash="{64FDD8F7-6919-F525-D9E9-49861900E03C}">
+		<SoundBank Id="2800585656" Type="Event" GUID="{5D863314-F367-4BE1-A3F8-390FFB89465A}" Language="SFX" Hash="{27F4A757-B61B-FFF3-C08E-C4C1AFEE0F6B}">
 			<ObjectPath>Play_SFX_MENBLACK_GRUNT_CATCH_ALIEN</ObjectPath>
 			<ShortName>Play_SFX_MENBLACK_GRUNT_CATCH_ALIEN</ShortName>
 			<Path>Event/Play_SFX_MENBLACK_GRUNT_CATCH_ALIEN.bnk</Path>
@@ -903,7 +1033,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3110399011" Type="Event" GUID="{A718C967-8A6E-4A72-97B9-0E2BD21D7345}" Language="SFX" Hash="{627E82F3-3B0A-AD24-528F-70BE814453F5}">
+		<SoundBank Id="3110399011" Type="Event" GUID="{A718C967-8A6E-4A72-97B9-0E2BD21D7345}" Language="SFX" Hash="{392A542B-FF96-5BDD-DA60-6EC719B5D25D}">
 			<ObjectPath>Play_AMB_3D_LEVERS_OFF_LOOP</ObjectPath>
 			<ShortName>Play_AMB_3D_LEVERS_OFF_LOOP</ShortName>
 			<Path>Event/Play_AMB_3D_LEVERS_OFF_LOOP.bnk</Path>
@@ -922,7 +1052,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3126765036" Type="Event" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" Language="SFX" Hash="{48F27E3D-F382-7559-47B8-7D8D22E83A60}">
+		<SoundBank Id="3126765036" Type="Event" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" Language="SFX" Hash="{4D4EAB3C-44C2-97AF-0143-6DEDBFD241B8}">
 			<ObjectPath>Play_BGM</ObjectPath>
 			<ShortName>Play_BGM</ShortName>
 			<Path>Event/Play_BGM.bnk</Path>
@@ -972,6 +1102,21 @@
 					<Path>Media/621569200.wem</Path>
 					<CachePath>SFX/BGM_LEVEL_LOOP_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="651441700" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_SILENCE_STORYBOARDS.wav</ShortName>
+					<Path>Media/651441700.wem</Path>
+					<CachePath>SFX/BGM_SILENCE_STORYBOARDS_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="846764474" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_LOADING_LOOP.wav</ShortName>
+					<Path>Media/846764474.wem</Path>
+					<CachePath>SFX/BGM_LOADING_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="872339771" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_LOADING_INTRO.wav</ShortName>
+					<Path>Media/872339771.wem</Path>
+					<CachePath>SFX/BGM_LOADING_INTRO_FBC78EF0.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="3126765036" Name="Play_BGM" ObjectPath="\Events\Default Work Unit\Play_BGM" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" DurationType="Infinite">
@@ -998,6 +1143,18 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2248712270" Id="1966203490" GUID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
+							<MediaRefs>
+								<MediaRef Id="651441700"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2248712270" Id="93434497" GUID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
+							<MediaRefs>
+								<MediaRef Id="651441700"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="2248712270" Id="979765101" GUID="{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"/>
 							<MediaRefs>
 								<MediaRef Id="223694991"/>
@@ -1008,6 +1165,13 @@
 							<SwitchValue GroupType="State" GroupId="2248712270" Id="1432716332" GUID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
 							<MediaRefs>
 								<MediaRef Id="180484542"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2248712270" Id="3573931707" GUID="{462F5976-B37B-48B0-96F0-5CDC40A6D736}"/>
+							<MediaRefs>
+								<MediaRef Id="846764474"/>
+								<MediaRef Id="872339771"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -1023,6 +1187,7 @@
 						<State Id="1966203490" Name="STORYBOARD_END" ObjectPath="\States\Default Work Unit\BGM_STATES\STORYBOARD_END" GUID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
 						<State Id="2005704188" Name="MAIN_MENU" ObjectPath="\States\Default Work Unit\BGM_STATES\MAIN_MENU" GUID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
 						<State Id="2782712965" Name="LEVEL" ObjectPath="\States\Default Work Unit\BGM_STATES\LEVEL" GUID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
+						<State Id="3573931707" Name="LOADING" ObjectPath="\States\Default Work Unit\BGM_STATES\LOADING" GUID="{462F5976-B37B-48B0-96F0-5CDC40A6D736}"/>
 						<State Id="4188752148" Name="ALIEN_SPOTTED" ObjectPath="\States\Default Work Unit\BGM_STATES\ALIEN_SPOTTED" GUID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
 					</States>
 				</StateGroup>
@@ -1047,14 +1212,6 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3301992102" Type="Event" GUID="{EAFA5753-72D7-496C-B4C9-E0CDF55ED6B1}" Language="SFX" Hash="{BF4B2B4B-E7BB-5323-0B0D-261D1A45437E}">
-			<ObjectPath>Play_SFX_BUTTON_APPEAR</ObjectPath>
-			<ShortName>Play_SFX_BUTTON_APPEAR</ShortName>
-			<Path>Event/Play_SFX_BUTTON_APPEAR.bnk</Path>
-			<Events>
-				<Event Id="3301992102" Name="Play_SFX_BUTTON_APPEAR" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_BUTTON_APPEAR" GUID="{EAFA5753-72D7-496C-B4C9-E0CDF55ED6B1}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-			</Events>
-		</SoundBank>
 		<SoundBank Id="3303699548" Type="Event" GUID="{343F1413-B08F-43B9-A7FB-42FF2743C333}" Language="SFX" Hash="{5BED5BCE-6487-A9B0-0774-2AC35E3AF658}">
 			<ObjectPath>Play_SFX_MENBLACK_IS_CLOSE_LOOP</ObjectPath>
 			<ShortName>Play_SFX_MENBLACK_IS_CLOSE_LOOP</ShortName>
@@ -1074,7 +1231,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3430759498" Type="Event" GUID="{F24B7B7B-EFE0-4AB1-9854-DA433F7D6EA3}" Language="SFX" Hash="{F487B45D-C239-2292-9FF5-D57D036F2815}">
+		<SoundBank Id="3430759498" Type="Event" GUID="{F24B7B7B-EFE0-4AB1-9854-DA433F7D6EA3}" Language="SFX" Hash="{30B6D701-AAF9-9E82-4CAC-5FC3C7AE0CD0}">
 			<ObjectPath>Play_SFX_MENU_MAIN_ENTER</ObjectPath>
 			<ShortName>Play_SFX_MENU_MAIN_ENTER</ShortName>
 			<Path>Event/Play_SFX_MENU_MAIN_ENTER.bnk</Path>
@@ -1082,18 +1239,18 @@
 				<File Id="843766598" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>SFX_MENU_MAIN_ENTER.wav</ShortName>
 					<Path>Media/843766598.wem</Path>
-					<CachePath>SFX/SFX_MENU_MAIN_ENTER_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_MENU_MAIN_ENTER_F658B64F.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3430759498" Name="Play_SFX_MENU_MAIN_ENTER" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_MENU_MAIN_ENTER" GUID="{F24B7B7B-EFE0-4AB1-9854-DA433F7D6EA3}" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="3430759498" Name="Play_SFX_MENU_MAIN_ENTER" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_MENU_MAIN_ENTER" GUID="{F24B7B7B-EFE0-4AB1-9854-DA433F7D6EA3}" DurationType="OneShot" DurationMin="2.8272" DurationMax="2.8272">
 					<MediaRefs>
 						<MediaRef Id="843766598"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4110738637" Type="Event" GUID="{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}" Language="SFX" Hash="{CC1DCBEF-C9E4-CE14-2855-1C77DF90A72E}">
+		<SoundBank Id="4110738637" Type="Event" GUID="{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}" Language="SFX" Hash="{4A5C451E-4A83-23F3-B3B9-3AAB06730350}">
 			<ObjectPath>Play_SFX_PANEL_OUT</ObjectPath>
 			<ShortName>Play_SFX_PANEL_OUT</ShortName>
 			<Path>Event/Play_SFX_PANEL_OUT.bnk</Path>
@@ -1136,7 +1293,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4182414899" Type="Event" GUID="{05620FB7-FBEE-4CB5-9DBC-3F8C608A3671}" Language="SFX" Hash="{EB59636F-0DFF-76F4-7196-168EE9707F7A}">
+		<SoundBank Id="4182414899" Type="Event" GUID="{05620FB7-FBEE-4CB5-9DBC-3F8C608A3671}" Language="SFX" Hash="{E2D9BE57-9EC0-E6FB-674C-946B5CFF0895}">
 			<ObjectPath>Play_ROOM_DOOR_ROOM_OPEN</ObjectPath>
 			<ShortName>Play_ROOM_DOOR_ROOM_OPEN</ShortName>
 			<Path>Event/Play_ROOM_DOOR_ROOM_OPEN.bnk</Path>
@@ -1167,7 +1324,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4230093191" Type="Event" GUID="{5BA3A5D4-E1C1-4FFE-BB86-3C4A4F831173}" Language="SFX" Hash="{D900E16A-6B73-F796-408C-0607EFEF1033}">
+		<SoundBank Id="4230093191" Type="Event" GUID="{5BA3A5D4-E1C1-4FFE-BB86-3C4A4F831173}" Language="SFX" Hash="{16140614-8209-4AF9-F2FF-1C1D1CFCF583}">
 			<ObjectPath>Play_SFX_HOVERS</ObjectPath>
 			<ShortName>Play_SFX_HOVERS</ShortName>
 			<Path>Event/Play_SFX_HOVERS.bnk</Path>
@@ -1211,5 +1368,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{77D10846-A64B-5274-7C0E-CC3C3F30B0DE}</FileHash>
+	<FileHash>{C0B5F84B-1EBE-3BAC-4F4E-975A7049A1ED}</FileHash>
 </SoundBanksInfo>

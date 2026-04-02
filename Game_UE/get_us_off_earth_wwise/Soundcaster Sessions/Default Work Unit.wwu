@@ -124,7 +124,7 @@
 						<CurrentStateRef Name="MAIN_MENU" ID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="TILE" ID="{964759D4-5713-451C-B5C2-D98D035C10EB}"/>
+						<CurrentSwitchRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

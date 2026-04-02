@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="Project" SchemaVersion="119" WwiseVersion="v2023.1.15" WwiseBuild="8789">
 	<ProjectInfo>
-		<Project Name="concours_ubisoft_2026_wwise" ID="{B76CF6B1-98C9-4E99-A34F-5F6B941DFA78}">
+		<Project Name="get_us_off_earth_wwise" ID="{B76CF6B1-98C9-4E99-A34F-5F6B941DFA78}">
 			<Platforms>
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{825C0ED9-6CD5-4142-9EEC-0C95DEEF3FE8}"/>
 			</Platforms>
@@ -23,6 +23,10 @@
 						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
 					</ValueList>
 				</Property>
+				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
+				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
+				<Property Name="SoundBankGeneratePrintGUID" Type="bool" Value="True"/>
+				<Property Name="SoundBankGeneratePrintPath" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
