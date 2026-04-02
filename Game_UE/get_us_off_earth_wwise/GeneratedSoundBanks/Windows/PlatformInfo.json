@@ -19,12 +19,12 @@
    "SubFoldersForGeneratedFiles": "false",
    "RemoveUnusedGeneratedFiles": "true",
    "SourceControlGeneratedFiles": "false",
-   "GenerateHeaderFile": "true",
+   "GenerateHeaderFile": "false",
    "GenerateContentTxtFile": "true",
    "GenerateMetadataXML": "true",
    "GenerateMetadataJSON": "true",
    "GenerateAllBanksMetadata": "true",
-   "GeneratePerBankMetadata": "true",
+   "GeneratePerBankMetadata": "false",
    "UseSoundBankNames": "true",
    "AllowExceedingMaxSize": "false",
    "MaxAttenuationInfo": "true",
@@ -32,6 +32,6 @@
    "PrintObjectGuid": "true",
    "PrintObjectPath": "true"
   },
-  "FileHash": "{4700C098-0299-13B2-95D0-EED542565FB7}"
+  "FileHash": "{2DA6F916-9C4D-7563-CC5D-1A75F6C83457}"
  }
 }
