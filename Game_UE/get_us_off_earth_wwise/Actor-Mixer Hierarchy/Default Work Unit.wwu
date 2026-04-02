@@ -31,6 +31,11 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -61,6 +66,11 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -91,6 +101,11 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -121,6 +136,11 @@
 						<Sound Name="AMB_2D_ROOMTONE_GENERAL_LOOP" ID="{670287AE-2463-4BAC-90F9-6FA5371DB104}" ShortID="164043588">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -160,6 +180,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="MEN IN BLACK GRUNTS" ID="{C2BB06D3-4381-45DA-9332-36458D5C6C9E}" ShortID="280320708">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -248,6 +275,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="SFX_MENBLACK_GRUNT_CATCH_ALIEN" ID="{7DD309D2-4652-40B9-AA7A-FF2E81EA077E}" ShortID="124251194">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -258,6 +292,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="SFX_MENBLACK_GRUNT_CATCH_ALIEN_01" ID="{9484A9CD-B880-4FFC-A8D8-0719FF3542D3}" ShortID="873768750">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -280,6 +321,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_MENBLACK_GRUNT_CATCH_ALIEN_02" ID="{363773EF-75A0-461C-8ED4-64B7BE1D42ED}" ShortID="436832873">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -302,6 +350,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_MENBLACK_GRUNT_CATCH_ALIEN_03" ID="{9A3FEFD3-2B22-4CC3-9F7E-973504D1BE50}" ShortID="482653360">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -374,6 +429,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="MENBLACK_FS_WALK_TILE" ID="{3518333A-F2F7-4651-BF96-0854AC6EFF86}" ShortID="962313480">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -649,6 +711,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="MENBLACK_FS_WALK_RUG" ID="{ABF685FD-6F31-44F7-98BB-08A36DD9A360}" ShortID="193461837">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -940,6 +1009,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="SFX_LEVER_LIGHT" ID="{CD0A0EB2-CE0F-4410-BDD8-523FA305805E}" ShortID="254862105">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1018,6 +1094,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="SFX_LEVER_TRAP" ID="{0FC9D59C-CC2A-41A1-8CF1-EE2823D4A634}" ShortID="245799321">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1130,6 +1213,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="ROOM_DOOR_ROOM_OPEN" ID="{08CC7D38-7076-4104-B081-007AC012CA75}" ShortID="49128888">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1221,6 +1311,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<Sound Name="SFX_DOOR_HANGAR_OPEN" ID="{0DB94197-7FA2-4EF1-80BD-618B49FE33B2}" ShortID="510528081">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1243,6 +1340,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<RandomSequenceContainer Name="INCUBATOR_DOOR_OPEN" ID="{4022AC26-73A0-4093-96DC-ACF98C764DD8}" ShortID="519629196">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1333,6 +1437,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="KEYS_PICKUP" ID="{BE5C9F01-36BD-421E-9695-6AC19A449AE0}" ShortID="445508567">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1426,6 +1537,11 @@
 								<Sound Name="SFX_KEYS_EMITTER_LOOP" ID="{92D545ED-A7CE-4134-94AE-BBCC4435C951}" ShortID="39726696">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1467,6 +1583,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="BACK" ID="{B0C84602-F364-4D4C-B090-8FFA76E87BFC}" ShortID="378946494">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1589,6 +1712,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="HOVERS" ID="{55DB06ED-8999-4735-84A7-7559A2AF3D61}" ShortID="899588668">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1711,6 +1841,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="SELECT" ID="{2721639D-84E7-4DB7-AB7A-86916D425F2D}" ShortID="499401717">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1832,39 +1969,14 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<ActorMixer Name="INTERACTIVE OBJECTS" ID="{519B2CA1-8832-47C5-856D-0E4148C6D3B1}" ShortID="15192863">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="BUTTON_APPEAR" ID="{5247902C-43EB-474D-99F0-6A82B8B6D4D4}" ShortID="450833165">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="BUTTON_ACTIVATED" ID="{C8AEF9C4-1CBF-456B-AAAB-8470699D2F7B}" ShortID="147636022">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</ActorMixer>
 						<RandomSequenceContainer Name="PANEL IN" ID="{5658A692-77A5-4857-ADF2-B5BDF6C44366}" ShortID="278134724">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1919,6 +2031,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SFX_UI_MENU_PANEL_IN_03" ID="{06674FD6-F137-4C83-A414-C7474C7D98F9}" ShortID="936667809">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1987,6 +2106,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<Sound Name="SFX_MENU_MAIN_ENTER" ID="{CCE54549-C2F6-4C7E-B35B-BE73718D9CCF}" ShortID="184555006">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -1997,6 +2123,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_MENU_MAIN_ENTER" ID="{703B6A6B-DA86-4973-A6BF-901EEA558BF6}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.1728"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_MENU_MAIN_ENTER.wav</AudioFile>
 									<MediaIDList>
@@ -2009,6 +2139,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SFX_MENU_MAIN_EXIT" ID="{E20EA445-6064-48F7-B281-B717F0365720}" ShortID="808506405">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -2019,6 +2156,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_MENU_MAIN_EXIT" ID="{53233F29-4E67-4692-8491-86ABDE8D616F}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.3744"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_MENU_MAIN_EXIT.wav</AudioFile>
 									<MediaIDList>
@@ -2031,6 +2172,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="PANEL OUT" ID="{4146650E-6308-4B75-A22D-0CC6B38D52E2}" ShortID="477287261">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -2208,12 +2356,25 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="TILE" ID="{964759D4-5713-451C-B5C2-D98D035C10EB}" WorkUnitID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="SURFACE" ID="{51BCD824-4EE1-4B17-8C75-DF5ABA922871}" WorkUnitID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="ALIEN_FS_RUN_RUG" ID="{849AB703-228A-4DF3-8573-2B1EC00C0CBA}" ShortID="240983556">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -2475,6 +2636,13 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}" ShortID="771408523">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -2694,6 +2862,20 @@
 												<ItemRef Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
+												<ItemList>
+													<ItemRef Name="ALIEN_FS_RUN_RUG" ID="{849AB703-228A-4DF3-8573-2B1EC00C0CBA}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="TILE" ID="{964759D4-5713-451C-B5C2-D98D035C10EB}"/>
+												<ItemList>
+													<ItemRef Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
@@ -2709,6 +2891,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="SFX_ALIEN_GRUNT_SPOTTED" ID="{4C932210-5E91-43FD-B6A4-9E8920EE5EB7}" ShortID="897349119">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -2787,6 +2976,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="SFX_ALIEN_GRUNT_CATCHED" ID="{4ED8666A-8CA6-4F78-9FD6-39167BD19C2B}" ShortID="268303402">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
@@ -2889,6 +3085,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<Sound Name="SFX_ALIEN_TELEPORTED" ID="{7A3BBF49-4D4B-4BF2-A171-78EBC84E3815}" ShortID="518028009">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
