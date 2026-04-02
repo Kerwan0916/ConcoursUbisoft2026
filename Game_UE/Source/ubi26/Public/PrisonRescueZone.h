@@ -37,6 +37,6 @@ protected:
 	void OnAlienRescued(AActor* FreedAlien);
 
 private:
-	UPROPERTY()
-	TArray<APlayerController*> RescuerInZone;
+	UPROPERTY(Transient)
+	TMap<uint32, TObjectPtr<APlayerController>> RescuerInZone;
 };
