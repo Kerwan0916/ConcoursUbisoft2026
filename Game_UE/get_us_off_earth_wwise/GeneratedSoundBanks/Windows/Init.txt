@@ -1,0 +1,49 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2248712270	BGM_STATES			\Default Work Unit\BGM_STATES	
+	4233560256	PLAY_PAUSE			\Default Work Unit\PLAY_PAUSE	
+
+State	ID	Name	State Group			Notes
+	93434497	STORYBOARD_START	BGM_STATES			
+	748895195	None	BGM_STATES			
+	979765101	WIN	BGM_STATES			
+	1432716332	GAME_OVER	BGM_STATES			
+	1966203490	STORYBOARD_END	BGM_STATES			
+	2005704188	MAIN_MENU	BGM_STATES			
+	2782712965	LEVEL	BGM_STATES			
+	4188752148	ALIEN_SPOTTED	BGM_STATES			
+	748895195	None	PLAY_PAUSE			
+	1852808225	PLAYING	PLAY_PAUSE			
+	3092587493	PAUSE	PLAY_PAUSE			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	924658319	RTPC_VOLUME_MAIN			\Default Work Unit\VOLUME FADERS\RTPC_VOLUME_MAIN	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	3993832622	RTPC_VOLUME_BGM			\Default Work Unit\VOLUME FADERS\RTPC_VOLUME_BGM	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+	4276639445	RTPC_VOLUME_SFX			\Default Work Unit\VOLUME FADERS\RTPC_VOLUME_SFX	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	84587813	ALIENS			\Default Work Unit\Master Audio Bus\ALIENS	
+	315418005	MEN IN BLACK			\Default Work Unit\Master Audio Bus\MEN IN BLACK	
+	412724365	BGM			\Default Work Unit\Master Audio Bus\BGM	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	2002649911	WORLD OBJECTS			\Default Work Unit\Master Audio Bus\WORLD OBJECTS	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

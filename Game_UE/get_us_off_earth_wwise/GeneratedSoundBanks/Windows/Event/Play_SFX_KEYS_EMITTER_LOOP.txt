@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2012969758	Play_SFX_KEYS_EMITTER_LOOP			\Default Work Unit\WORLD OBJECTS\KEYS\Play_SFX_KEYS_EMITTER_LOOP	
+

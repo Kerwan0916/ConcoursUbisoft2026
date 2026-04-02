@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1484426712	Play_ALIEN_FS_RUN_SWITCH			\Default Work Unit\ALIEN 1\Play_ALIEN_FS_RUN_SWITCH	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1834394558	SURFACE			\Default Work Unit\SURFACE	
+
+Switch	ID	Name	Switch Group			Notes
+	712161697	RUG	SURFACE			
+	2637588553	TILE	SURFACE			
+
