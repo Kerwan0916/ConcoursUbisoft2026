@@ -100,7 +100,7 @@ void APrisonRescueZone::ExecuteRescue()
 			{
 				if (APlayerController* PC = Cast<APlayerController>(PrisonerPawn->GetController()))
 				{
-w					PrisonerPawn->EnableInput(PC);
+					PrisonerPawn->EnableInput(PC);
 
 					FVector RespawnLocation = PrisonerActor->ActorHasTag("PurpleAlien") ? PurpleAlienInitialLocation : GreenAlienInitialLocation;
 					PrisonerPawn->SetActorLocation(RespawnLocation);
