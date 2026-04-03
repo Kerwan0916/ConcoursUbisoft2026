@@ -39,4 +39,7 @@ protected:
 private:
 	UPROPERTY(Transient)
 	TMap<uint32, TObjectPtr<APlayerController>> RescuerInZone;
+
+	static FVector GreenAlienInitialLocation;
+	static FVector PurpleAlienInitialLocation;
 };
