@@ -8,6 +8,9 @@
 #include "GameFramework/Pawn.h"
 #include "GameFramework/PlayerController.h"
 
+FVector APrisonRescueZone::GreenAlienInitialLocation = FVector::ZeroVector;
+FVector APrisonRescueZone::PurpleAlienInitialLocation = FVector::ZeroVector;
+
 APrisonRescueZone::APrisonRescueZone()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -41,15 +44,24 @@ void APrisonRescueZone::Tick(float DeltaTime)
 
 void APrisonRescueZone::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	// Only care if a FREE alien walks into the box
-	if (OtherActor && OtherActor->ActorHasTag("Alien"))
+	if (OtherActor)
 	{
-		if (APawn* AlienPawn = Cast<APawn>(OtherActor))
+		FVector& OtherActorInitLocation = OtherActor->ActorHasTag("PurpleAlien") ? PurpleAlienInitialLocation : GreenAlienInitialLocation;
+		if (OtherActorInitLocation.IsZero())
 		{
-			if (APlayerController* PC = Cast<APlayerController>(AlienPawn->GetController()))
+			OtherActorInitLocation = OtherActor->GetActorLocation();
+		}
+
+		// Only care if a FREE alien walks into the box
+		if (OtherActor->ActorHasTag("Alien"))
+		{
+			if (APawn* AlienPawn = Cast<APawn>(OtherActor))
 			{
-				// Add them to our tracking array
-				RescuerInZone.Add(PC->GetUniqueID(), PC);
+				if (APlayerController* PC = Cast<APlayerController>(AlienPawn->GetController()))
+				{
+					// Add them to our tracking array
+					RescuerInZone.Add(PC->GetUniqueID(), PC);
+				}
 			}
 		}
 	}
@@ -88,7 +100,10 @@ void APrisonRescueZone::ExecuteRescue()
 			{
 				if (APlayerController* PC = Cast<APlayerController>(PrisonerPawn->GetController()))
 				{
-					PrisonerPawn->EnableInput(PC);
+w					PrisonerPawn->EnableInput(PC);
+
+					FVector RespawnLocation = PrisonerActor->ActorHasTag("PurpleAlien") ? PurpleAlienInitialLocation : GreenAlienInitialLocation;
+					PrisonerPawn->SetActorLocation(RespawnLocation);
 
 					// 3. Tell the blueprint
 					OnAlienRescued(PrisonerActor);
