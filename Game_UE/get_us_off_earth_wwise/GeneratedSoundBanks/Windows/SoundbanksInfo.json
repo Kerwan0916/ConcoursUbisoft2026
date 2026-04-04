@@ -240,7 +240,7 @@
     "Type": "Event",
     "GUID": "{F9E9C59E-1D1B-48A8-B9C7-848685025D08}",
     "Language": "SFX",
-    "Hash": "{DDF4F35C-EB50-B471-CCE4-F24159899C18}",
+    "Hash": "{4A374E3E-D6B1-F337-E97F-3A6BF64C768C}",
     "ObjectPath": "Play_SFX_ALIEN_GRUNT_SPOTTED",
     "ShortName": "Play_SFX_ALIEN_GRUNT_SPOTTED",
     "Path": "Event/Play_SFX_ALIEN_GRUNT_SPOTTED.bnk",
@@ -280,8 +280,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\ALIEN 1\\GRUNTS\\Play_SFX_ALIEN_GRUNT_SPOTTED",
       "GUID": "{F9E9C59E-1D1B-48A8-B9C7-848685025D08}",
       "DurationType": "OneShot",
-      "DurationMin": "0.5",
-      "DurationMax": "0.5",
+      "DurationMin": "1",
+      "DurationMax": "1",
       "MediaRefs": [
        {
         "Id": "558125221"
@@ -338,7 +338,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{1084A9E2-429C-93F5-42E0-6AFC1DAC6401}",
+    "Hash": "{294122D2-0F7F-73ED-323C-27808480A22A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1153,7 +1153,7 @@
     "Type": "Event",
     "GUID": "{D6873E74-1023-4146-BC4F-445644489C81}",
     "Language": "SFX",
-    "Hash": "{3315A56A-1D20-4DB1-52EC-C1ECA1265F9B}",
+    "Hash": "{890B0638-2216-0DA4-7D76-53F1660476CD}",
     "ObjectPath": "Play_ALIEN_FS_RUN_SWITCH",
     "ShortName": "Play_ALIEN_FS_RUN_SWITCH",
     "Path": "Event/Play_ALIEN_FS_RUN_SWITCH.bnk",
@@ -1345,7 +1345,8 @@
          "GroupType": "Switch",
          "GroupId": "1834394558",
          "Id": "712161697",
-         "GUID": "{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"
+         "GUID": "{CF2675A6-777C-44D1-B1AC-6C1594D7C179}",
+         "Default": "true"
         },
         "MediaRefs": [
          {
@@ -1385,8 +1386,7 @@
          "GroupType": "Switch",
          "GroupId": "1834394558",
          "Id": "2637588553",
-         "GUID": "{964759D4-5713-451C-B5C2-D98D035C10EB}",
-         "Default": "true"
+         "GUID": "{964759D4-5713-451C-B5C2-D98D035C10EB}"
         },
         "MediaRefs": [
          {
@@ -1829,7 +1829,7 @@
     "Type": "Event",
     "GUID": "{5A50AF4C-9921-4873-AA70-A16D0E30AA34}",
     "Language": "SFX",
-    "Hash": "{DA0D9389-7AD1-A83E-57BE-CFABB6635AF8}",
+    "Hash": "{A5E7EE64-B1D7-9A2C-5B5E-FD970AD71F29}",
     "ObjectPath": "Play_SFX_KEYS_EMITTER_LOOP",
     "ShortName": "Play_SFX_KEYS_EMITTER_LOOP",
     "Path": "Event/Play_SFX_KEYS_EMITTER_LOOP.bnk",
@@ -3091,6 +3091,6 @@
     ]
    }
   ],
-  "FileHash": "{6A3AAD98-F0A5-C352-3762-538DC214368A}"
+  "FileHash": "{73B77482-3107-0E5E-15D7-4FA190BE1398}"
  }
 }
