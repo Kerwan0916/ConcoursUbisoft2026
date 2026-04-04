@@ -1536,10 +1536,21 @@
 								</RandomSequenceContainer>
 								<Sound Name="SFX_KEYS_EMITTER_LOOP" ID="{92D545ED-A7CE-4134-94AE-BBCC4435C951}" ShortID="39726696">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2341,545 +2352,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="FOOTSTEPS" ID="{8CBE50B0-B52D-4759-9A12-36AF0B778E56}" ShortID="768817791">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SwitchContainer Name="ALIEN_FS_RUN_SWITCH" ID="{1AA0B0CB-3EF7-4FE2-B0E1-EF13E3692F1B}" ShortID="938249804">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="TILE" ID="{964759D4-5713-451C-B5C2-D98D035C10EB}" WorkUnitID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="SURFACE" ID="{51BCD824-4EE1-4B17-8C75-DF5ABA922871}" WorkUnitID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="ALIEN_FS_RUN_RUG" ID="{849AB703-228A-4DF3-8573-2B1EC00C0CBA}" ShortID="240983556">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-7</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_01" ID="{8979A7B4-90AE-4E9E-92B1-BF589D2D9E79}" ShortID="962909087">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_01" ID="{A9B08B95-795D-4B80-8CC5-7C5C0BF7E22C}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1047142444"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_01" ID="{A9B08B95-795D-4B80-8CC5-7C5C0BF7E22C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_02" ID="{4326D48A-76CE-4E2F-A65F-0EE3FDD9E13D}" ShortID="50969881">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_02" ID="{0663CE4C-8BA2-4E05-AED4-6C70CFA121EA}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.418536585365854"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="680797267"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_02" ID="{0663CE4C-8BA2-4E05-AED4-6C70CFA121EA}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_03" ID="{A53B9E72-154D-476D-8C1F-F14B61FC0257}" ShortID="804657739">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_03" ID="{36153DB1-5C2F-47D9-B303-7BFC5C647049}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="851729636"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_03" ID="{36153DB1-5C2F-47D9-B303-7BFC5C647049}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_04" ID="{290148E0-0031-4F93-B1F9-D4FF72E77551}" ShortID="413203868">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_04" ID="{2379AC0E-A6AD-4634-B3DF-C1CEF2ACE4B6}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.223414634146341"/>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="191645909"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_04" ID="{2379AC0E-A6AD-4634-B3DF-C1CEF2ACE4B6}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_05" ID="{4E3808EC-155D-4B3E-8FAB-8970CD91125F}" ShortID="1023826735">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_05" ID="{F60BEAD5-4BF6-42F6-B3D9-F79F6C337205}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.281463414634146"/>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="216286846"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_05" ID="{F60BEAD5-4BF6-42F6-B3D9-F79F6C337205}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_06" ID="{B97975FE-1EE5-4FE1-BCC9-0948FD102EED}" ShortID="694175805">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_06" ID="{14B9ED91-333E-47F1-BE23-9639F5F6F768}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.158536585365854"/>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="331121356"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_06" ID="{14B9ED91-333E-47F1-BE23-9639F5F6F768}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_07" ID="{1BCC196E-E524-4032-B26D-05CCFF78713D}" ShortID="156439216">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_07" ID="{A92A2946-B39A-4553-A1E0-0FA5A66A2E65}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.153658536585366"/>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_07.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="360949913"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_07" ID="{A92A2946-B39A-4553-A1E0-0FA5A66A2E65}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_08" ID="{30993270-5FB5-426C-9800-AB19386AE672}" ShortID="329701479">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_08" ID="{D0F0752B-7D7F-4D51-83CF-F3020FC2BC58}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_08.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1052331438"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_08" ID="{D0F0752B-7D7F-4D51-83CF-F3020FC2BC58}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_09" ID="{C3C8C4F4-B2AB-478F-8328-0D168BAC68A3}" ShortID="671585234">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_09" ID="{81493D8F-911D-44AB-8949-861E53BA380C}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_09.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="816819462"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_09" ID="{81493D8F-911D-44AB-8949-861E53BA380C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_RUG_10" ID="{7A377A8D-2CD1-49D0-B24E-F1A8D256165B}" ShortID="989411612">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_10" ID="{3F62148C-A244-4768-B54F-4E3ABA5BE853}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.273170731707317"/>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_RUG_10.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="199489418"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_10" ID="{3F62148C-A244-4768-B54F-4E3ABA5BE853}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}" ShortID="771408523">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_01" ID="{60AF961B-31A9-468E-BBE8-50BBFED077A9}" ShortID="62862377">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_01" ID="{DB60293C-4997-4EEC-A6F3-A32E51F04169}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="968726609"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_01" ID="{DB60293C-4997-4EEC-A6F3-A32E51F04169}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_02" ID="{CF998506-AC7A-4A79-8711-12D8D5119CA4}" ShortID="886009822">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_02" ID="{75CF10E8-89E0-4AFB-BF79-DCE30BC2E55B}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1049735021"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_02" ID="{75CF10E8-89E0-4AFB-BF79-DCE30BC2E55B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_03" ID="{BE07DB67-9BCF-4D6D-8642-01C1CCB367DD}" ShortID="188689161">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_03" ID="{1F363BEC-81D8-4484-85A0-7A2C19C3E9ED}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="275134199"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_03" ID="{1F363BEC-81D8-4484-85A0-7A2C19C3E9ED}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_04" ID="{4D59585D-F31C-4353-90F0-C82FD0E94FA4}" ShortID="724983909">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_04" ID="{22EB2333-1250-452E-A43A-FDC5ACDF888B}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="76787987"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_04" ID="{22EB2333-1250-452E-A43A-FDC5ACDF888B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_05" ID="{7E7EB61C-AB24-4A5B-874A-F249D92D565E}" ShortID="626095616">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_05" ID="{71C2C22A-E53A-40E7-A23C-56FC5B6C37E1}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="607443133"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_05" ID="{71C2C22A-E53A-40E7-A23C-56FC5B6C37E1}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_06" ID="{B8ABA161-4641-438B-9688-961D9375F3AF}" ShortID="1034557196">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_06" ID="{DBCD28B4-203F-4D92-9A4D-65575299A357}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="783943069"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_06" ID="{DBCD28B4-203F-4D92-9A4D-65575299A357}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_07" ID="{D8E5423F-2A7B-4B24-AD19-CCD071F97F2C}" ShortID="195586002">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_07" ID="{BD7F4B45-4D3B-4A50-8817-ED8509BD24A2}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_07.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="903465451"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_07" ID="{BD7F4B45-4D3B-4A50-8817-ED8509BD24A2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_08" ID="{7CC7504E-5928-4A5D-91EF-90B4D94611F4}" ShortID="11004240">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_08" ID="{FB31D982-D608-4984-9548-906C62ED7847}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_08.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="617451163"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_08" ID="{FB31D982-D608-4984-9548-906C62ED7847}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_ALIENS_FS_RUN_TILES_09" ID="{08141CA2-6591-476D-BDA9-74F9BA71A336}" ShortID="918892819">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_09" ID="{4F53500C-B804-42ED-BDB0-E70628F6FC67}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_ALIENS_FS_RUN_TILES_09.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="768684392"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_09" ID="{4F53500C-B804-42ED-BDB0-E70628F6FC67}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="ALIEN_FS_RUN_RUG" ID="{849AB703-228A-4DF3-8573-2B1EC00C0CBA}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
-												<ItemList>
-													<ItemRef Name="ALIEN_FS_RUN_RUG" ID="{849AB703-228A-4DF3-8573-2B1EC00C0CBA}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="TILE" ID="{964759D4-5713-451C-B5C2-D98D035C10EB}"/>
-												<ItemList>
-													<ItemRef Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-							</ChildrenList>
-						</ActorMixer>
 						<ActorMixer Name="GRUNT ALIEN" ID="{443C4D7A-72BD-4BC1-ADED-BE4A921EEFF4}" ShortID="813324169">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2892,6 +2364,11 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="SFX_ALIEN_GRUNT_SPOTTED" ID="{4C932210-5E91-43FD-B6A4-9E8920EE5EB7}" ShortID="897349119">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-9</Value>
@@ -3113,6 +2590,533 @@
 								<ActiveSource Name="SFX_ALIEN_TELEPORTED" ID="{037E401C-8BFD-4B01-BD9F-76345D185AD2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<SwitchContainer Name="ALIEN_FS_RUN_SWITCH" ID="{1AA0B0CB-3EF7-4FE2-B0E1-EF13E3692F1B}" ShortID="938249804">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}" WorkUnitID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="ALIENS" ID="{76E48A40-357B-4B25-8837-8FE32BE05C10}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SURFACE" ID="{51BCD824-4EE1-4B17-8C75-DF5ABA922871}" WorkUnitID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="ALIEN_FS_RUN_RUG" ID="{849AB703-228A-4DF3-8573-2B1EC00C0CBA}" ShortID="240983556">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_01" ID="{8979A7B4-90AE-4E9E-92B1-BF589D2D9E79}" ShortID="962909087">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_01" ID="{A9B08B95-795D-4B80-8CC5-7C5C0BF7E22C}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1047142444"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_01" ID="{A9B08B95-795D-4B80-8CC5-7C5C0BF7E22C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_02" ID="{4326D48A-76CE-4E2F-A65F-0EE3FDD9E13D}" ShortID="50969881">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_02" ID="{0663CE4C-8BA2-4E05-AED4-6C70CFA121EA}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.418536585365854"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="680797267"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_02" ID="{0663CE4C-8BA2-4E05-AED4-6C70CFA121EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_03" ID="{A53B9E72-154D-476D-8C1F-F14B61FC0257}" ShortID="804657739">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_03" ID="{36153DB1-5C2F-47D9-B303-7BFC5C647049}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="851729636"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_03" ID="{36153DB1-5C2F-47D9-B303-7BFC5C647049}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_04" ID="{290148E0-0031-4F93-B1F9-D4FF72E77551}" ShortID="413203868">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_04" ID="{2379AC0E-A6AD-4634-B3DF-C1CEF2ACE4B6}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.223414634146341"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="191645909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_04" ID="{2379AC0E-A6AD-4634-B3DF-C1CEF2ACE4B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_05" ID="{4E3808EC-155D-4B3E-8FAB-8970CD91125F}" ShortID="1023826735">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_05" ID="{F60BEAD5-4BF6-42F6-B3D9-F79F6C337205}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.281463414634146"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="216286846"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_05" ID="{F60BEAD5-4BF6-42F6-B3D9-F79F6C337205}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_06" ID="{B97975FE-1EE5-4FE1-BCC9-0948FD102EED}" ShortID="694175805">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_06" ID="{14B9ED91-333E-47F1-BE23-9639F5F6F768}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.158536585365854"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="331121356"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_06" ID="{14B9ED91-333E-47F1-BE23-9639F5F6F768}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_07" ID="{1BCC196E-E524-4032-B26D-05CCFF78713D}" ShortID="156439216">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_07" ID="{A92A2946-B39A-4553-A1E0-0FA5A66A2E65}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.153658536585366"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="360949913"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_07" ID="{A92A2946-B39A-4553-A1E0-0FA5A66A2E65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_08" ID="{30993270-5FB5-426C-9800-AB19386AE672}" ShortID="329701479">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_08" ID="{D0F0752B-7D7F-4D51-83CF-F3020FC2BC58}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1052331438"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_08" ID="{D0F0752B-7D7F-4D51-83CF-F3020FC2BC58}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_09" ID="{C3C8C4F4-B2AB-478F-8328-0D168BAC68A3}" ShortID="671585234">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_09" ID="{81493D8F-911D-44AB-8949-861E53BA380C}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="816819462"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_09" ID="{81493D8F-911D-44AB-8949-861E53BA380C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_RUG_10" ID="{7A377A8D-2CD1-49D0-B24E-F1A8D256165B}" ShortID="989411612">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_RUG_10" ID="{3F62148C-A244-4768-B54F-4E3ABA5BE853}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.273170731707317"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_RUG_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="199489418"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_RUG_10" ID="{3F62148C-A244-4768-B54F-4E3ABA5BE853}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}" ShortID="771408523">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_01" ID="{60AF961B-31A9-468E-BBE8-50BBFED077A9}" ShortID="62862377">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_01" ID="{DB60293C-4997-4EEC-A6F3-A32E51F04169}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="968726609"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_01" ID="{DB60293C-4997-4EEC-A6F3-A32E51F04169}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_02" ID="{CF998506-AC7A-4A79-8711-12D8D5119CA4}" ShortID="886009822">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_02" ID="{75CF10E8-89E0-4AFB-BF79-DCE30BC2E55B}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1049735021"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_02" ID="{75CF10E8-89E0-4AFB-BF79-DCE30BC2E55B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_03" ID="{BE07DB67-9BCF-4D6D-8642-01C1CCB367DD}" ShortID="188689161">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_03" ID="{1F363BEC-81D8-4484-85A0-7A2C19C3E9ED}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="275134199"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_03" ID="{1F363BEC-81D8-4484-85A0-7A2C19C3E9ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_04" ID="{4D59585D-F31C-4353-90F0-C82FD0E94FA4}" ShortID="724983909">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_04" ID="{22EB2333-1250-452E-A43A-FDC5ACDF888B}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="76787987"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_04" ID="{22EB2333-1250-452E-A43A-FDC5ACDF888B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_05" ID="{7E7EB61C-AB24-4A5B-874A-F249D92D565E}" ShortID="626095616">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_05" ID="{71C2C22A-E53A-40E7-A23C-56FC5B6C37E1}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="607443133"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_05" ID="{71C2C22A-E53A-40E7-A23C-56FC5B6C37E1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_06" ID="{B8ABA161-4641-438B-9688-961D9375F3AF}" ShortID="1034557196">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_06" ID="{DBCD28B4-203F-4D92-9A4D-65575299A357}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="783943069"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_06" ID="{DBCD28B4-203F-4D92-9A4D-65575299A357}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_07" ID="{D8E5423F-2A7B-4B24-AD19-CCD071F97F2C}" ShortID="195586002">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_07" ID="{BD7F4B45-4D3B-4A50-8817-ED8509BD24A2}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="903465451"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_07" ID="{BD7F4B45-4D3B-4A50-8817-ED8509BD24A2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_08" ID="{7CC7504E-5928-4A5D-91EF-90B4D94611F4}" ShortID="11004240">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_08" ID="{FB31D982-D608-4984-9548-906C62ED7847}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="617451163"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_08" ID="{FB31D982-D608-4984-9548-906C62ED7847}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_ALIENS_FS_RUN_TILES_09" ID="{08141CA2-6591-476D-BDA9-74F9BA71A336}" ShortID="918892819">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_ALIENS_FS_RUN_TILES_09" ID="{4F53500C-B804-42ED-BDB0-E70628F6FC67}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_ALIENS_FS_RUN_TILES_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="768684392"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_ALIENS_FS_RUN_TILES_09" ID="{4F53500C-B804-42ED-BDB0-E70628F6FC67}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="ALIEN_FS_RUN_RUG" ID="{849AB703-228A-4DF3-8573-2B1EC00C0CBA}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
+										<ItemList>
+											<ItemRef Name="ALIEN_FS_RUN_RUG" ID="{849AB703-228A-4DF3-8573-2B1EC00C0CBA}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="TILE" ID="{964759D4-5713-451C-B5C2-D98D035C10EB}"/>
+										<ItemList>
+											<ItemRef Name="ALIEN_FS_RUN_TILE" ID="{48A3A63A-F6B8-4437-B412-F63AEDA382D2}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

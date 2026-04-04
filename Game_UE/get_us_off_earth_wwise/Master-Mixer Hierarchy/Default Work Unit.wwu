@@ -159,15 +159,74 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="PLAY_PAUSE" ID="{1F5A2969-05D1-416E-8F8F-B78998E6EF38}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="BGM_STATES" ID="{D39E64FD-B42E-4A9F-8955-0010E697CDFB}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="WIN" ID="{DB540C88-7C60-46F3-9F84-8F6E1A52205B}"/>
+										<CustomState Name="" ID="{77AD3037-FD06-4EB4-BF92-A9CB46ED3F23}" ShortID="1056968191">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LEVEL" ID="{E8A181DB-A7EE-477E-9B7A-B5010A29E227}"/>
+										<CustomState Name="" ID="{506DE15E-57C3-4689-9110-3282E10BD58C}" ShortID="759333838"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="GAME_OVER" ID="{146D3876-4C28-483A-88A2-B126F678DC2B}"/>
+										<CustomState Name="" ID="{90BE55D0-320E-4E8A-A33A-78305FDC5B23}" ShortID="330092638">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LOADING" ID="{462F5976-B37B-48B0-96F0-5CDC40A6D736}"/>
+										<CustomState Name="" ID="{665661A4-F8CD-4964-87E7-176CE3471E5D}" ShortID="971744028">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MAIN_MENU" ID="{74A12937-57BD-49C1-8906-D5E45A40C105}"/>
+										<CustomState Name="" ID="{6721B006-D05F-435C-A950-82227A195CB9}" ShortID="592310322">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="PLAYING" ID="{87A3118A-B344-4A3F-BF3B-4ECC7A720C6A}"/>
 										<CustomState Name="" ID="{3DD9E6F3-B7CE-41D8-A35E-59C8150CB85E}" ShortID="646306527"/>
 									</CustomState>
 									<CustomState>
+										<StateRef Name="ALIEN_SPOTTED" ID="{69335EE8-5A15-4B50-B800-5DEAAF0E09C3}"/>
+										<CustomState Name="" ID="{F382FDAC-89F3-4E5A-97BC-B4CD3F7BD353}" ShortID="40149734"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="PAUSE" ID="{DEC808FE-54AF-4B64-90CF-E5951B912818}"/>
 										<CustomState Name="" ID="{D376C078-3D21-44A9-AC82-20C2232B80E8}" ShortID="92818570">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_END" ID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
+										<CustomState Name="" ID="{E98D5756-2054-4740-84B8-4D77CC571FAD}" ShortID="40997447">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STORYBOARD_START" ID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
+										<CustomState Name="" ID="{E8BE59F3-F39F-4ABD-AD8D-5B1CA4A996B2}" ShortID="904403044">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-108"/>
 											</PropertyList>
