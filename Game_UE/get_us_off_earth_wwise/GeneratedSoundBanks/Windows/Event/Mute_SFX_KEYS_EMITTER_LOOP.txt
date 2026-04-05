@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2906469151	Mute_SFX_KEYS_EMITTER_LOOP			\Default Work Unit\WORLD OBJECTS\KEYS\Mute_SFX_KEYS_EMITTER_LOOP	
+
