@@ -63,6 +63,12 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "AI Catch")
 	void OnGameOver();
 
+	UFUNCTION(BlueprintImplementableEvent, Category = "AI Events")
+	void OnAlienDetected(AActor* DetectedAlien);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "AI Events")
+	void OnAlienCaught(AActor* CaughtAlien);
+
 	void CatchAlien(AActor* CaughtAlien);
 	void FinishCatchSequence();
 	void ResetCatchCooldown();
