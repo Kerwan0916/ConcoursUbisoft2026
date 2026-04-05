@@ -1829,7 +1829,7 @@
     "Type": "Event",
     "GUID": "{5A50AF4C-9921-4873-AA70-A16D0E30AA34}",
     "Language": "SFX",
-    "Hash": "{A5E7EE64-B1D7-9A2C-5B5E-FD970AD71F29}",
+    "Hash": "{DB8E49CA-7D98-1A3F-A213-92065D54FDBF}",
     "ObjectPath": "Play_SFX_KEYS_EMITTER_LOOP",
     "ShortName": "Play_SFX_KEYS_EMITTER_LOOP",
     "Path": "Event/Play_SFX_KEYS_EMITTER_LOOP.bnk",
@@ -2400,6 +2400,28 @@
     ]
    },
    {
+    "Id": "2906469151",
+    "Type": "Event",
+    "GUID": "{6016D3EF-2B0D-4B03-B874-772AE0D2A0F7}",
+    "Language": "SFX",
+    "Hash": "{455C93F8-D0F9-BC9B-4047-23318DC130B0}",
+    "ObjectPath": "Mute_SFX_KEYS_EMITTER_LOOP",
+    "ShortName": "Mute_SFX_KEYS_EMITTER_LOOP",
+    "Path": "Event/Mute_SFX_KEYS_EMITTER_LOOP.bnk",
+    "Events": [
+     {
+      "Id": "2906469151",
+      "Name": "Mute_SFX_KEYS_EMITTER_LOOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\WORLD OBJECTS\\KEYS\\Mute_SFX_KEYS_EMITTER_LOOP",
+      "GUID": "{6016D3EF-2B0D-4B03-B874-772AE0D2A0F7}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
     "Id": "3110399011",
     "Type": "Event",
     "GUID": "{A718C967-8A6E-4A72-97B9-0E2BD21D7345}",
@@ -2440,7 +2462,7 @@
     "Type": "Event",
     "GUID": "{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}",
     "Language": "SFX",
-    "Hash": "{4D4EAB3C-44C2-97AF-0143-6DEDBFD241B8}",
+    "Hash": "{2FE40B0E-EA30-70D6-90A7-CDB7B5AF500B}",
     "ObjectPath": "Play_BGM",
     "ShortName": "Play_BGM",
     "Path": "Event/Play_BGM.bnk",
@@ -2527,15 +2549,6 @@
       "CachePath": "SFX/BGM_LEVEL_LOOP_FBC78EF0.wem"
      },
      {
-      "Id": "651441700",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "BGM_SILENCE_STORYBOARDS.wav",
-      "Path": "Media/651441700.wem",
-      "CachePath": "SFX/BGM_SILENCE_STORYBOARDS_FBC78EF0.wem"
-     },
-     {
       "Id": "846764474",
       "Language": "SFX",
       "Streaming": "false",
@@ -2545,6 +2558,15 @@
       "CachePath": "SFX/BGM_LOADING_LOOP_FBC78EF0.wem"
      },
      {
+      "Id": "865736609",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_STORYBOARD_INTRO_WITH_SFX.wav",
+      "Path": "Media/865736609.wem",
+      "CachePath": "SFX/BGM_STORYBOARD_INTRO_WITH_SFX_FBC78EF0.wem"
+     },
+     {
       "Id": "872339771",
       "Language": "SFX",
       "Streaming": "false",
@@ -2552,6 +2574,15 @@
       "ShortName": "BGM_LOADING_INTRO.wav",
       "Path": "Media/872339771.wem",
       "CachePath": "SFX/BGM_LOADING_INTRO_FBC78EF0.wem"
+     },
+     {
+      "Id": "963587756",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_STORYBOARD_OUTRO_WITH SFX.wav",
+      "Path": "Media/963587756.wem",
+      "CachePath": "SFX/BGM_STORYBOARD_OUTRO_WITH SFX_FBC78EF0.wem"
      }
     ],
     "Events": [
@@ -2619,7 +2650,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "651441700"
+          "Id": "963587756"
          }
         ]
        },
@@ -2632,7 +2663,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "651441700"
+          "Id": "865736609"
          }
         ]
        },
@@ -3091,6 +3122,6 @@
     ]
    }
   ],
-  "FileHash": "{73B77482-3107-0E5E-15D7-4FA190BE1398}"
+  "FileHash": "{AC1665B9-2285-BE03-6FE3-5E4888846A77}"
  }
 }

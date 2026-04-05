@@ -36,7 +36,8 @@ void AManInBlack_AIController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//MoveToNextPatrolPoint();
+	// start the 360 proximity radar to check for nearby aliens every 0.5 seconds
+	GetWorld()->GetTimerManager().SetTimer(ProximityTimerHandle, this, &AManInBlack_AIController::CheckProximity, 0.5f, true);
 }
 
 void AManInBlack_AIController::OnPossess(APawn* InPawn)
@@ -204,7 +205,7 @@ void AManInBlack_AIController::UpdateChase()
 			MIBCharacter->GetCharacterMovement()->MaxWalkSpeed = ChaseSpeed;
 		}
 
-		MoveToActor(TargetAlien, 100.0f);
+		MoveToActor(TargetAlien, 10.0f);
 	}
 	else
 	{
@@ -217,7 +218,7 @@ void AManInBlack_AIController::UpdateChase()
 			// if the alien is within 600 units, man in black spins and keeps chasing
 			if (DistToOldTarget < 600.0f)
 			{
-				MoveToActor(TargetAlien, 100.0f);
+				MoveToActor(TargetAlien, 10.0f);
 				return; // stop here so the patrol logic doesn't kick in and change his destination while he's still chasing the last known location of the alien
 			}
 		}
@@ -260,7 +261,7 @@ void AManInBlack_AIController::CatchAlien(AActor* CaughtAlien)
 {
 	if (!CaughtAlien) return;
 
-	// 1. Stop AI Chase & Trigger Cooldown
+	// Stop AI Chase & Trigger Cooldown
 	GetWorld()->GetTimerManager().ClearTimer(ChaseTimerHandle);
 	TargetAlien = nullptr;
 	StopMovement();
@@ -269,7 +270,7 @@ void AManInBlack_AIController::CatchAlien(AActor* CaughtAlien)
 	bIsCatchOnCooldown = true;
 	GetWorld()->GetTimerManager().SetTimer(CatchCooldownTimerHandle, this, &AManInBlack_AIController::ResetCatchCooldown, CatchCooldown, false);
 
-	// 2. Lock the player controls and trigger the camera fade
+	// Lock the player controls and trigger the camera fade
 	if (APawn* CaughtPawn = Cast<APawn>(CaughtAlien))
 	{
 		if (APlayerController* PC = Cast<APlayerController>(CaughtPawn->GetController()))
@@ -284,11 +285,11 @@ void AManInBlack_AIController::CatchAlien(AActor* CaughtAlien)
 		}
 	}
 
-	// 3. Swap the ID badges so the AI ignores this player from now on
+	// Swap the ID badges so the AI ignores this player from now on
 	CaughtAlien->Tags.Remove("Alien");
 	CaughtAlien->Tags.Add("Prisoner");
 
-	// 4. GAME OVER CHECK: Are both players currently in prison?
+	// GAME OVER CHECK Are both players currently in prison?
 	TArray<AActor*> Prisoners;
 	UGameplayStatics::GetAllActorsWithTag(GetWorld(), "Prisoner", Prisoners);
 
@@ -299,7 +300,7 @@ void AManInBlack_AIController::CatchAlien(AActor* CaughtAlien)
 		return;
 	}
 
-	// 5. If the game isn't over, set a timer to teleport them 1 second later (when the screen is fully black)
+	// If the game isn't over, set a timer to teleport them 1 second later
 	GetWorld()->GetTimerManager().SetTimer(CatchSequenceTimerHandle, this, &AManInBlack_AIController::FinishCatchSequence, 1.0f, false);
 }
 
@@ -325,17 +326,17 @@ void AManInBlack_AIController::FinishCatchSequence()
 		CellTagToFind = "PrisonCell";
 	}
 
-	// 1. Find the specific location matching the alien's color
+	// Find the specific location matching the alien's color
 	TArray<AActor*> PrisonCells;
 	UGameplayStatics::GetAllActorsWithTag(GetWorld(), CellTagToFind, PrisonCells);
 
-	// 2. Teleport the alien to their specific incubator
+	// Teleport the alien to their specific incubator
 	if (PrisonCells.Num() > 0)
 	{
 		CurrentlyCaughtAlien->SetActorLocation(PrisonCells[0]->GetActorLocation());
 	}
 
-	// 3. Trigger the White Fade-In
+	// Trigger the White Fade-In
 	if (APawn* CaughtPawn = Cast<APawn>(CurrentlyCaughtAlien))
 	{
 		if (APlayerController* PC = Cast<APlayerController>(CaughtPawn->GetController()))
@@ -347,7 +348,7 @@ void AManInBlack_AIController::FinishCatchSequence()
 		}
 	}
 
-	// 4. Clean up and tell the Man in Black to go back to patrolling
+	// Clean up and tell the Man in Black to go back to patrolling
 	CurrentlyCaughtAlien = nullptr;
 	MoveToNextPatrolPoint();
 }
@@ -355,5 +356,38 @@ void AManInBlack_AIController::FinishCatchSequence()
 void AManInBlack_AIController::ResetCatchCooldown()
 {
 	bIsCatchOnCooldown = false;
+}
+
+void AManInBlack_AIController::CheckProximity()
+{
+	// don't bother scanning if he's already chasing an alien
+	if (TargetAlien != nullptr || GetPawn() == nullptr) return;
+
+	// grab all free aliens on the map
+	TArray<AActor*> Aliens;
+	UGameplayStatics::GetAllActorsWithTag(GetWorld(), "Alien", Aliens);
+
+	// measure distance to each alien
+	for (AActor* Alien : Aliens)
+	{
+		if (Alien)
+		{
+			float Distance = FVector::Dist(GetPawn()->GetActorLocation(), Alien->GetActorLocation());
+
+			// if any are within the proximity radius
+			if (Distance <= ProximityRadius)
+			{
+				// lock onto the sneaky alien and start chasing
+				TargetAlien = Alien;
+				GetWorld()->GetTimerManager().ClearTimer(WaitTimerHandle); // stop patrolling
+				if (!GetWorld()->GetTimerManager().IsTimerActive(ChaseTimerHandle))
+				{
+					GetWorld()->GetTimerManager().SetTimer(ChaseTimerHandle, this, &AManInBlack_AIController::UpdateChase, 0.2f, true);
+					UpdateChase();
+				}
+				return; // stop checking other aliens, we only want to chase one at a time
+			}
+		}
+	}
 }
 

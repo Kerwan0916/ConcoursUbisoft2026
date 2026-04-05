@@ -55,7 +55,7 @@ public:
 
 	// AI Catch Settings
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Catch")
-	float CatchDistance = 150.0f; // Distance at which the AI will "catch" the alien
+	float CatchDistance = 100.0f; // Distance at which the AI will "catch" the alien
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Catch")
 	float CatchCooldown = 3.0f; // Time after catching before the AI can catch again
@@ -66,6 +66,10 @@ public:
 	void CatchAlien(AActor* CaughtAlien);
 	void FinishCatchSequence();
 	void ResetCatchCooldown();
+
+	// AI Proximity Radar
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Patrol")
+	float ProximityRadius = 250.0f; // Radius for the proximity radar 
 
 
 	UFUNCTION(BlueprintCallable, Category = "AI Patrol")
@@ -83,4 +87,9 @@ private:
 	FTimerHandle CatchCooldownTimerHandle;
 	AActor* CurrentlyCaughtAlien = nullptr;
 	bool bIsCatchOnCooldown = false;
+
+	FTimerHandle ProximityTimerHandle;
+
+	UFUNCTION()
+	void CheckProximity();
 };

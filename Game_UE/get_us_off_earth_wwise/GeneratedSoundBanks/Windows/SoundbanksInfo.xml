@@ -744,7 +744,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2012969758" Type="Event" GUID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" Language="SFX" Hash="{A5E7EE64-B1D7-9A2C-5B5E-FD970AD71F29}">
+		<SoundBank Id="2012969758" Type="Event" GUID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" Language="SFX" Hash="{DB8E49CA-7D98-1A3F-A213-92065D54FDBF}">
 			<ObjectPath>Play_SFX_KEYS_EMITTER_LOOP</ObjectPath>
 			<ShortName>Play_SFX_KEYS_EMITTER_LOOP</ShortName>
 			<Path>Event/Play_SFX_KEYS_EMITTER_LOOP.bnk</Path>
@@ -1033,6 +1033,14 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="2906469151" Type="Event" GUID="{6016D3EF-2B0D-4B03-B874-772AE0D2A0F7}" Language="SFX" Hash="{455C93F8-D0F9-BC9B-4047-23318DC130B0}">
+			<ObjectPath>Mute_SFX_KEYS_EMITTER_LOOP</ObjectPath>
+			<ShortName>Mute_SFX_KEYS_EMITTER_LOOP</ShortName>
+			<Path>Event/Mute_SFX_KEYS_EMITTER_LOOP.bnk</Path>
+			<Events>
+				<Event Id="2906469151" Name="Mute_SFX_KEYS_EMITTER_LOOP" ObjectPath="\Events\Default Work Unit\WORLD OBJECTS\KEYS\Mute_SFX_KEYS_EMITTER_LOOP" GUID="{6016D3EF-2B0D-4B03-B874-772AE0D2A0F7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="3110399011" Type="Event" GUID="{A718C967-8A6E-4A72-97B9-0E2BD21D7345}" Language="SFX" Hash="{392A542B-FF96-5BDD-DA60-6EC719B5D25D}">
 			<ObjectPath>Play_AMB_3D_LEVERS_OFF_LOOP</ObjectPath>
 			<ShortName>Play_AMB_3D_LEVERS_OFF_LOOP</ShortName>
@@ -1052,7 +1060,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3126765036" Type="Event" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" Language="SFX" Hash="{4D4EAB3C-44C2-97AF-0143-6DEDBFD241B8}">
+		<SoundBank Id="3126765036" Type="Event" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" Language="SFX" Hash="{2FE40B0E-EA30-70D6-90A7-CDB7B5AF500B}">
 			<ObjectPath>Play_BGM</ObjectPath>
 			<ShortName>Play_BGM</ShortName>
 			<Path>Event/Play_BGM.bnk</Path>
@@ -1102,20 +1110,25 @@
 					<Path>Media/621569200.wem</Path>
 					<CachePath>SFX/BGM_LEVEL_LOOP_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="651441700" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>BGM_SILENCE_STORYBOARDS.wav</ShortName>
-					<Path>Media/651441700.wem</Path>
-					<CachePath>SFX/BGM_SILENCE_STORYBOARDS_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="846764474" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>BGM_LOADING_LOOP.wav</ShortName>
 					<Path>Media/846764474.wem</Path>
 					<CachePath>SFX/BGM_LOADING_LOOP_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="865736609" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_STORYBOARD_INTRO_WITH_SFX.wav</ShortName>
+					<Path>Media/865736609.wem</Path>
+					<CachePath>SFX/BGM_STORYBOARD_INTRO_WITH_SFX_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="872339771" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>BGM_LOADING_INTRO.wav</ShortName>
 					<Path>Media/872339771.wem</Path>
 					<CachePath>SFX/BGM_LOADING_INTRO_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="963587756" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_STORYBOARD_OUTRO_WITH SFX.wav</ShortName>
+					<Path>Media/963587756.wem</Path>
+					<CachePath>SFX/BGM_STORYBOARD_OUTRO_WITH SFX_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -1145,13 +1158,13 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="2248712270" Id="1966203490" GUID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
 							<MediaRefs>
-								<MediaRef Id="651441700"/>
+								<MediaRef Id="963587756"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="2248712270" Id="93434497" GUID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
 							<MediaRefs>
-								<MediaRef Id="651441700"/>
+								<MediaRef Id="865736609"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1368,5 +1381,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4BE51425-2F13-7F98-91D4-AE558BFDA896}</FileHash>
+	<FileHash>{30FC8B7C-AD92-E9AD-9B84-66AB089BD308}</FileHash>
 </SoundBanksInfo>

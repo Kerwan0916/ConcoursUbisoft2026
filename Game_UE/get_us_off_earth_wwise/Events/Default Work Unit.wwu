@@ -269,6 +269,32 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{979C0815-8586-4B09-8D53-3D7466D0D627}" ShortID="785641017">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_KEYS_EMITTER_LOOP" ID="{92D545ED-A7CE-4134-94AE-BBCC4435C951}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Mute_SFX_KEYS_EMITTER_LOOP" ID="{6016D3EF-2B0D-4B03-B874-772AE0D2A0F7}">
+									<ChildrenList>
+										<Action Name="" ID="{EDE4EEA6-985C-433D-96A8-70AF38F76954}" ShortID="907171135">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_KEYS_EMITTER_LOOP" ID="{92D545ED-A7CE-4134-94AE-BBCC4435C951}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 							</ChildrenList>
