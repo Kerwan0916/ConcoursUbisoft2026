@@ -2194,6 +2194,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="SFX_ALIEN_GRUNT_CATCHED" ID="{4ED8666A-8CA6-4F78-9FD6-39167BD19C2B}" ShortID="268303402">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
