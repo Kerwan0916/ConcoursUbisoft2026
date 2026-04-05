@@ -71,6 +71,7 @@ void AManInBlack_AIController::OnTargetDetected(AActor* Actor, FAIStimulus Stimu
 		// If the chase loop isn't already running, start it (Runs every 0.2 seconds)
 		if (!GetWorld()->GetTimerManager().IsTimerActive(ChaseTimerHandle))
 		{
+			OnAlienDetected(Actor); // call the blueprint event
 			GetWorld()->GetTimerManager().SetTimer(ChaseTimerHandle, this, &AManInBlack_AIController::UpdateChase, 0.2f, true);
 
 			// Call it immediately the first time so there is no delay
@@ -261,6 +262,9 @@ void AManInBlack_AIController::CatchAlien(AActor* CaughtAlien)
 {
 	if (!CaughtAlien) return;
 
+	// call the blueprint event for the sound designer
+	OnAlienCaught(CaughtAlien);
+
 	// Stop AI Chase & Trigger Cooldown
 	GetWorld()->GetTimerManager().ClearTimer(ChaseTimerHandle);
 	TargetAlien = nullptr;
@@ -382,6 +386,7 @@ void AManInBlack_AIController::CheckProximity()
 				GetWorld()->GetTimerManager().ClearTimer(WaitTimerHandle); // stop patrolling
 				if (!GetWorld()->GetTimerManager().IsTimerActive(ChaseTimerHandle))
 				{
+					OnAlienDetected(Alien); // call the blueprint event
 					GetWorld()->GetTimerManager().SetTimer(ChaseTimerHandle, this, &AManInBlack_AIController::UpdateChase, 0.2f, true);
 					UpdateChase();
 				}

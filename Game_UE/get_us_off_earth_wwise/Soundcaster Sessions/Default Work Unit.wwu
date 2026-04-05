@@ -82,10 +82,6 @@
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_SFX_PANEL_IN" ID="{588ED580-500C-4C9D-9384-F5AE049851BE}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
-							<Position X="3" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_SFX_SELECT" ID="{63A16E8C-756D-44CF-84DD-E0FF4473C2E7}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
 							<Position X="3" Y="3"/>
 						</Module>
@@ -104,10 +100,6 @@
 						<Module>
 							<ObjectRef Name="Play_SFX_MENU_MAIN_EXIT" ID="{8038F53F-89A9-4267-939D-5E227260F756}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
 							<Position X="4" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_SFX_PANEL_OUT" ID="{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
-							<Position X="4" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_SFX_KEYS_EMITTER_LOOP" ID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" WorkUnitID="{0D0ECA9D-3DC2-4941-8D09-775BE9A6B04D}"/>
