@@ -1816,7 +1816,7 @@
     "Type": "Event",
     "GUID": "{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}",
     "Language": "SFX",
-    "Hash": "{B1B3302C-B9B1-F7CE-7319-87B830042E4F}",
+    "Hash": "{347FBAD9-EB69-3AFF-D6C0-16F03FF3963D}",
     "ObjectPath": "Play_SFX_ALIEN_GRUNT_CATCHED",
     "ShortName": "Play_SFX_ALIEN_GRUNT_CATCHED",
     "Path": "Event/Play_SFX_ALIEN_GRUNT_CATCHED.bnk",
@@ -1856,8 +1856,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\ALIEN 1\\GRUNTS\\Play_SFX_ALIEN_GRUNT_CATCHED",
       "GUID": "{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}",
       "DurationType": "OneShot",
-      "DurationMin": "1",
-      "DurationMax": "1",
+      "DurationMin": "1.5",
+      "DurationMax": "1.5",
       "MediaRefs": [
        {
         "Id": "683213460"
@@ -2377,7 +2377,7 @@
     "Type": "Event",
     "GUID": "{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}",
     "Language": "SFX",
-    "Hash": "{2BE103C8-C358-5B1B-657D-30A33BC33D85}",
+    "Hash": "{6383DBFE-81DB-FD3A-34AD-C3CC4F00CB55}",
     "ObjectPath": "Play_BGM",
     "ShortName": "Play_BGM",
     "Path": "Event/Play_BGM.bnk",
@@ -2473,15 +2473,6 @@
       "CachePath": "SFX/BGM_LOADING_LOOP_FBC78EF0.wem"
      },
      {
-      "Id": "865736609",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "BGM_STORYBOARD_INTRO_WITH_SFX.wav",
-      "Path": "Media/865736609.wem",
-      "CachePath": "SFX/BGM_STORYBOARD_INTRO_WITH_SFX_FBC78EF0.wem"
-     },
-     {
       "Id": "872339771",
       "Language": "SFX",
       "Streaming": "false",
@@ -2491,13 +2482,13 @@
       "CachePath": "SFX/BGM_LOADING_INTRO_FBC78EF0.wem"
      },
      {
-      "Id": "963587756",
+      "Id": "967084777",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "BGM_STORYBOARD_OUTRO_WITH SFX.wav",
-      "Path": "Media/963587756.wem",
-      "CachePath": "SFX/BGM_STORYBOARD_OUTRO_WITH SFX_FBC78EF0.wem"
+      "ShortName": "BGM_SILENCE_STORYBOARDS.wav",
+      "Path": "Media/967084777.wem",
+      "CachePath": "SFX/BGM_SILENCE_STORYBOARDS_FBC78EF0.wem"
      }
     ],
     "Events": [
@@ -2565,7 +2556,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "963587756"
+          "Id": "967084777"
          }
         ]
        },
@@ -2578,7 +2569,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "865736609"
+          "Id": "967084777"
          }
         ]
        },
@@ -2952,6 +2943,6 @@
     ]
    }
   ],
-  "FileHash": "{2B00C4BF-3097-6E8E-E29A-7A0D501964A5}"
+  "FileHash": "{DA022716-BBBD-5D9E-0B3A-1C24D1A99A61}"
  }
 }
