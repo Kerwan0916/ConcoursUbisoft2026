@@ -2462,7 +2462,7 @@
     "Type": "Event",
     "GUID": "{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}",
     "Language": "SFX",
-    "Hash": "{2FE40B0E-EA30-70D6-90A7-CDB7B5AF500B}",
+    "Hash": "{470ADDA7-ACA5-7AA5-4BA3-EF74F763AFB1}",
     "ObjectPath": "Play_BGM",
     "ShortName": "Play_BGM",
     "Path": "Event/Play_BGM.bnk",
@@ -3122,6 +3122,6 @@
     ]
    }
   ],
-  "FileHash": "{AC1665B9-2285-BE03-6FE3-5E4888846A77}"
+  "FileHash": "{32B1D933-0621-DEDD-722B-A581D6453F9A}"
  }
 }
