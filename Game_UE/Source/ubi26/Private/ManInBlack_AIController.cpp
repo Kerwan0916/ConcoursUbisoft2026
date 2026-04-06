@@ -307,11 +307,29 @@ void AManInBlack_AIController::FinishCatchSequence()
 {
 	if (!CurrentlyCaughtAlien) return;
 
-	// 1. Find the specific location tagged "PrisonCell"
-	TArray<AActor*> PrisonCells;
-	UGameplayStatics::GetAllActorsWithTag(GetWorld(), "PrisonCell", PrisonCells);
+	// Dynamic Cell Matching 
+	FName CellTagToFind = NAME_None;
 
-	// 2. Teleport the alien to it
+	// Check the alien's ID tags to figure out which incubator they belong in
+	if (CurrentlyCaughtAlien->ActorHasTag("GreenAlien"))
+	{
+		CellTagToFind = "GreenCell";
+	}
+	else if (CurrentlyCaughtAlien->ActorHasTag("PurpleAlien"))
+	{
+		CellTagToFind = "PurpleCell";
+	}
+	else
+	{
+		// Fallback just in case someone forgot to add the tags!
+		CellTagToFind = "PrisonCell";
+	}
+
+	// 1. Find the specific location matching the alien's color
+	TArray<AActor*> PrisonCells;
+	UGameplayStatics::GetAllActorsWithTag(GetWorld(), CellTagToFind, PrisonCells);
+
+	// 2. Teleport the alien to their specific incubator
 	if (PrisonCells.Num() > 0)
 	{
 		CurrentlyCaughtAlien->SetActorLocation(PrisonCells[0]->GetActorLocation());
