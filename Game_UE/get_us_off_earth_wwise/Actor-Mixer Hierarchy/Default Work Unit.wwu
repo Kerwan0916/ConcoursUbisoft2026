@@ -413,12 +413,31 @@
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="MENBLACK_FS_WALK_SWITCH" ID="{F02BC883-DE03-4B4B-96E2-5AA0D443BEC4}" ShortID="478282613">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATT_MEN_FS" ID="{C0E26669-D065-46B5-BEBC-035CDD4C13CA}" WorkUnitID="{C7C42472-609E-4A9F-8D37-68580D7AD43E}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{723F5557-1091-4383-9CDC-9802E19CC5A4}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="TILE" ID="{964759D4-5713-451C-B5C2-D98D035C10EB}" WorkUnitID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}"/>
+									<ObjectRef Name="RUG" ID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}" WorkUnitID="{3606BB4B-9960-4FA3-8580-A9CA7C88F5CC}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="MEN IN BLACK" ID="{4B876210-25EC-4323-B907-B11C5B5F457A}" WorkUnitID="{39A1E2D3-5480-4AD5-A757-D3EC8438EB20}"/>

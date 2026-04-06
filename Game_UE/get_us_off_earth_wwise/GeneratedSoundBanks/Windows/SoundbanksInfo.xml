@@ -770,7 +770,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2383364376" Type="Event" GUID="{E8C96E28-2882-412B-832B-A36E181F35C2}" Language="SFX" Hash="{AC9A6EB4-89B6-0068-2061-F4B0BEA1BA95}">
+		<SoundBank Id="2383364376" Type="Event" GUID="{E8C96E28-2882-412B-832B-A36E181F35C2}" Language="SFX" Hash="{3B22459E-E8D8-A6C3-4691-EED8BDC4E478}">
 			<ObjectPath>Play_SFX_MENBLACK_FS_WALK_SWITCH</ObjectPath>
 			<ShortName>Play_SFX_MENBLACK_FS_WALK_SWITCH</ShortName>
 			<Path>Event/Play_SFX_MENBLACK_FS_WALK_SWITCH.bnk</Path>
@@ -880,7 +880,7 @@
 				<Event Id="2383364376" Name="Play_SFX_MENBLACK_FS_WALK_SWITCH" ObjectPath="\Events\Default Work Unit\MEN IN BLACK\Play_SFX_MENBLACK_FS_WALK_SWITCH" GUID="{E8C96E28-2882-412B-832B-A36E181F35C2}" DurationType="OneShot" DurationMin="0.19217686" DurationMax="0.5">
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="712161697" GUID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="712161697" GUID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="12460939"/>
 								<MediaRef Id="33356790"/>
@@ -895,7 +895,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="2637588553" GUID="{964759D4-5713-451C-B5C2-D98D035C10EB}" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="2637588553" GUID="{964759D4-5713-451C-B5C2-D98D035C10EB}"/>
 							<MediaRefs>
 								<MediaRef Id="253777966"/>
 								<MediaRef Id="342258560"/>
@@ -1290,5 +1290,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2EE74773-9EFA-353F-94B5-B7670066FDC0}</FileHash>
+	<FileHash>{2B689D80-4685-F04A-108D-1FE5A75597CD}</FileHash>
 </SoundBanksInfo>
