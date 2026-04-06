@@ -362,28 +362,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_SFX_PANEL_IN" ID="{588ED580-500C-4C9D-9384-F5AE049851BE}">
-							<ChildrenList>
-								<Action Name="" ID="{B4525B2E-3646-4ECB-BC4D-1FC2AC4C417D}" ShortID="549693846">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PANEL IN" ID="{5658A692-77A5-4857-ADF2-B5BDF6C44366}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_PANEL_OUT" ID="{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}">
-							<ChildrenList>
-								<Action Name="" ID="{E5550588-E47B-4B52-87C7-F621D7D8C30A}" ShortID="44288266">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PANEL OUT" ID="{4146650E-6308-4B75-A22D-0CC6B38D52E2}" WorkUnitID="{CB02D388-3A22-4373-AB9E-DE28A6FF36A1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AMB" ID="{32CC0A0E-039E-4DEE-B9C0-C681A4FEB9C5}" ShortID="504437582">
