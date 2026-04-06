@@ -75,7 +75,7 @@ public:
 
 	// AI Proximity Radar
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI Patrol")
-	float ProximityRadius = 250.0f; // Radius for the proximity radar 
+	float ProximityRadius = 400.0f; // Radius for the proximity radar 
 
 
 	UFUNCTION(BlueprintCallable, Category = "AI Patrol")
@@ -98,4 +98,7 @@ private:
 
 	UFUNCTION()
 	void CheckProximity();
+
+	FTimerHandle GiveUpTimerHandle;
+	void GiveUpChase();
 };

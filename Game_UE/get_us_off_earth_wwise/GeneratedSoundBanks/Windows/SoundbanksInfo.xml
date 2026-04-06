@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="73382271" Type="Event" GUID="{CE553948-3260-40AC-9F07-DAF424CA0830}" Language="SFX" Hash="{36EB62D4-CE50-4F28-9D30-78502D7A0A92}">
+		<SoundBank Id="73382271" Type="Event" GUID="{CE553948-3260-40AC-9F07-DAF424CA0830}" Language="SFX" Hash="{1D0A3B61-2568-4558-AEEB-92AC4138E450}">
 			<ObjectPath>Play_AMB_2D_ROOMTONE_GENERAL_LOOP</ObjectPath>
 			<ShortName>Play_AMB_2D_ROOMTONE_GENERAL_LOOP</ShortName>
 			<Path>Event/Play_AMB_2D_ROOMTONE_GENERAL_LOOP.bnk</Path>
@@ -28,7 +28,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="325086926" Type="Event" GUID="{63A16E8C-756D-44CF-84DD-E0FF4473C2E7}" Language="SFX" Hash="{BF63D56D-4F95-0760-D559-038EBEA09F5B}">
+		<SoundBank Id="325086926" Type="Event" GUID="{63A16E8C-756D-44CF-84DD-E0FF4473C2E7}" Language="SFX" Hash="{7D8420FD-E3CE-E799-567F-6A1EE83E7D5D}">
 			<ObjectPath>Play_SFX_SELECT</ObjectPath>
 			<ShortName>Play_SFX_SELECT</ShortName>
 			<Path>Event/Play_SFX_SELECT.bnk</Path>
@@ -152,7 +152,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1160267864" Type="Event" GUID="{8038F53F-89A9-4267-939D-5E227260F756}" Language="SFX" Hash="{C0CC535B-50F3-17DB-663A-DA97B35C7F61}">
+		<SoundBank Id="1160267864" Type="Event" GUID="{8038F53F-89A9-4267-939D-5E227260F756}" Language="SFX" Hash="{7A37CCB7-7F6F-BB72-474E-E2901D569712}">
 			<ObjectPath>Play_SFX_MENU_MAIN_EXIT</ObjectPath>
 			<ShortName>Play_SFX_MENU_MAIN_EXIT</ShortName>
 			<Path>Event/Play_SFX_MENU_MAIN_EXIT.bnk</Path>
@@ -364,49 +364,6 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1450419186" Type="Event" GUID="{588ED580-500C-4C9D-9384-F5AE049851BE}" Language="SFX" Hash="{D59AA88A-8953-9332-9A44-5F63C1813312}">
-			<ObjectPath>Play_SFX_PANEL_IN</ObjectPath>
-			<ShortName>Play_SFX_PANEL_IN</ShortName>
-			<Path>Event/Play_SFX_PANEL_IN.bnk</Path>
-			<Media>
-				<File Id="111241175" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_IN_03.wav</ShortName>
-					<Path>Media/111241175.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_IN_03_818F3B66.wem</CachePath>
-				</File>
-				<File Id="154169061" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_IN_05.wav</ShortName>
-					<Path>Media/154169061.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_IN_05_818F3B66.wem</CachePath>
-				</File>
-				<File Id="374124027" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_IN_01.wav</ShortName>
-					<Path>Media/374124027.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_IN_01_818F3B66.wem</CachePath>
-				</File>
-				<File Id="421196250" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_IN_04.wav</ShortName>
-					<Path>Media/421196250.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_IN_04_818F3B66.wem</CachePath>
-				</File>
-				<File Id="940334184" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_IN_02.wav</ShortName>
-					<Path>Media/940334184.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_IN_02_818F3B66.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="1450419186" Name="Play_SFX_PANEL_IN" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_PANEL_IN" GUID="{588ED580-500C-4C9D-9384-F5AE049851BE}" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
-					<MediaRefs>
-						<MediaRef Id="111241175"/>
-						<MediaRef Id="154169061"/>
-						<MediaRef Id="374124027"/>
-						<MediaRef Id="421196250"/>
-						<MediaRef Id="940334184"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-		</SoundBank>
 		<SoundBank Id="1484426712" Type="Event" GUID="{D6873E74-1023-4146-BC4F-445644489C81}" Language="SFX" Hash="{890B0638-2216-0DA4-7D76-53F1660476CD}">
 			<ObjectPath>Play_ALIEN_FS_RUN_SWITCH</ObjectPath>
 			<ShortName>Play_ALIEN_FS_RUN_SWITCH</ShortName>
@@ -589,7 +546,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1592706777" Type="Event" GUID="{4B7F7B1D-5D74-4F8A-A69C-D12AC56E112D}" Language="SFX" Hash="{7DA387D1-D4ED-CC50-60B1-4963976819CA}">
+		<SoundBank Id="1592706777" Type="Event" GUID="{4B7F7B1D-5D74-4F8A-A69C-D12AC56E112D}" Language="SFX" Hash="{CD80F939-8000-4337-369A-DD70147AED00}">
 			<ObjectPath>Play_SFX_KEYS_PICKUP</ObjectPath>
 			<ShortName>Play_SFX_KEYS_PICKUP</ShortName>
 			<Path>Event/Play_SFX_KEYS_PICKUP.bnk</Path>
@@ -670,7 +627,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1780698603" Type="Event" GUID="{990DFE39-4F9E-4AAD-BB67-AB4DB629A568}" Language="SFX" Hash="{E16CAA7E-0DCE-F6FA-38D0-C84508EFCA70}">
+		<SoundBank Id="1780698603" Type="Event" GUID="{990DFE39-4F9E-4AAD-BB67-AB4DB629A568}" Language="SFX" Hash="{8CD7F9A1-B241-5553-064D-A523D84EBC4E}">
 			<ObjectPath>Play_SFX_BACK</ObjectPath>
 			<ShortName>Play_SFX_BACK</ShortName>
 			<Path>Event/Play_SFX_BACK.bnk</Path>
@@ -744,7 +701,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2012969758" Type="Event" GUID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" Language="SFX" Hash="{DB8E49CA-7D98-1A3F-A213-92065D54FDBF}">
+		<SoundBank Id="2012969758" Type="Event" GUID="{5A50AF4C-9921-4873-AA70-A16D0E30AA34}" Language="SFX" Hash="{11CD4D76-2653-E08A-48EB-BD9F2C4634B6}">
 			<ObjectPath>Play_SFX_KEYS_EMITTER_LOOP</ObjectPath>
 			<ShortName>Play_SFX_KEYS_EMITTER_LOOP</ShortName>
 			<Path>Event/Play_SFX_KEYS_EMITTER_LOOP.bnk</Path>
@@ -782,7 +739,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2138504219" Type="Event" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" Language="SFX" Hash="{B1B3302C-B9B1-F7CE-7319-87B830042E4F}">
+		<SoundBank Id="2138504219" Type="Event" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" Language="SFX" Hash="{347FBAD9-EB69-3AFF-D6C0-16F03FF3963D}">
 			<ObjectPath>Play_SFX_ALIEN_GRUNT_CATCHED</ObjectPath>
 			<ShortName>Play_SFX_ALIEN_GRUNT_CATCHED</ShortName>
 			<Path>Event/Play_SFX_ALIEN_GRUNT_CATCHED.bnk</Path>
@@ -804,7 +761,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2138504219" Name="Play_SFX_ALIEN_GRUNT_CATCHED" ObjectPath="\Events\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_CATCHED" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="2138504219" Name="Play_SFX_ALIEN_GRUNT_CATCHED" ObjectPath="\Events\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_CATCHED" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
 					<MediaRefs>
 						<MediaRef Id="683213460"/>
 						<MediaRef Id="965717301"/>
@@ -813,7 +770,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2383364376" Type="Event" GUID="{E8C96E28-2882-412B-832B-A36E181F35C2}" Language="SFX" Hash="{AC9A6EB4-89B6-0068-2061-F4B0BEA1BA95}">
+		<SoundBank Id="2383364376" Type="Event" GUID="{E8C96E28-2882-412B-832B-A36E181F35C2}" Language="SFX" Hash="{3B22459E-E8D8-A6C3-4691-EED8BDC4E478}">
 			<ObjectPath>Play_SFX_MENBLACK_FS_WALK_SWITCH</ObjectPath>
 			<ShortName>Play_SFX_MENBLACK_FS_WALK_SWITCH</ShortName>
 			<Path>Event/Play_SFX_MENBLACK_FS_WALK_SWITCH.bnk</Path>
@@ -923,7 +880,7 @@
 				<Event Id="2383364376" Name="Play_SFX_MENBLACK_FS_WALK_SWITCH" ObjectPath="\Events\Default Work Unit\MEN IN BLACK\Play_SFX_MENBLACK_FS_WALK_SWITCH" GUID="{E8C96E28-2882-412B-832B-A36E181F35C2}" DurationType="OneShot" DurationMin="0.19217686" DurationMax="0.5">
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="712161697" GUID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"/>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="712161697" GUID="{CF2675A6-777C-44D1-B1AC-6C1594D7C179}" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="12460939"/>
 								<MediaRef Id="33356790"/>
@@ -938,7 +895,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="2637588553" GUID="{964759D4-5713-451C-B5C2-D98D035C10EB}" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="2637588553" GUID="{964759D4-5713-451C-B5C2-D98D035C10EB}"/>
 							<MediaRefs>
 								<MediaRef Id="253777966"/>
 								<MediaRef Id="342258560"/>
@@ -1060,7 +1017,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3126765036" Type="Event" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" Language="SFX" Hash="{470ADDA7-ACA5-7AA5-4BA3-EF74F763AFB1}">
+		<SoundBank Id="3126765036" Type="Event" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" Language="SFX" Hash="{6383DBFE-81DB-FD3A-34AD-C3CC4F00CB55}">
 			<ObjectPath>Play_BGM</ObjectPath>
 			<ShortName>Play_BGM</ShortName>
 			<Path>Event/Play_BGM.bnk</Path>
@@ -1115,20 +1072,15 @@
 					<Path>Media/846764474.wem</Path>
 					<CachePath>SFX/BGM_LOADING_LOOP_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="865736609" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>BGM_STORYBOARD_INTRO_WITH_SFX.wav</ShortName>
-					<Path>Media/865736609.wem</Path>
-					<CachePath>SFX/BGM_STORYBOARD_INTRO_WITH_SFX_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="872339771" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>BGM_LOADING_INTRO.wav</ShortName>
 					<Path>Media/872339771.wem</Path>
 					<CachePath>SFX/BGM_LOADING_INTRO_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="963587756" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>BGM_STORYBOARD_OUTRO_WITH SFX.wav</ShortName>
-					<Path>Media/963587756.wem</Path>
-					<CachePath>SFX/BGM_STORYBOARD_OUTRO_WITH SFX_FBC78EF0.wem</CachePath>
+				<File Id="967084777" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_SILENCE_STORYBOARDS.wav</ShortName>
+					<Path>Media/967084777.wem</Path>
+					<CachePath>SFX/BGM_SILENCE_STORYBOARDS_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -1158,13 +1110,13 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="2248712270" Id="1966203490" GUID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
 							<MediaRefs>
-								<MediaRef Id="963587756"/>
+								<MediaRef Id="967084777"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="2248712270" Id="93434497" GUID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
 							<MediaRefs>
-								<MediaRef Id="865736609"/>
+								<MediaRef Id="967084777"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1244,7 +1196,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3430759498" Type="Event" GUID="{F24B7B7B-EFE0-4AB1-9854-DA433F7D6EA3}" Language="SFX" Hash="{30B6D701-AAF9-9E82-4CAC-5FC3C7AE0CD0}">
+		<SoundBank Id="3430759498" Type="Event" GUID="{F24B7B7B-EFE0-4AB1-9854-DA433F7D6EA3}" Language="SFX" Hash="{5AE7A019-087F-9756-89AE-9EAFE0C100A3}">
 			<ObjectPath>Play_SFX_MENU_MAIN_ENTER</ObjectPath>
 			<ShortName>Play_SFX_MENU_MAIN_ENTER</ShortName>
 			<Path>Event/Play_SFX_MENU_MAIN_ENTER.bnk</Path>
@@ -1263,50 +1215,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4110738637" Type="Event" GUID="{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}" Language="SFX" Hash="{4A5C451E-4A83-23F3-B3B9-3AAB06730350}">
-			<ObjectPath>Play_SFX_PANEL_OUT</ObjectPath>
-			<ShortName>Play_SFX_PANEL_OUT</ShortName>
-			<Path>Event/Play_SFX_PANEL_OUT.bnk</Path>
-			<Media>
-				<File Id="203755712" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_OUT_03.wav</ShortName>
-					<Path>Media/203755712.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_OUT_03_818F3B66.wem</CachePath>
-				</File>
-				<File Id="224976223" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_OUT_02.wav</ShortName>
-					<Path>Media/224976223.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_OUT_02_818F3B66.wem</CachePath>
-				</File>
-				<File Id="359125135" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_OUT_04.wav</ShortName>
-					<Path>Media/359125135.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_OUT_04_818F3B66.wem</CachePath>
-				</File>
-				<File Id="371348642" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_OUT_05.wav</ShortName>
-					<Path>Media/371348642.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_OUT_05_818F3B66.wem</CachePath>
-				</File>
-				<File Id="1012132438" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>SFX_UI_MENU_PANEL_OUT_01.wav</ShortName>
-					<Path>Media/1012132438.wem</Path>
-					<CachePath>SFX/SFX_UI_MENU_PANEL_OUT_01_818F3B66.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="4110738637" Name="Play_SFX_PANEL_OUT" ObjectPath="\Events\Default Work Unit\UI\Play_SFX_PANEL_OUT" GUID="{26A7B5EF-F91A-4ED8-9A17-7CC31DF2B431}" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
-					<MediaRefs>
-						<MediaRef Id="203755712"/>
-						<MediaRef Id="224976223"/>
-						<MediaRef Id="359125135"/>
-						<MediaRef Id="371348642"/>
-						<MediaRef Id="1012132438"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="4182414899" Type="Event" GUID="{05620FB7-FBEE-4CB5-9DBC-3F8C608A3671}" Language="SFX" Hash="{E2D9BE57-9EC0-E6FB-674C-946B5CFF0895}">
+		<SoundBank Id="4182414899" Type="Event" GUID="{05620FB7-FBEE-4CB5-9DBC-3F8C608A3671}" Language="SFX" Hash="{231732E4-DDF3-1460-2957-A6FFB8E32C26}">
 			<ObjectPath>Play_ROOM_DOOR_ROOM_OPEN</ObjectPath>
 			<ShortName>Play_ROOM_DOOR_ROOM_OPEN</ShortName>
 			<Path>Event/Play_ROOM_DOOR_ROOM_OPEN.bnk</Path>
@@ -1337,7 +1246,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4230093191" Type="Event" GUID="{5BA3A5D4-E1C1-4FFE-BB86-3C4A4F831173}" Language="SFX" Hash="{16140614-8209-4AF9-F2FF-1C1D1CFCF583}">
+		<SoundBank Id="4230093191" Type="Event" GUID="{5BA3A5D4-E1C1-4FFE-BB86-3C4A4F831173}" Language="SFX" Hash="{48E795B4-849C-036E-F339-03458DD70238}">
 			<ObjectPath>Play_SFX_HOVERS</ObjectPath>
 			<ShortName>Play_SFX_HOVERS</ShortName>
 			<Path>Event/Play_SFX_HOVERS.bnk</Path>
@@ -1381,5 +1290,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E994BEE7-BA39-85C2-31B7-C794FD246430}</FileHash>
+	<FileHash>{2B689D80-4685-F04A-108D-1FE5A75597CD}</FileHash>
 </SoundBanksInfo>
