@@ -739,7 +739,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2138504219" Type="Event" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" Language="SFX" Hash="{B1B3302C-B9B1-F7CE-7319-87B830042E4F}">
+		<SoundBank Id="2138504219" Type="Event" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" Language="SFX" Hash="{347FBAD9-EB69-3AFF-D6C0-16F03FF3963D}">
 			<ObjectPath>Play_SFX_ALIEN_GRUNT_CATCHED</ObjectPath>
 			<ShortName>Play_SFX_ALIEN_GRUNT_CATCHED</ShortName>
 			<Path>Event/Play_SFX_ALIEN_GRUNT_CATCHED.bnk</Path>
@@ -761,7 +761,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2138504219" Name="Play_SFX_ALIEN_GRUNT_CATCHED" ObjectPath="\Events\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_CATCHED" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="2138504219" Name="Play_SFX_ALIEN_GRUNT_CATCHED" ObjectPath="\Events\Default Work Unit\ALIEN 1\GRUNTS\Play_SFX_ALIEN_GRUNT_CATCHED" GUID="{099CB9B0-84CF-43B1-8A3B-D41AB4D201FC}" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
 					<MediaRefs>
 						<MediaRef Id="683213460"/>
 						<MediaRef Id="965717301"/>
@@ -1017,7 +1017,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3126765036" Type="Event" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" Language="SFX" Hash="{2BE103C8-C358-5B1B-657D-30A33BC33D85}">
+		<SoundBank Id="3126765036" Type="Event" GUID="{BFECC3EB-5A46-454D-B1C6-CEEA7E13C6BA}" Language="SFX" Hash="{6383DBFE-81DB-FD3A-34AD-C3CC4F00CB55}">
 			<ObjectPath>Play_BGM</ObjectPath>
 			<ShortName>Play_BGM</ShortName>
 			<Path>Event/Play_BGM.bnk</Path>
@@ -1072,20 +1072,15 @@
 					<Path>Media/846764474.wem</Path>
 					<CachePath>SFX/BGM_LOADING_LOOP_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="865736609" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>BGM_STORYBOARD_INTRO_WITH_SFX.wav</ShortName>
-					<Path>Media/865736609.wem</Path>
-					<CachePath>SFX/BGM_STORYBOARD_INTRO_WITH_SFX_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="872339771" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>BGM_LOADING_INTRO.wav</ShortName>
 					<Path>Media/872339771.wem</Path>
 					<CachePath>SFX/BGM_LOADING_INTRO_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="963587756" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>BGM_STORYBOARD_OUTRO_WITH SFX.wav</ShortName>
-					<Path>Media/963587756.wem</Path>
-					<CachePath>SFX/BGM_STORYBOARD_OUTRO_WITH SFX_FBC78EF0.wem</CachePath>
+				<File Id="967084777" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BGM_SILENCE_STORYBOARDS.wav</ShortName>
+					<Path>Media/967084777.wem</Path>
+					<CachePath>SFX/BGM_SILENCE_STORYBOARDS_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -1115,13 +1110,13 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="2248712270" Id="1966203490" GUID="{4FBCCE88-C8A4-4C67-96B7-D3016D302E10}"/>
 							<MediaRefs>
-								<MediaRef Id="963587756"/>
+								<MediaRef Id="967084777"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="2248712270" Id="93434497" GUID="{DEEAD65F-3C99-4F2D-A5F8-EB07B6D8A0E8}"/>
 							<MediaRefs>
-								<MediaRef Id="865736609"/>
+								<MediaRef Id="967084777"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1295,5 +1290,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AECFF972-6CBE-D9F5-2273-019F757BCAB4}</FileHash>
+	<FileHash>{2EE74773-9EFA-353F-94B5-B7670066FDC0}</FileHash>
 </SoundBanksInfo>
