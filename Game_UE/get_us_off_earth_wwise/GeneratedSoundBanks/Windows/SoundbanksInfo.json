@@ -1877,7 +1877,7 @@
     "Type": "Event",
     "GUID": "{E8C96E28-2882-412B-832B-A36E181F35C2}",
     "Language": "SFX",
-    "Hash": "{AC9A6EB4-89B6-0068-2061-F4B0BEA1BA95}",
+    "Hash": "{3B22459E-E8D8-A6C3-4691-EED8BDC4E478}",
     "ObjectPath": "Play_SFX_MENBLACK_FS_WALK_SWITCH",
     "ShortName": "Play_SFX_MENBLACK_FS_WALK_SWITCH",
     "Path": "Event/Play_SFX_MENBLACK_FS_WALK_SWITCH.bnk",
@@ -2078,7 +2078,8 @@
          "GroupType": "Switch",
          "GroupId": "1834394558",
          "Id": "712161697",
-         "GUID": "{CF2675A6-777C-44D1-B1AC-6C1594D7C179}"
+         "GUID": "{CF2675A6-777C-44D1-B1AC-6C1594D7C179}",
+         "Default": "true"
         },
         "MediaRefs": [
          {
@@ -2118,8 +2119,7 @@
          "GroupType": "Switch",
          "GroupId": "1834394558",
          "Id": "2637588553",
-         "GUID": "{964759D4-5713-451C-B5C2-D98D035C10EB}",
-         "Default": "true"
+         "GUID": "{964759D4-5713-451C-B5C2-D98D035C10EB}"
         },
         "MediaRefs": [
          {
@@ -2943,6 +2943,6 @@
     ]
    }
   ],
-  "FileHash": "{DA022716-BBBD-5D9E-0B3A-1C24D1A99A61}"
+  "FileHash": "{2755E314-E6A9-1D8D-8AB0-A8264888C776}"
  }
 }
