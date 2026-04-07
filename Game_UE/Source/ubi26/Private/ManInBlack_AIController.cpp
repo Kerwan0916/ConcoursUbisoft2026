@@ -198,6 +198,7 @@ void AManInBlack_AIController::UpdateChase()
 	// Did we find an alien
 	if (ClosestAlien != nullptr)
 	{
+		GetWorld()->GetTimerManager().ClearTimer(GiveUpTimerHandle); // if we see an alien, cancel the give up timer
 		TargetAlien = ClosestAlien;
 
 		// Set speed to sprinting!
@@ -219,42 +220,18 @@ void AManInBlack_AIController::UpdateChase()
 			// if the alien is within 600 units, man in black spins and keeps chasing
 			if (DistToOldTarget < 600.0f)
 			{
+				// start the 3 second give up timer 
+				if (!GetWorld()->GetTimerManager().IsTimerActive(GiveUpTimerHandle))
+				{
+					GetWorld()->GetTimerManager().SetTimer(GiveUpTimerHandle, this, &AManInBlack_AIController::GiveUpChase, 3.0f, false);
+				}
+
 				MoveToActor(TargetAlien, 10.0f);
 				return; // stop here so the patrol logic doesn't kick in and change his destination while he's still chasing the last known location of the alien
 			}
 		}
-		// The array was empty so all aliens escaped his vision.
-		// Clear the target, kill the chase loop, and resume patrol
-		TargetAlien = nullptr;
-		GetWorld()->GetTimerManager().ClearTimer(ChaseTimerHandle);
-
-		// Find the closest patrol point to his current location 
-		if (PatrolPoints.Num() > 0 && GetPawn() != nullptr)
-		{
-			float ShortestPatrolDist = 999999.0f;
-			int32 ClosestIndex = CurrentPatrolIndex;
-			FVector MyLocation = GetPawn()->GetActorLocation();
-
-			for (int32 i = 0; i < PatrolPoints.Num(); i++)
-			{
-				if (PatrolPoints[i])
-				{
-					float Dist = FVector::Dist(MyLocation, PatrolPoints[i]->GetActorLocation());
-
-					// If this point is closer than the others, save it
-					if (Dist < ShortestPatrolDist)
-					{
-						ShortestPatrolDist = Dist;
-						ClosestIndex = i;
-					}
-				}
-			}
-
-			// Update his brain to target the closest point we just found
-			CurrentPatrolIndex = ClosestIndex;
-		}
-		// Resume patrol heading to the new closest point
-		MoveToNextPatrolPoint();
+		// if alien is more than 600 units away, he gives up and goes back to patrolling
+		GiveUpChase();
 	}
 }
 
@@ -267,6 +244,7 @@ void AManInBlack_AIController::CatchAlien(AActor* CaughtAlien)
 
 	// Stop AI Chase & Trigger Cooldown
 	GetWorld()->GetTimerManager().ClearTimer(ChaseTimerHandle);
+	GetWorld()->GetTimerManager().ClearTimer(GiveUpTimerHandle);
 	TargetAlien = nullptr;
 	StopMovement();
 	CurrentlyCaughtAlien = CaughtAlien;
@@ -394,5 +372,39 @@ void AManInBlack_AIController::CheckProximity()
 			}
 		}
 	}
+}
+
+void AManInBlack_AIController::GiveUpChase()
+{
+	// clear timers
+	GetWorld()->GetTimerManager().ClearTimer(ChaseTimerHandle);
+	GetWorld()->GetTimerManager().ClearTimer(GiveUpTimerHandle);
+
+	// clear target
+	TargetAlien = nullptr;
+
+	// resume patrol with closest point as destination
+	if (PatrolPoints.Num() > 0 && GetPawn() != nullptr)
+	{
+		float ShortestPatrolDist = 999999.0f;
+		int32 ClosestIndex = CurrentPatrolIndex;
+		FVector MyLocation = GetPawn()->GetActorLocation();
+		for (int32 i = 0; i < PatrolPoints.Num(); i++)
+		{
+			if (PatrolPoints[i])
+			{
+				float Dist = FVector::Dist(MyLocation, PatrolPoints[i]->GetActorLocation());
+				if (Dist < ShortestPatrolDist)
+				{
+					ShortestPatrolDist = Dist;
+					ClosestIndex = i;
+				}
+			}
+		}
+		CurrentPatrolIndex = ClosestIndex;
+	}
+
+	// Resume patrol heading to the new closest point
+	MoveToNextPatrolPoint();
 }
 
