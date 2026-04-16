@@ -238,7 +238,8 @@ void AManInBlack_AIController::UpdateChase()
 void AManInBlack_AIController::CatchAlien(AActor* CaughtAlien)
 {
 	if (!CaughtAlien) return;
-
+	// modif de phil, rajoute une ligne qui empèche de lancer la méthode si la valeur est a true
+	if (bIsCatchOnCooldown) return;
 	// call the blueprint event for the sound designer
 	OnAlienCaught(CaughtAlien);
 
