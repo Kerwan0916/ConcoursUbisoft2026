@@ -4,3 +4,5 @@
 Content/** linguist-vendored
 *.cpp linguist-detectable
 *.h linguist-detectable
+*.ma linguist-vendored
+Art/** linguist-vendored
