@@ -1,0 +1,6 @@
+*.uasset linguist-vendored
+*.umap linguist-vendored
+*.uproject linguist-generated
+Content/** linguist-vendored
+*.cpp linguist-detectable
+*.h linguist-detectable
